@@ -18,11 +18,15 @@ export default class WorkerRepository {
     });
   }
 
-  async findWorkerProfessions(id: string) {
+  async findWorkerProfessions(
+    id: string,
+    include: Prisma.WorkerProfessionInclude = {},
+  ) {
     return this.databaseService.workerProfession.findMany({
       where: {
         workerId: id,
       },
+      include,
     });
   }
 

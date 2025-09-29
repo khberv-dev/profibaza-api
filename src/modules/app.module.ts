@@ -7,9 +7,15 @@ import ClientModule from './client/client.module';
 import LegalModule from './legal/legal.module';
 import WorkerModule from './worker/worker.module';
 import DocumentModule from './document/document.module';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import path from 'node:path';
 
 @Module({
   imports: [
+    ServeStaticModule.forRoot({
+      rootPath: path.join(process.cwd(), 'files'),
+      serveRoot: '/public',
+    }),
     DatabaseModule,
     AuthModule,
     UserModule,

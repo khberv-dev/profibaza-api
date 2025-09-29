@@ -14,7 +14,10 @@ export default class WorkerService {
   ) {}
 
   async getWorkerProfessions(id: string) {
-    const workerProfessions = await this.workerRepository.findWorkerProfessions(id);
+    const workerProfessions = await this.workerRepository.findWorkerProfessions(id, {
+      demos: true,
+      profession: true,
+    });
 
     return {
       ok: true,
