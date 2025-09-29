@@ -66,6 +66,8 @@ model Client {
   contacts  Contact[]
   documents Document[]
 
+  orders Order[]
+
   userId String @unique @map("user_id")
   user   User   @relation(fields: [userId], references: [id])
 
@@ -86,6 +88,8 @@ model Legal {
 
   contacts  Contact[]
   documents Document[]
+
+  orders Order[]
 
   userId String @unique @map("user_id")
   user   User   @relation(fields: [userId], references: [id])
@@ -235,9 +239,10 @@ model WorkerProfessionDemo {
 }
 
 model Comment {
-  id     String  @id @default(uuid(4))
-  text   String?
-  rating Int     @default(1)
+  id       String  @id @default(uuid(4))
+  text     String?
+  rating   Int     @default(1)
+  feedback String?
 
   workerProfessionId String           @map("worker_profession_id")
   workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
@@ -251,4 +256,22 @@ model Comment {
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("comments")
+}
+
+model Order {
+  id       String   @id @default(uuid(4))
+  startAt  DateTime @map("start_at")
+  endAt    DateTime @map("end_at")
+  deadline DateTime @map("deadline")
+
+  clientId String? @map("client_id")
+  client   Client? @relation(fields: [clientId], references: [id])
+
+  legalId String? @map("legal_id")
+  legal   Legal?  @relation(fields: [legalId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("orders")
 }
