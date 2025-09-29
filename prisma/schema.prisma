@@ -1,0 +1,254 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  CLIENT
+  LEGAL
+  WORKER
+}
+
+enum ContactType {
+  PHONE
+  EMAIL
+}
+
+enum DocumentType {
+  PASSPORT
+  ID_CARD
+  DIPLOMA
+  CERTIFICATE
+}
+
+enum JobType {
+  SOLO
+  EMPLOYEE
+  ABROAD
+}
+
+model User {
+  id         String  @id @default(uuid(4))
+  name       String
+  surname    String
+  middleName String  @map("middle_name")
+  phone      String
+  email      String? @unique
+  password   String
+  avatar     String?
+
+  role Role @default(CLIENT)
+
+  clientProfile Client?
+  legalProfile  Legal?
+  workerProfile Worker?
+  adminProfile  Admin?
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Client {
+  id       String  @id @default(uuid(4))
+  address1 String?
+  address2 String?
+  address3 String?
+
+  comments Comment[]
+
+  contacts  Contact[]
+  documents Document[]
+
+  userId String @unique @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("clients")
+}
+
+model Legal {
+  id       String  @id @default(uuid(4))
+  name     String?
+  address1 String?
+  address2 String?
+  address3 String?
+
+  comments Comment[]
+
+  contacts  Contact[]
+  documents Document[]
+
+  userId String @unique @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("legals")
+}
+
+model Worker {
+  id       String  @id @default(uuid(4))
+  address1 String?
+  address2 String?
+  address3 String?
+
+  contacts  Contact[]
+  documents Document[]
+
+  userId String @unique @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  professions WorkerProfession[]
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("workers")
+}
+
+model Admin {
+  id String @id @default(uuid(4))
+
+  userId String @unique @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("admins")
+}
+
+model ResetPasswordRequest {
+  id String @id @default(uuid(4))
+
+  phone String
+  code  String
+
+  expires_at DateTime
+  createdAt  DateTime @default(now()) @map("created_at")
+
+  @@map("reset-password-requests")
+}
+
+model Contact {
+  id      String      @id @default(uuid(4))
+  contact String
+  type    ContactType
+
+  clientId String @unique @map("client_id")
+  client   Client @relation(fields: [clientId], references: [id])
+
+  legalId String @unique @map("legal_id")
+  legal   Legal  @relation(fields: [legalId], references: [id])
+
+  workerId String @unique @map("worker_id")
+  worker   Worker @relation(fields: [workerId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("contacts")
+}
+
+model Document {
+  id     String       @id @default(uuid(4))
+  fileId String
+  type   DocumentType
+
+  clientId String? @map("client_id")
+  client   Client? @relation(fields: [clientId], references: [id])
+
+  legalId String? @map("legal_id")
+  legal   Legal?  @relation(fields: [legalId], references: [id])
+
+  workerId String? @map("worker_id")
+  worker   Worker? @relation(fields: [workerId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("documents")
+}
+
+model Profession {
+  id     String @id @default(uuid(4))
+  nameUz String @map("name_uz")
+  nameRu String @map("name_ru")
+
+  workerProfessions WorkerProfession[]
+
+  deletedAt DateTime? @map("deleted_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+
+  @@map("professions")
+}
+
+model WorkerProfession {
+  id                  String  @id @default(uuid(4))
+  minPrice            Int     @map("min_price")
+  maxPrice            Int     @map("max_price")
+  rating              Float   @default(0)
+  hasTeam             Boolean @default(false) @map("has_team")
+  teamMemberCount     Int     @default(1) @map("team_member_count")
+  readyForHugeProject Boolean @default(false) @map("ready_for_huge_project")
+  inventory           String?
+  competitions        String?
+  jobType             JobType @default(SOLO) @map("job_type")
+
+  comments Comment[]
+  demos    WorkerProfessionDemo[]
+
+  workerId String @map("worker_id")
+  worker   Worker @relation(fields: [workerId], references: [id])
+
+  professionId String     @map("profession_id")
+  profession   Profession @relation(fields: [professionId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("worker_profession")
+}
+
+model WorkerProfessionDemo {
+  id      String  @id @default(uuid(4))
+  fileId  String
+  comment String?
+
+  workerProfessionId String           @map("profession_id")
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("worker_profession_demo")
+}
+
+model Comment {
+  id     String  @id @default(uuid(4))
+  text   String?
+  rating Int     @default(1)
+
+  workerProfessionId String           @map("worker_profession_id")
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+
+  clientId String @map("client_id")
+  client   Client @relation(fields: [clientId], references: [id])
+
+  legalId String @map("legal_id")
+  legal   Legal  @relation(fields: [legalId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("comments")
+}
