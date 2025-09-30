@@ -111,7 +111,25 @@ export default class WorkerService {
   }
 
   async getNewOrders(workerId: string) {
-    const orders = await this.workerRepository.findNewOrders(workerId);
+    const orders = await this.workerRepository.findNewOrders(workerId, {
+      client: {
+        select: {
+          address1: true,
+          address2: true,
+          address3: true,
+          user: {
+            select: {
+              surname: true,
+              name: true,
+              middleName: true,
+              phone: true,
+              avatar: true,
+            },
+          },
+        },
+      },
+      legal: true,
+    });
 
     return {
       ok: true,

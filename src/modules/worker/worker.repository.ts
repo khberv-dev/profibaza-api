@@ -65,7 +65,10 @@ export default class WorkerRepository {
     });
   }
 
-  async findNewOrders(workerId: string) {
+  async findNewOrders(
+    workerId: string,
+    include: Prisma.OrderInclude,
+  ) {
     return this.databaseService.order.findMany({
       where: {
         startAt: null,
@@ -73,6 +76,7 @@ export default class WorkerRepository {
           workerId,
         },
       },
+      include,
     });
   }
 
