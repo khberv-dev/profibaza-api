@@ -1,4 +1,4 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import WorkerRepository from './worker.repository';
 import CreateWorkerProfessionDto from './dto/create-worker-profession.dto';
 import DocumentRepository from '../document/document.repository';
@@ -17,6 +17,7 @@ export default class WorkerService {
     const workerProfessions = await this.workerRepository.findWorkerProfessions(id, {
       demos: true,
       profession: true,
+      orders: true,
     });
 
     return {
@@ -107,5 +108,62 @@ export default class WorkerService {
 
   async updateProfession(workerProfessionId: string, data: UpdateWorkerProfessionDto) {
     await this.workerRepository.updateWorkerProfession(workerProfessionId, data);
+  }
+
+  async getNewOrders(workerId: string) {
+    const orders = await this.workerRepository.findNewOrders(workerId);
+
+    return {
+      ok: true,
+      data: orders,
+    };
+  }
+
+  async acceptOrder(orderId: string) {
+    const order = await this.workerRepository.findOrderById(orderId);
+    const now = new Date();
+
+    if (!order) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Buyurtma topilmadi',
+        },
+      });
+    }
+
+    await this.workerRepository.updateOrderById(orderId, {
+      status: 'PROGRESS',
+      startAt: now,
+    });
+
+    return {
+      ok: true,
+      message: 'Buyurtma qabul qilindi',
+    };
+  }
+
+  async rejectOrder(orderId: string) {
+    const order = await this.workerRepository.findOrderById(orderId);
+    const now = new Date();
+
+    if (!order) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Buyurtma topilmadi',
+        },
+      });
+    }
+
+    await this.workerRepository.updateOrderById(orderId, {
+      status: 'REJECTED',
+      rejectedAt: now,
+    });
+
+    return {
+      ok: true,
+      message: 'Buyurtma bekor qilindi',
+    };
   }
 }

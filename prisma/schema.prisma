@@ -32,6 +32,13 @@ enum JobType {
   ABROAD
 }
 
+enum OrderStatus {
+  NEW
+  PROGRESS
+  DONE
+  REJECTED
+}
+
 model User {
   id         String  @id @default(uuid(4))
   name       String
@@ -212,6 +219,7 @@ model WorkerProfession {
 
   comments Comment[]
   demos    WorkerProfessionDemo[]
+  orders   Order[]
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -259,16 +267,22 @@ model Comment {
 }
 
 model Order {
-  id       String   @id @default(uuid(4))
-  startAt  DateTime @map("start_at")
-  endAt    DateTime @map("end_at")
-  deadline DateTime @map("deadline")
+  id          String      @id @default(uuid(4))
+  startAt     DateTime?   @map("start_at")
+  endAt       DateTime?   @map("end_at")
+  rejectedAt  DateTime?   @map("rejected_at")
+  deadline    DateTime    @map("deadline")
+  description String
+  status      OrderStatus @default(NEW)
 
   clientId String? @map("client_id")
   client   Client? @relation(fields: [clientId], references: [id])
 
   legalId String? @map("legal_id")
   legal   Legal?  @relation(fields: [legalId], references: [id])
+
+  workerProfessionId String           @map("worker_profession_id")
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")

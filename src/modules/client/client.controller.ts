@@ -1,8 +1,9 @@
-import { Body, Controller, Get, Put, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import ClientService from './client.service';
 import { User } from '../../helpers/decorators/user.decorator';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
+import CreateOrderDto from './dto/create-order.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('client')
@@ -17,5 +18,10 @@ export default class ClientController {
   @Put('update-address')
   async updateAddress(@User() user: User, @Body() body: UpdateAddressDto) {
     return this.clientService.updateAddress(user.roleUID, body);
+  }
+
+  @Post('create-order')
+  async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
+    return this.clientService.createOrder(user.roleUID, body);
   }
 }

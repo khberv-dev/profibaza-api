@@ -1,6 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import ClientRepository from './client.repository';
 import UpdateAddressDto from '../user/dto/update-address.dto';
+import CreateOrderDto from './dto/create-order.dto';
+import dayjs from 'dayjs';
 
 @Injectable()
 export default class ClientService {
@@ -26,6 +28,24 @@ export default class ClientService {
       ok: true,
       message: {
         uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
+
+  async createOrder(clientId: string, orderData: CreateOrderDto) {
+    const deadline = dayjs(orderData.deadline, 'YYYY-MM-DD');
+
+    await this.clientRepository.createOrder({
+      clientId,
+      workerProfessionId: orderData.workerProfessionId,
+      description: orderData.description,
+      deadline: deadline.toDate(),
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Buyurtma yaratildi va ustaga jo'natildi",
       },
     };
   }

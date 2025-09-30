@@ -18,10 +18,7 @@ export default class WorkerRepository {
     });
   }
 
-  async findWorkerProfessions(
-    id: string,
-    include: Prisma.WorkerProfessionInclude = {},
-  ) {
+  async findWorkerProfessions(id: string, include: Prisma.WorkerProfessionInclude = {}) {
     return this.databaseService.workerProfession.findMany({
       where: {
         workerId: id,
@@ -65,6 +62,32 @@ export default class WorkerRepository {
       where: {
         workerProfessionId: workerProfessionId,
       },
+    });
+  }
+
+  async findNewOrders(workerId: string) {
+    return this.databaseService.order.findMany({
+      where: {
+        startAt: null,
+        workerProfession: {
+          workerId,
+        },
+      },
+    });
+  }
+
+  async findOrderById(orderId: string) {
+    return this.databaseService.order.findFirst({
+      where: {
+        id: orderId,
+      },
+    });
+  }
+
+  async updateOrderById(orderId: string, data: Prisma.OrderUncheckedUpdateInput) {
+    return this.databaseService.order.update({
+      where: { id: orderId },
+      data,
     });
   }
 }

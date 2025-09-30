@@ -34,4 +34,8 @@ export default class ClientRepository {
       },
     });
   }
+
+  async createOrder(data: Prisma.OrderUncheckedCreateInput) {
+    return this.databaseService.order.create({ data });
+  }
 }
