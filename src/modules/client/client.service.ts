@@ -40,6 +40,10 @@ export default class ClientService {
       workerProfessionId: orderData.workerProfessionId,
       description: orderData.description,
       deadline: deadline.toDate(),
+      budget: orderData.budget,
+      address1: orderData.address1,
+      address2: orderData.address2,
+      address3: orderData.address3,
     });
 
     return {

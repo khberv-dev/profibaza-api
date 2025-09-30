@@ -274,6 +274,10 @@ model Order {
   deadline    DateTime    @map("deadline")
   description String
   status      OrderStatus @default(NEW)
+  budget      Int
+  address1    String
+  address2    String
+  address3    String
 
   clientId String? @map("client_id")
   client   Client? @relation(fields: [clientId], references: [id])
