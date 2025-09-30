@@ -24,4 +24,9 @@ export default class ClientController {
   async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
     return this.clientService.createOrder(user.roleUID, body);
   }
+
+  @Get('orders')
+  async getOrders(@User() user: User) {
+    return this.clientService.getOrders(user.roleUID);
+  }
 }

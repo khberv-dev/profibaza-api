@@ -49,4 +49,31 @@ export default class ClientService {
       },
     };
   }
+
+  async getOrders(clientId: string) {
+    const orders = await this.clientRepository.findOrdersByClientId(clientId, {
+      workerProfession: {
+        include: {
+          worker: {
+            select: {
+              user: {
+                select: {
+                  surname: true,
+                  name: true,
+                  middleName: true,
+                  phone: true,
+                  avatar: true,
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      data: orders,
+    };
+  }
 }

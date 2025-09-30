@@ -38,4 +38,13 @@ export default class ClientRepository {
   async createOrder(data: Prisma.OrderUncheckedCreateInput) {
     return this.databaseService.order.create({ data });
   }
+
+  async findOrdersByClientId(clientId: string, include: Prisma.OrderInclude = {}) {
+    return this.databaseService.order.findMany({
+      where: {
+        clientId,
+      },
+      include,
+    });
+  }
 }
