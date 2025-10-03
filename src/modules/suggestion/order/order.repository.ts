@@ -9,4 +9,13 @@ export default class OrderRepository {
   async findOrders(filter: Prisma.WorkerProfessionFindManyArgs) {
     return this.databaseService.workerProfession.findMany(filter);
   }
+
+  async getOrder(workerProfessionId: string) {
+    return this.databaseService.workerProfession.findFirst({
+      where: { id: workerProfessionId },
+      include: {
+        worker: true,
+      },
+    });
+  }
 }

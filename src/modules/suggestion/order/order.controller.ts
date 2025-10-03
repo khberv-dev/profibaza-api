@@ -1,4 +1,12 @@
-import { Controller, Get, ParseArrayPipe, ParseIntPipe, Query, UseGuards } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Param,
+  ParseArrayPipe,
+  ParseIntPipe,
+  Query,
+  UseGuards,
+} from '@nestjs/common';
 import OrderService from './order.service';
 import JwtAuthGuard from '../../../helpers/guards/jwt-auth.guard';
 
@@ -14,5 +22,10 @@ export default class OrderController {
     @Query('professions', ParseArrayPipe) professions: string[],
   ) {
     return this.orderService.findOrders(minPrice, maxPrice, professions);
+  }
+
+  @Get('search/:id')
+  async getOrder(@Param('id') id: string) {
+    return this.orderService.getOrder(id);
   }
 }

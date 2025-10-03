@@ -41,4 +41,13 @@ export default class OrderService {
       data: orders,
     };
   }
+
+  async getOrder(id: string) {
+    const order = await this.orderRepository.getOrder(id);
+
+    return {
+      ok: true,
+      data: order,
+    };
+  }
 }
