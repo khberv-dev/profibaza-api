@@ -14,7 +14,18 @@ export default class OrderRepository {
     return this.databaseService.workerProfession.findFirst({
       where: { id: workerProfessionId },
       include: {
-        worker: true,
+        worker: {
+          select: {
+            user: {
+              select: {
+                surname: true,
+                name: true,
+                middleName: true,
+                avatar: true,
+              },
+            },
+          },
+        },
       },
     });
   }
