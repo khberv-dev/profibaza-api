@@ -1,9 +1,10 @@
-import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import ClientService from './client.service';
 import { User } from '../../helpers/decorators/user.decorator';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
 import CreateOrderDto from './dto/create-order.dto';
+import PostCommentDto from './dto/post-comment.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('client')
@@ -28,5 +29,14 @@ export default class ClientController {
   @Get('orders')
   async getOrders(@User() user: User) {
     return this.clientService.getOrders(user.roleUID);
+  }
+
+  @Post('comment/:id')
+  async postComment(
+    @User() user: User,
+    @Param('id') orderId: string,
+    @Body() body: PostCommentDto,
+  ) {
+    return this.clientService.postComment(user.roleUID, orderId, body);
   }
 }

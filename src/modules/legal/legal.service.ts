@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import LegalRepository from './legal.repository';
 import UpdateAddressDto from '../user/dto/update-address.dto';
+import PostCommentDto from '../client/dto/post-comment.dto';
 
 @Injectable()
 export default class LegalService {
@@ -26,6 +27,17 @@ export default class LegalService {
       ok: true,
       message: {
         uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
+
+  async postComment(clientId: string, orderId: string, data: PostCommentDto) {
+    await this.legalRepository.createOrderComment(clientId, orderId, data.comment, data.rate);
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Izoh qabul qilindi',
       },
     };
   }

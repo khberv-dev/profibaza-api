@@ -47,4 +47,15 @@ export default class ClientRepository {
       include,
     });
   }
+
+  async createOrderComment(clientId: string, orderId: string, comment: string, rating: number) {
+    return this.databaseService.comment.create({
+      data: {
+        clientId,
+        orderId,
+        rating,
+        text: comment,
+      },
+    });
+  }
 }

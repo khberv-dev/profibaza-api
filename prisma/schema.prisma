@@ -217,9 +217,8 @@ model WorkerProfession {
   competitions        String?
   jobType             JobType @default(SOLO) @map("job_type")
 
-  comments Comment[]
-  demos    WorkerProfessionDemo[]
-  orders   Order[]
+  demos  WorkerProfessionDemo[]
+  orders Order[]
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -252,14 +251,14 @@ model Comment {
   rating   Int     @default(1)
   feedback String?
 
-  workerProfessionId String           @map("worker_profession_id")
-  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+  orderId String @map("order_id")
+  order   Order  @relation(fields: [orderId], references: [id])
 
-  clientId String @map("client_id")
-  client   Client @relation(fields: [clientId], references: [id])
+  clientId String? @map("client_id")
+  client   Client? @relation(fields: [clientId], references: [id])
 
-  legalId String @map("legal_id")
-  legal   Legal  @relation(fields: [legalId], references: [id])
+  legalId String? @map("legal_id")
+  legal   Legal?  @relation(fields: [legalId], references: [id])
 
   createdAt DateTime @default(now()) @map("created_at")
 
@@ -278,6 +277,8 @@ model Order {
   address1    String
   address2    String
   address3    String
+
+  comments Comment[]
 
   clientId String? @map("client_id")
   client   Client? @relation(fields: [clientId], references: [id])

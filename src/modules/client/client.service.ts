@@ -3,6 +3,7 @@ import ClientRepository from './client.repository';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import CreateOrderDto from './dto/create-order.dto';
 import dayjs from 'dayjs';
+import PostCommentDto from './dto/post-comment.dto';
 
 @Injectable()
 export default class ClientService {
@@ -78,6 +79,17 @@ export default class ClientService {
     return {
       ok: true,
       data: orders,
+    };
+  }
+
+  async postComment(clientId: string, orderId: string, data: PostCommentDto) {
+    await this.clientRepository.createOrderComment(clientId, orderId, data.comment, data.rate);
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Izoh qabul qilindi',
+      },
     };
   }
 }
