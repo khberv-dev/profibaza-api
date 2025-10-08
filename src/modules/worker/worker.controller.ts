@@ -96,7 +96,7 @@ export default class WorkerController {
 
   @Post('reject-order/:id')
   async rejectOrder(@Param('id') orderId: string) {
-    return this.workerService.acceptOrder(orderId);
+    return this.workerService.rejectOrder(orderId);
   }
 
   @Post('feedback/:id')

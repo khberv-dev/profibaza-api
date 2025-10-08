@@ -187,6 +187,17 @@ export default class WorkerService {
   }
 
   async postCommentFeedback(commentId: string, data: CommentFeedbackDto) {
+    const comment = await this.workerRepository.getCommentById(commentId);
+
+    if (!comment) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Izoh topilmadi',
+        },
+      });
+    }
+
     await this.workerRepository.addCommentFeedback(commentId, data.feedback);
 
     return {

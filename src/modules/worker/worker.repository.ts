@@ -102,4 +102,8 @@ export default class WorkerRepository {
       },
     });
   }
+
+  async getCommentById(commentId: string) {
+    return this.databaseService.comment.findFirst({ where: { id: commentId } });
+  }
 }
