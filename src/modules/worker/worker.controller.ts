@@ -18,6 +18,7 @@ import { documentInterceptor } from './interceptor/document.interceptor';
 import type { Response } from 'express';
 import { professionDemoInterceptor } from './interceptor/profession-demo.interceptor';
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
+import CommentFeedbackDto from './dto/comment-feedback.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -96,5 +97,10 @@ export default class WorkerController {
   @Post('reject-order/:id')
   async rejectOrder(@Param('id') orderId: string) {
     return this.workerService.acceptOrder(orderId);
+  }
+
+  @Post('feedback/:id')
+  async postCommentFeedback(@Param('id') commentId: string, @Body() body: CommentFeedbackDto) {
+    return this.workerService.postCommentFeedback(commentId, body);
   }
 }

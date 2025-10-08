@@ -65,10 +65,7 @@ export default class WorkerRepository {
     });
   }
 
-  async findNewOrders(
-    workerId: string,
-    include: Prisma.OrderInclude,
-  ) {
+  async findNewOrders(workerId: string, include: Prisma.OrderInclude) {
     return this.databaseService.order.findMany({
       where: {
         startAt: null,
@@ -92,6 +89,17 @@ export default class WorkerRepository {
     return this.databaseService.order.update({
       where: { id: orderId },
       data,
+    });
+  }
+
+  async addCommentFeedback(commentId: string, feedback: string) {
+    return this.databaseService.comment.update({
+      where: {
+        id: commentId,
+      },
+      data: {
+        feedback,
+      },
     });
   }
 }

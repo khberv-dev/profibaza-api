@@ -5,6 +5,7 @@ import DocumentRepository from '../document/document.repository';
 import path from 'node:path';
 import process from 'node:process';
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
+import CommentFeedbackDto from './dto/comment-feedback.dto';
 
 @Injectable()
 export default class WorkerService {
@@ -182,6 +183,17 @@ export default class WorkerService {
     return {
       ok: true,
       message: 'Buyurtma bekor qilindi',
+    };
+  }
+
+  async postCommentFeedback(commentId: string, data: CommentFeedbackDto) {
+    await this.workerRepository.addCommentFeedback(commentId, data.feedback);
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Izoh qoldirildi',
+      },
     };
   }
 }
