@@ -5,6 +5,7 @@ import {
   Param,
   Post,
   Put,
+  Query,
   Res,
   UploadedFile,
   UseGuards,
@@ -19,6 +20,7 @@ import type { Response } from 'express';
 import { professionDemoInterceptor } from './interceptor/profession-demo.interceptor';
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
+import GetOrdersDto from './dto/get-orders.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -90,8 +92,8 @@ export default class WorkerController {
   }
 
   @Get('orders')
-  async getOrders(@User() user: User) {
-    return this.workerService.getOrders(user.roleUID);
+  async getOrders(@User() user: User, @Query() query: GetOrdersDto) {
+    return this.workerService.getOrders(user.roleUID, query);
   }
 
   @Post('accept-order/:id')

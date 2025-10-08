@@ -77,16 +77,9 @@ export default class WorkerRepository {
     });
   }
 
-  async findOrders(workerId: string, include: Prisma.OrderInclude) {
+  async findOrders(workerId: string, include: Prisma.OrderInclude, where: Prisma.OrderWhereInput) {
     return this.databaseService.order.findMany({
-      where: {
-        startAt: {
-          not: null,
-        },
-        workerProfession: {
-          workerId,
-        },
-      },
+      where,
       include,
     });
   }

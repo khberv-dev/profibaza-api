@@ -6,6 +6,8 @@ import path from 'node:path';
 import process from 'node:process';
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
+import GetOrdersDto from './dto/get-orders.dto';
+import { Prisma } from '@prisma/client';
 
 @Injectable()
 export default class WorkerService {
@@ -138,26 +140,43 @@ export default class WorkerService {
     };
   }
 
-  async getOrders(workerId: string) {
-    const orders = await this.workerRepository.findOrders(workerId, {
-      client: {
-        select: {
-          address1: true,
-          address2: true,
-          address3: true,
-          user: {
-            select: {
-              surname: true,
-              name: true,
-              middleName: true,
-              phone: true,
-              avatar: true,
+  async getOrders(workerId: string, filter: GetOrdersDto) {
+    const orderFilter: Prisma.OrderWhereInput = {
+      startAt: {
+        not: null,
+      },
+      workerProfession: {
+        workerId,
+      },
+    };
+
+    if (filter.status) {
+      orderFilter.status = filter.status;
+    }
+
+    const orders = await this.workerRepository.findOrders(
+      workerId,
+      {
+        client: {
+          select: {
+            address1: true,
+            address2: true,
+            address3: true,
+            user: {
+              select: {
+                surname: true,
+                name: true,
+                middleName: true,
+                phone: true,
+                avatar: true,
+              },
             },
           },
         },
+        legal: true,
       },
-      legal: true,
-    });
+      orderFilter,
+    );
 
     return {
       ok: true,
