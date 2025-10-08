@@ -1,5 +1,15 @@
-import { IsBoolean, IsEnum, IsInt, IsOptional, IsString } from 'class-validator';
-import { JoyType } from './create-worker-profession.dto';
+import {
+  IsArray,
+  IsBoolean,
+  IsEnum,
+  IsInt,
+  IsOptional,
+  IsString,
+  ValidateNested,
+} from 'class-validator';
+import { JobType } from './create-worker-profession.dto';
+import { Type } from 'class-transformer';
+import LocationDto from './location.dto';
 
 export default class UpdateWorkerProfessionDto {
   @IsOptional()
@@ -31,10 +41,16 @@ export default class UpdateWorkerProfessionDto {
   competitions: string;
 
   @IsOptional()
-  @IsEnum(JoyType)
-  jobType: JoyType;
+  @IsEnum(JobType)
+  jobType: JobType;
 
   @IsOptional()
   @IsBoolean()
   readyForHugeProject: boolean;
+
+  // @IsOptional()
+  // @IsArray()
+  // @ValidateNested({ each: true })
+  // @Type(() => LocationDto)
+  // locations: LocationDto[];
 }

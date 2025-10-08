@@ -217,8 +217,9 @@ model WorkerProfession {
   competitions        String?
   jobType             JobType @default(SOLO) @map("job_type")
 
-  demos  WorkerProfessionDemo[]
-  orders Order[]
+  demos     WorkerProfessionDemo[]
+  orders    Order[]
+  locations Location[]
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -293,4 +294,19 @@ model Order {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("orders")
+}
+
+model Location {
+  id        String @id @default(uuid(4))
+  latitude  Float
+  longitude Float
+  radius    Float
+
+  workProfessionId String
+  workProfession   WorkerProfession @relation(fields: [workProfessionId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("locations")
 }

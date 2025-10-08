@@ -1,6 +1,16 @@
-import { IsBoolean, IsEnum, IsInt, IsOptional, IsString } from 'class-validator';
+import {
+  IsArray,
+  IsBoolean,
+  IsEnum,
+  IsInt,
+  IsOptional,
+  IsString,
+  ValidateNested,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+import LocationDto from './location.dto';
 
-export enum JoyType {
+export enum JobType {
   SOLO = 'SOLO',
   EMPLOYEE = 'EMPLOYEE',
   ABROAD = 'ABROAD',
@@ -31,9 +41,15 @@ export default class CreateWorkerProfessionDto {
   competitions: string;
 
   @IsOptional()
-  @IsEnum(JoyType)
-  jobType: JoyType;
+  @IsEnum(JobType)
+  jobType: JobType;
 
   @IsBoolean()
   readyForHugeProject: boolean;
+
+  @IsOptional()
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => LocationDto)
+  locations: LocationDto[];
 }
