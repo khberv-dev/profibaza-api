@@ -89,6 +89,11 @@ export default class WorkerController {
     return this.workerService.getNewOrders(user.roleUID);
   }
 
+  @Get('orders')
+  async getOrders(@User() user: User) {
+    return this.workerService.getOrders(user.roleUID);
+  }
+
   @Post('accept-order/:id')
   async acceptOrder(@Param('id') orderId: string) {
     return this.workerService.acceptOrder(orderId);
