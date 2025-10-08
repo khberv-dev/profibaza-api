@@ -189,7 +189,7 @@ export default class WorkerService {
   async postCommentFeedback(commentId: string, data: CommentFeedbackDto) {
     const comment = await this.workerRepository.getCommentById(commentId);
 
-    if (!comment) {
+    if (!comment || comment.feedback) {
       throw new BadRequestException({
         ok: false,
         message: {
