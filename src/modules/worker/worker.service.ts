@@ -21,6 +21,8 @@ export default class WorkerService {
       demos: true,
       profession: true,
       orders: true,
+      schedule: true,
+      locations: true,
     });
 
     return {
