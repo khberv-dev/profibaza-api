@@ -220,6 +220,7 @@ model WorkerProfession {
   demos     WorkerProfessionDemo[]
   orders    Order[]
   locations Location[]
+  schedule  Schedule?
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -309,4 +310,23 @@ model Location {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("locations")
+}
+
+model Schedule {
+  id        String  @id @default(uuid(4))
+  monday    Boolean
+  tuesday   Boolean
+  wednesday Boolean
+  thursday  Boolean
+  friday    Boolean
+  saturday  Boolean
+  sunday    Boolean
+
+  workerProfessionId String           @unique
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("schedules")
 }

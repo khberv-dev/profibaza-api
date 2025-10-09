@@ -110,7 +110,11 @@ export default class WorkerService {
   }
 
   async updateProfession(workerProfessionId: string, data: UpdateWorkerProfessionDto) {
-    await this.workerRepository.updateWorkerProfession(workerProfessionId, data);
+    const { schedule, ...workerProfessionData } = data;
+    const workerProfession = await this.workerRepository.findWorkerProfession(workerProfessionId);
+
+    await this.workerRepository.updateWorkerProfessionSchedule(workerProfession!.id, schedule);
+    await this.workerRepository.updateWorkerProfession(workerProfessionId, workerProfessionData);
   }
 
   async getNewOrders(workerId: string) {

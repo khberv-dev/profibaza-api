@@ -27,12 +27,28 @@ export default class WorkerRepository {
     });
   }
 
+  async findWorkerProfession(id: string, include: Prisma.WorkerProfessionInclude = {}) {
+    return this.databaseService.workerProfession.findFirst({
+      where: {
+        id,
+      },
+      include,
+    });
+  }
+
   async createWorkerProfession(data: Prisma.WorkerProfessionUncheckedCreateInput) {
     return this.databaseService.workerProfession.create({ data });
   }
 
   async updateWorkerProfession(id: string, data: Prisma.WorkerProfessionUncheckedUpdateInput) {
     return this.databaseService.workerProfession.update({
+      where: { id },
+      data,
+    });
+  }
+
+  async updateWorkerProfessionSchedule(id: string, data: Prisma.ScheduleUpdateInput) {
+    return this.databaseService.schedule.update({
       where: { id },
       data,
     });

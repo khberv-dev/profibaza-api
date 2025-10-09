@@ -9,6 +9,7 @@ import {
 } from 'class-validator';
 import { Type } from 'class-transformer';
 import LocationDto from './location.dto';
+import ScheduleDto from './schedule.dto';
 
 export enum JobType {
   SOLO = 'SOLO',
@@ -52,4 +53,8 @@ export default class CreateWorkerProfessionDto {
   @ValidateNested({ each: true })
   @Type(() => LocationDto)
   locations: LocationDto[];
+
+  @ValidateNested()
+  @Type(() => ScheduleDto)
+  schedule: ScheduleDto;
 }

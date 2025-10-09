@@ -1,15 +1,7 @@
-import {
-  IsArray,
-  IsBoolean,
-  IsEnum,
-  IsInt,
-  IsOptional,
-  IsString,
-  ValidateNested,
-} from 'class-validator';
+import { IsBoolean, IsEnum, IsInt, IsOptional, IsString, ValidateNested } from 'class-validator';
 import { JobType } from './create-worker-profession.dto';
 import { Type } from 'class-transformer';
-import LocationDto from './location.dto';
+import ScheduleDto from './schedule.dto';
 
 export default class UpdateWorkerProfessionDto {
   @IsOptional()
@@ -53,4 +45,9 @@ export default class UpdateWorkerProfessionDto {
   // @ValidateNested({ each: true })
   // @Type(() => LocationDto)
   // locations: LocationDto[];
+
+  @IsOptional()
+  @ValidateNested()
+  @Type(() => ScheduleDto)
+  schedule: ScheduleDto;
 }
