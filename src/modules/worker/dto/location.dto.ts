@@ -1,12 +1,12 @@
-import { IsDecimal } from 'class-validator';
+import { IsDecimal, IsInt } from 'class-validator';
 
 export default class LocationDto {
   @IsDecimal()
-  longitude: number;
+  longitude: string;
 
   @IsDecimal()
-  latitude: number;
+  latitude: string;
 
-  @IsDecimal()
+  @IsInt()
   radius: number;
 }

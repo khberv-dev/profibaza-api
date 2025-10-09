@@ -7,7 +7,7 @@ import { BadRequestException } from '@nestjs/common';
 
 export const avatarInterceptor = FileInterceptor('file', {
   limits: {
-    fileSize: 5000000,
+    fileSize: 5_000_000,
   },
   storage: diskStorage({
     destination: 'files/avatar',

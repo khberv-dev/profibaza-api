@@ -173,7 +173,22 @@ export default class WorkerService {
             },
           },
         },
-        legal: true,
+        legal: {
+          select: {
+            address1: true,
+            address2: true,
+            address3: true,
+            user: {
+              select: {
+                surname: true,
+                name: true,
+                middleName: true,
+                phone: true,
+                avatar: true,
+              },
+            },
+          },
+        },
       },
       orderFilter,
     );
