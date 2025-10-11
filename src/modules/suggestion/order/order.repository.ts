@@ -10,6 +10,15 @@ export default class OrderRepository {
     return this.databaseService.workerProfession.findMany(filter);
   }
 
+  async countActiveOrders(workerProfessionId: string) {
+    return this.databaseService.order.count({
+      where: {
+        workerProfessionId,
+        status: 'PROGRESS',
+      },
+    });
+  }
+
   async getOrder(workerProfessionId: string) {
     return this.databaseService.workerProfession.findFirst({
       where: { id: workerProfessionId },

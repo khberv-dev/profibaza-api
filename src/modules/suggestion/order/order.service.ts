@@ -6,7 +6,7 @@ export default class OrderService {
   constructor(private orderRepository: OrderRepository) {}
 
   async findOrders(minPrice: number, maxPrice: number, professions: string[]) {
-    const orders = await this.orderRepository.findOrders({
+    let orders = await this.orderRepository.findOrders({
       where: {
         minPrice: {
           gte: minPrice,
@@ -35,6 +35,17 @@ export default class OrderService {
         },
       },
     });
+
+    orders = await Promise.all(
+      orders.map(async (order) => {
+        const activeOrdersCount = await this.orderRepository.countActiveOrders(order.id);
+
+        return {
+          isBusy: activeOrdersCount > 0,
+          ...order,
+        };
+      }),
+    );
 
     return {
       ok: true,
