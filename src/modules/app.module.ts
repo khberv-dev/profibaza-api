@@ -9,14 +9,18 @@ import WorkerModule from './worker/worker.module';
 import DocumentModule from './document/document.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import path from 'node:path';
+import { ScheduleModule } from '@nestjs/schedule';
+import CronModule from './cron/cron.module';
 
 @Module({
   imports: [
+    DatabaseModule,
     ServeStaticModule.forRoot({
       rootPath: path.join(process.cwd(), 'files'),
       serveRoot: '/public',
     }),
-    DatabaseModule,
+    ScheduleModule.forRoot(),
+    CronModule,
     AuthModule,
     UserModule,
     SuggestionModule,
