@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import DatabaseService from '../database/database.service';
 import { Prisma } from '@prisma/client';
+import CreateExperienceDto from './dto/create-experience.dto';
 
 @Injectable()
 export default class WorkerRepository {
@@ -128,5 +129,14 @@ export default class WorkerRepository {
 
   async getCommentById(commentId: string) {
     return this.databaseService.comment.findFirst({ where: { id: commentId } });
+  }
+
+  async createExperience(workerProfessionId: string, data: CreateExperienceDto) {
+    return this.databaseService.experience.create({
+      data: {
+        workerProfessionId,
+        ...data,
+      },
+    });
   }
 }

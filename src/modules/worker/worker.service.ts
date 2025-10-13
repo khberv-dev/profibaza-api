@@ -8,6 +8,7 @@ import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
 import GetOrdersDto from './dto/get-orders.dto';
 import { Prisma } from '@prisma/client';
+import CreateExperienceDto from './dto/create-experience.dto';
 
 @Injectable()
 export default class WorkerService {
@@ -23,6 +24,7 @@ export default class WorkerService {
       orders: true,
       schedule: true,
       locations: true,
+      experience: true,
     });
 
     return {
@@ -271,6 +273,17 @@ export default class WorkerService {
       ok: true,
       message: {
         uz: 'Izoh qoldirildi',
+      },
+    };
+  }
+
+  async createExperience(workerProfessionExperienceId: string, data: CreateExperienceDto) {
+    await this.workerRepository.createExperience(workerProfessionExperienceId, data);
+
+    return {
+      ok: true,
+      message: {
+        uz: "Qo'shildi",
       },
     };
   }

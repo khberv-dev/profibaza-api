@@ -21,6 +21,7 @@ import { professionDemoInterceptor } from './interceptor/profession-demo.interce
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
 import GetOrdersDto from './dto/get-orders.dto';
+import CreateExperienceDto from './dto/create-experience.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -49,7 +50,6 @@ export default class WorkerController {
   @Post('profession/upload-demo/:id')
   @UseInterceptors(professionDemoInterceptor)
   async uploadProfessionDemo(
-    @User() user: User,
     @UploadedFile() file: Express.Multer.File,
     @Param('id') workerProfessionId: string,
   ) {
@@ -57,8 +57,16 @@ export default class WorkerController {
   }
 
   @Get('profession/demos/:id')
-  async getProfessionDemos(@User() user: User, @Param('id') workerProfessionId: string) {
+  async getProfessionDemos(@Param('id') workerProfessionId: string) {
     return this.workerService.getDemos(workerProfessionId);
+  }
+
+  @Post('profession/:id/experience')
+  async createExperience(
+    @Param('id') workerProfessionId: string,
+    @Body() body: CreateExperienceDto,
+  ) {
+    return this.workerService.createExperience(workerProfessionId, body);
   }
 
   @Post('upload-document')

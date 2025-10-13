@@ -217,10 +217,11 @@ model WorkerProfession {
   competitions        String?
   jobType             JobType @default(SOLO) @map("job_type")
 
-  demos     WorkerProfessionDemo[]
-  orders    Order[]
-  locations Location[]
-  schedule  Schedule?
+  demos      WorkerProfessionDemo[]
+  orders     Order[]
+  locations  Location[]
+  experience Experience[]
+  schedule   Schedule?
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -329,4 +330,18 @@ model Schedule {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("schedules")
+}
+
+model Experience {
+  id        String @id @default(uuid(4))
+  startedAt Int
+  endedAt   Int?
+
+  workerProfessionId String           @unique
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("experience")
 }
