@@ -1,4 +1,4 @@
-import { IsInt, IsOptional } from 'class-validator';
+import { IsInt, IsOptional, IsString } from 'class-validator';
 
 export default class CreateExperienceDto {
   @IsInt()
@@ -7,4 +7,10 @@ export default class CreateExperienceDto {
   @IsOptional()
   @IsInt()
   endedAt: number;
+
+  @IsString()
+  jobPlace: string;
+
+  @IsString()
+  jobDescription: string;
 }
