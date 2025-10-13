@@ -334,8 +334,8 @@ model Schedule {
 
 model Experience {
   id        String @id @default(uuid(4))
-  startedAt Int
-  endedAt   Int?
+  startedAt Int    @map("started_at")
+  endedAt   Int?   @map("ended_at")
 
   workerProfessionId String           @unique
   workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
