@@ -49,6 +49,9 @@ export default class WorkerService {
       maxPrice: data.maxPrice,
       inventory: data.inventory,
       competitions: data.competitions,
+      schedule: {
+        create: data.schedule,
+      },
       locations: {
         create: locationsData,
       },
