@@ -164,9 +164,6 @@ export default class WorkerService {
 
   async getOrders(workerId: string, filter: GetOrdersDto) {
     const orderFilter: Prisma.OrderWhereInput = {
-      startAt: {
-        not: null,
-      },
       workerProfession: {
         workerId,
       },
