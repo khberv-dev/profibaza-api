@@ -34,6 +34,14 @@ export default class WorkerService {
   }
 
   async createWorkerProfession(id: string, data: CreateWorkerProfessionDto) {
+    const locationsData = data.locations.map((location) => {
+      return {
+        longitude: Number.parseFloat(location.longitude),
+        latitude: Number.parseFloat(location.latitude),
+        radius: location.radius,
+      };
+    });
+
     await this.workerRepository.createWorkerProfession({
       workerId: id,
       professionId: data.professionId,
@@ -41,6 +49,9 @@ export default class WorkerService {
       maxPrice: data.maxPrice,
       inventory: data.inventory,
       competitions: data.competitions,
+      locations: {
+        create: locationsData,
+      },
     });
 
     return {
