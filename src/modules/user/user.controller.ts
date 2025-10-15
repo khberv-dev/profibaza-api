@@ -69,4 +69,14 @@ export default class UserController {
       throw new NotFoundException();
     }
   }
+
+  @Post('request-activation')
+  async requestActivation(@User() user: User) {
+    return this.userService.requestActivation(user.id);
+  }
+
+  @Post('process-activation')
+  async processActivation(@User() user: User) {
+    return this.userService.processActivation(user.id);
+  }
 }

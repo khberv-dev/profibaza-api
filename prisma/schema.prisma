@@ -39,6 +39,12 @@ enum OrderStatus {
   REJECTED
 }
 
+enum TransactionStatus {
+  CREATED
+  PAID
+  DECLINED
+}
+
 model User {
   id         String  @id @default(uuid(4))
   name       String
@@ -49,6 +55,7 @@ model User {
   password   String
   avatar     String?
   active     Boolean @default(false)
+  balance    Int     @default(0)
 
   role Role @default(CLIENT)
 
@@ -56,6 +63,7 @@ model User {
   legalProfile  Legal?
   workerProfile Worker?
   adminProfile  Admin?
+  transactions  Transaction[]
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
@@ -347,4 +355,17 @@ model Experience {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("experience")
+}
+
+model Transaction {
+  id          String            @id @default(uuid(4))
+  userId      String            @map("user_id")
+  user        User              @relation(fields: [userId], references: [id])
+  amount      Int
+  description String?
+  status      TransactionStatus @default(CREATED)
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("transactions")
 }

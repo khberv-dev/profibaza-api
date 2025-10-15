@@ -8,10 +8,14 @@ import ResetPasswordDto from './dto/reset-password.dto';
 import dayjs from 'dayjs';
 import * as path from 'node:path';
 import * as process from 'node:process';
+import DatabaseService from '../database/database.service';
 
 @Injectable()
 export default class UserService {
-  constructor(private userRepository: UserRepository) {}
+  constructor(
+    private userRepository: UserRepository,
+    private databaseService: DatabaseService,
+  ) {}
 
   async getMe(id: string) {
     const user = (await this.userRepository.findById(id))!;
@@ -162,5 +166,81 @@ export default class UserService {
     } else {
       return path.join(process.cwd(), 'files', 'avatar', fileName);
     }
+  }
+
+  async requestActivation(userId: string) {
+    const user = await this.userRepository.findById(userId);
+
+    if (!user) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Foydalanuvchi topilmadi',
+        },
+      });
+    }
+
+    if (user.active) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Foydalanuvchi allaqachon faol holatda',
+        },
+      });
+    }
+
+    const transaction = await this.databaseService.transaction.create({
+      data: {
+        userId,
+        amount: 5000,
+        description: 'Akkaunt faollashtirish uchun',
+      },
+    });
+
+    return {
+      ok: true,
+      data: {
+        transactionId: transaction.id,
+      },
+    };
+  }
+
+  async processActivation(userId: string) {
+    const user = await this.userRepository.findById(userId);
+
+    if (user && user.active) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Foydalanuvchi allaqachon faollashtirilgan',
+        },
+      });
+    }
+
+    if (user && user.balance < 5000) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: "Hisobda yetarli mablag' mavjud emas",
+        },
+      });
+    }
+
+    await this.databaseService.user.update({
+      where: { id: userId },
+      data: {
+        active: true,
+        balance: {
+          decrement: 5000,
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Foydalanuvchi faollashtirildi',
+      },
+    };
   }
 }

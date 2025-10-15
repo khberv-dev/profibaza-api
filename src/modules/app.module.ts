@@ -11,6 +11,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import path from 'node:path';
 import { ScheduleModule } from '@nestjs/schedule';
 import CronModule from './cron/cron.module';
+import PaymentModule from './payment/payment.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import CronModule from './cron/cron.module';
     LegalModule,
     WorkerModule,
     DocumentModule,
+    PaymentModule,
   ],
 })
 export class AppModule {}
