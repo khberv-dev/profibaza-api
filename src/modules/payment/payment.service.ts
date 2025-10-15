@@ -93,7 +93,7 @@ export default class PaymentService {
       throw new BadRequestException({
         ok: false,
         message: {
-          ru: otpVerifyResponse.data['error']['message'],
+          ru: otpVerifyResponse.data['error'],
         },
       });
     }
@@ -128,7 +128,7 @@ export default class PaymentService {
       throw new BadRequestException({
         ok: false,
         message: {
-          ru: payReceiptResponse.data['error']['message'],
+          ru: payReceiptResponse.data['error'],
         },
       });
     }
