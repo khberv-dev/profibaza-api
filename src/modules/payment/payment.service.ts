@@ -117,7 +117,7 @@ export default class PaymentService {
     const receiptId = createReceiptResponse.data['result']['receipt']['_id'];
 
     const payReceiptResponse = await this.paymeRequest({
-      method: 'receipt.pay',
+      method: 'receipts.pay',
       params: {
         id: receiptId,
         token: data.token,
