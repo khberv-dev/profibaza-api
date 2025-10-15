@@ -114,6 +114,7 @@ export default class PaymentService {
       },
     });
 
+    console.log(createReceiptResponse.data);
     const receiptId = createReceiptResponse.data['result']['receipt']['_id'];
 
     const payReceiptResponse = await this.paymeRequest({
