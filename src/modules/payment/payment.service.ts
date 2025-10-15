@@ -90,11 +90,10 @@ export default class PaymentService {
     });
 
     if (otpVerifyResponse.data['error']) {
-      console.log('OTP verify');
       throw new BadRequestException({
         ok: false,
         message: {
-          ru: otpVerifyResponse.data['error'],
+          ru: otpVerifyResponse.data['error']['message'],
         },
       });
     }
@@ -103,14 +102,8 @@ export default class PaymentService {
       method: 'receipts.create',
       params: {
         amount: transaction.amount,
-        detail: {
-          items: [
-            {
-              title: transaction.description,
-              price: transaction.amount,
-              count: 1,
-            },
-          ],
+        account: {
+          id: transaction.userId,
         },
       },
     });
@@ -126,12 +119,10 @@ export default class PaymentService {
     });
 
     if (payReceiptResponse.data['error']) {
-      console.log('pay receipt');
-
       throw new BadRequestException({
         ok: false,
         message: {
-          ru: payReceiptResponse.data['error'],
+          ru: payReceiptResponse.data['error']['message'],
         },
       });
     }
