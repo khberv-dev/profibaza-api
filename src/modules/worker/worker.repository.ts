@@ -1,7 +1,8 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import DatabaseService from '../database/database.service';
 import { Prisma } from '@prisma/client';
 import CreateExperienceDto from './dto/create-experience.dto';
+import ScheduleDto from './dto/schedule.dto';
 
 @Injectable()
 export default class WorkerRepository {
@@ -48,11 +49,29 @@ export default class WorkerRepository {
     });
   }
 
-  async updateWorkerProfessionSchedule(id: string, data: Prisma.ScheduleUpdateInput) {
-    return this.databaseService.schedule.update({
-      where: { id },
-      data,
+  async updateWorkerProfessionSchedule(workerProfessionId: string, data: ScheduleDto) {
+    const workerProfession = await this.databaseService.workerProfession.findFirst({
+      where: { id: workerProfessionId },
+      include: { schedule: true },
     });
+
+    if (!workerProfession) {
+      throw new BadRequestException();
+    }
+
+    if (workerProfession.schedule) {
+      return this.databaseService.schedule.update({
+        where: { id: workerProfession.schedule.id },
+        data,
+      });
+    } else {
+      return this.databaseService.schedule.create({
+        data: {
+          workerProfessionId,
+          ...data,
+        },
+      });
+    }
   }
 
   async createDocument(id: string, fileId: string) {
