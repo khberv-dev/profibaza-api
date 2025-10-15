@@ -99,7 +99,7 @@ export default class PaymentService {
     }
 
     const createReceiptResponse = await this.paymeRequest({
-      method: 'receipt.create',
+      method: 'receipts.create',
       params: {
         amount: transaction.amount,
         detail: {
@@ -114,7 +114,6 @@ export default class PaymentService {
       },
     });
 
-    console.log(createReceiptResponse.data);
     const receiptId = createReceiptResponse.data['result']['receipt']['_id'];
 
     const payReceiptResponse = await this.paymeRequest({
