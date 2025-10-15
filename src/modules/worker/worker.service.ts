@@ -208,6 +208,7 @@ export default class WorkerService {
             },
           },
         },
+        comments: true,
       },
       orderFilter,
     );
