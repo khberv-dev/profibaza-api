@@ -11,8 +11,6 @@ export default class ProfessionController {
     return this.professionService.getAll();
   }
 
-
-
   @Post('')
   async create(@Body() body: CreateProfessionDto) {
     return this.professionService.create(body);

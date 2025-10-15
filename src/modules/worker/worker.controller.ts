@@ -41,7 +41,6 @@ export default class WorkerController {
   @Put('profession/:id')
   async updateWorkerProfession(
     @Param('id') workerProfessionId: string,
-    @User() user: User,
     @Body() body: UpdateWorkerProfessionDto,
   ) {
     return this.workerService.updateProfession(workerProfessionId, body);
