@@ -90,6 +90,7 @@ export default class PaymentService {
     });
 
     if (otpVerifyResponse.data['error']) {
+      console.log('OTP verify');
       throw new BadRequestException({
         ok: false,
         message: {
@@ -125,6 +126,8 @@ export default class PaymentService {
     });
 
     if (payReceiptResponse.data['error']) {
+      console.log('pay receipt');
+
       throw new BadRequestException({
         ok: false,
         message: {
