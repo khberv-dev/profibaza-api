@@ -57,6 +57,7 @@ export default class ClientService {
 
   async getOrders(clientId: string) {
     const orders = await this.clientRepository.findOrdersByClientId(clientId, {
+      comments: true,
       workerProfession: {
         include: {
           worker: {
