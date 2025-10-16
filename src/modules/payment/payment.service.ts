@@ -1,7 +1,11 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import CardPaymentDto from './dto/card-payment.dto';
 import axios from 'axios';
-import { PAYME_SUBSCRIBE_API_KEY, PAYME_SUBSCRIBE_API_URL } from '../../config';
+import {
+  PAYME_SUBSCRIBE_API_ID,
+  PAYME_SUBSCRIBE_API_KEY,
+  PAYME_SUBSCRIBE_API_URL,
+} from '../../config';
 import CardVerifyDto from './dto/card-verify.dto';
 import DatabaseService from '../database/database.service';
 
@@ -9,12 +13,27 @@ import DatabaseService from '../database/database.service';
 export default class PaymentService {
   constructor(private databaseService: DatabaseService) {}
 
-  private async paymeRequest(data) {
-    return axios.post(PAYME_SUBSCRIBE_API_URL, data, {
-      headers: {
-        'X-auth': PAYME_SUBSCRIBE_API_KEY,
+  private async paymeRequest(data, key: boolean = false) {
+    const requestId = Number(new Date().getTime().toString().slice(-6));
+    let auth = PAYME_SUBSCRIBE_API_ID;
+
+    if (key) {
+      auth += ':' + PAYME_SUBSCRIBE_API_KEY;
+    }
+
+    return axios.post(
+      PAYME_SUBSCRIBE_API_URL,
+      {
+        id: requestId,
+        ...data,
       },
-    });
+      {
+        headers: {
+          'X-Auth': auth,
+          'Cache-Control': 'no-cache',
+        },
+      },
+    );
   }
 
   async processCard(data: CardPaymentDto) {
@@ -98,25 +117,33 @@ export default class PaymentService {
       });
     }
 
-    const createReceiptResponse = await this.paymeRequest({
-      method: 'receipts.create',
-      params: {
-        amount: transaction.amount,
-        account: {
-          id: transaction.userId,
+    const createReceiptResponse = await this.paymeRequest(
+      {
+        method: 'receipts.create',
+        params: {
+          amount: transaction.amount * 100,
+          account: {
+            order_id: transaction.userId,
+          },
         },
       },
-    });
+      true,
+    );
 
     const receiptId = createReceiptResponse.data['result']['receipt']['_id'];
 
-    const payReceiptResponse = await this.paymeRequest({
-      method: 'receipts.pay',
-      params: {
-        id: receiptId,
-        token: data.token,
+    const payReceiptResponse = await this.paymeRequest(
+      {
+        method: 'receipts.pay',
+        params: {
+          id: receiptId,
+          token: data.token,
+        },
       },
-    });
+      true,
+    );
+
+    console.log(payReceiptResponse);
 
     if (payReceiptResponse.data['error']) {
       throw new BadRequestException({
