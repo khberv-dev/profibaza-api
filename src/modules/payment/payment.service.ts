@@ -143,8 +143,6 @@ export default class PaymentService {
       true,
     );
 
-    console.log(payReceiptResponse);
-
     if (payReceiptResponse.data['error']) {
       throw new BadRequestException({
         ok: false,
