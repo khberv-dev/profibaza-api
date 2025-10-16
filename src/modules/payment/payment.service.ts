@@ -163,6 +163,15 @@ export default class PaymentService {
       },
     });
 
+    await this.databaseService.transaction.update({
+      where: {
+        id: transaction.id,
+      },
+      data: {
+        status: 'PAID',
+      },
+    });
+
     return {
       ok: true,
       message: {
