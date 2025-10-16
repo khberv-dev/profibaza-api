@@ -49,6 +49,7 @@ export default class AuthService {
     return {
       sub: user.id,
       role: user.role,
+      active: user.active,
       roleUID: roleUID,
     };
   }
@@ -70,6 +71,7 @@ export default class AuthService {
     return {
       ok: true,
       token,
+      active: user.active,
       role: user.role,
     };
   }

@@ -6,6 +6,7 @@ import * as config from '../../config';
 export type JwtPayload = {
   sub: string;
   role: string;
+  active: boolean;
   roleUID: string | undefined;
 };
 
