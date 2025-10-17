@@ -21,6 +21,7 @@ export default class OrderService {
         },
       },
       include: {
+        locations: true,
         worker: {
           include: {
             user: {
