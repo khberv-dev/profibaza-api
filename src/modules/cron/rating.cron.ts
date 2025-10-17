@@ -45,7 +45,7 @@ export class RatingCron {
         starRatingCountSum += count;
       }
 
-      const rating = starRatingSum / starRatingCountSum;
+      const rating = starRatingCountSum !== 0 ? starRatingSum / starRatingCountSum : 0;
 
       await this.databaseService.workerProfession.update({
         where: { id: workerProfession.id },
