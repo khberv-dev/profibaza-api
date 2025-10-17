@@ -113,7 +113,7 @@ export default class WorkerRepository {
     });
   }
 
-  async findOrders(workerId: string, include: Prisma.OrderInclude, where: Prisma.OrderWhereInput) {
+  async findOrders(include: Prisma.OrderInclude, where: Prisma.OrderWhereInput) {
     return this.databaseService.order.findMany({
       where,
       include,

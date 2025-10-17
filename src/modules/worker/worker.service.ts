@@ -174,7 +174,6 @@ export default class WorkerService {
     }
 
     const orders = await this.workerRepository.findOrders(
-      workerId,
       {
         client: {
           select: {
