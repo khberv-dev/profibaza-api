@@ -6,7 +6,7 @@ import path from 'node:path';
 import process from 'node:process';
 import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
-import GetOrdersDto from './dto/get-orders.dto';
+import GetOrdersDto, { OrderStatus } from './dto/get-orders.dto';
 import { Prisma } from '@prisma/client';
 import CreateExperienceDto from './dto/create-experience.dto';
 
@@ -239,6 +239,39 @@ export default class WorkerService {
     return {
       ok: true,
       message: 'Buyurtma qabul qilindi',
+    };
+  }
+
+  async finishOrder(orderId: string) {
+    const order = await this.workerRepository.findOrderById(orderId);
+    const now = new Date();
+
+    if (!order) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Buyurtma topilmadi',
+        },
+      });
+    }
+
+    if (order.status !== OrderStatus.PROGRESS) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Buyurtma jarayon holatida emas',
+        },
+      });
+    }
+
+    await this.workerRepository.updateOrderById(orderId, {
+      status: 'DONE',
+      endAt: now,
+    });
+
+    return {
+      ok: true,
+      message: 'Buyurtma yakunlandi',
     };
   }
 

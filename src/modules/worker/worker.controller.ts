@@ -117,4 +117,9 @@ export default class WorkerController {
   async postCommentFeedback(@Param('id') commentId: string, @Body() body: CommentFeedbackDto) {
     return this.workerService.postCommentFeedback(commentId, body);
   }
+
+  @Post('finish-order/:id')
+  async finishOrder(@Param('id') orderId: string) {
+    return this.workerService.finishOrder(orderId);
+  }
 }
