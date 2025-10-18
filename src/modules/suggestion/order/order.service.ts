@@ -76,8 +76,9 @@ export default class OrderService {
 
         locations.forEach((location) => {
           const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
-          const r1 = Math.pow(location.radius + _radius, 2);
-          const r2 = Math.pow(location.radius - _radius, 2);
+          const _r = location.radius / 111.32;
+          const r1 = Math.pow(_r + _radius, 2);
+          const r2 = Math.pow(_r - _radius, 2);
 
           if (x <= r1 || x < r2) {
             inArea = true;
