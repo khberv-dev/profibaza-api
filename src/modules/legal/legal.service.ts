@@ -34,8 +34,8 @@ export default class LegalService {
     };
   }
 
-  async postComment(clientId: string, orderId: string, data: PostCommentDto) {
-    await this.legalRepository.createOrderComment(clientId, orderId, data.comment, data.rate);
+  async postComment(legalId: string, orderId: string, data: PostCommentDto) {
+    await this.legalRepository.createOrderComment(legalId, orderId, data.comment, data.rate);
 
     return {
       ok: true,

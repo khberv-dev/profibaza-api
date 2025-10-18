@@ -35,10 +35,10 @@ export default class LegalRepository {
     });
   }
 
-  async createOrderComment(clientId: string, orderId: string, comment: string, rating: number) {
+  async createOrderComment(legalId: string, orderId: string, comment: string, rating: number) {
     return this.databaseService.comment.create({
       data: {
-        clientId,
+        legalId,
         orderId,
         rating,
         text: comment,
