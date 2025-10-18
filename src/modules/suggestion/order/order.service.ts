@@ -64,27 +64,34 @@ export default class OrderService {
       },
     });
 
-    workerProfessions = workerProfessions.filter(async (order) => {
-      const locations = await this.databaseService.location.findMany({
-        where: {
-          workProfessionId: order.id,
-        },
-      });
+    workerProfessions = await Promise.all(
+      workerProfessions.map(async (workerProfession) => {
+        const locations = await this.databaseService.location.findMany({
+          where: {
+            workProfessionId: workerProfession.id,
+          },
+        });
 
-      let r = false;
+        let inArea = false;
 
-      locations.forEach((location) => {
-        const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
-        const r1 = Math.pow(location.radius + _radius, 2);
-        const r2 = Math.pow(location.radius - _radius, 2);
+        locations.forEach((location) => {
+          const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
+          const r1 = Math.pow(location.radius + _radius, 2);
+          const r2 = Math.pow(location.radius - _radius, 2);
 
-        if (x <= r1 || x < r2) {
-          r = true;
-        }
-      });
+          if (x <= r1 || x < r2) {
+            inArea = true;
+          }
+        });
 
-      return r;
-    });
+        return {
+          ...workerProfession,
+          inArea,
+        };
+      }),
+    );
+
+    workerProfessions = workerProfessions.filter((workerProfession) => workerProfession['inArea']);
 
     workerProfessions = await Promise.all(
       workerProfessions.map(async (order) => {
