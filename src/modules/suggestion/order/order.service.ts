@@ -17,6 +17,7 @@ export default class OrderService {
     lat: number,
     radius: number,
   ) {
+    const _radius = long / 111.32;
     let workerProfessions = await this.orderRepository.findOrders({
       where: {
         minPrice: {
@@ -33,10 +34,10 @@ export default class OrderService {
         locations: {
           some: {
             AND: [
-              { longitude: { gte: long - radius } },
-              { longitude: { lte: long + radius } },
-              { latitude: { gte: lat - radius } },
-              { latitude: { lte: lat + radius } },
+              { longitude: { gte: long - _radius } },
+              { longitude: { lte: long + _radius } },
+              { latitude: { gte: lat - _radius } },
+              { latitude: { lte: lat + _radius } },
             ],
           },
         },
@@ -74,8 +75,8 @@ export default class OrderService {
 
       locations.forEach((location) => {
         const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
-        const r1 = Math.pow(location.radius + radius, 2);
-        const r2 = Math.pow(location.radius - radius, 2);
+        const r1 = Math.pow(location.radius + _radius, 2);
+        const r2 = Math.pow(location.radius - _radius, 2);
 
         if (x <= r1 || x < r2) {
           r = true;
