@@ -17,7 +17,7 @@ export default class OrderService {
     lat: number,
     radius: number,
   ) {
-    const _radius = long / 111.32;
+    const _radius = radius / 111.32;
     let workerProfessions = await this.orderRepository.findOrders({
       where: {
         minPrice: {
