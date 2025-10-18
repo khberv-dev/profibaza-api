@@ -5,6 +5,7 @@ import UpdateAddressDto from '../user/dto/update-address.dto';
 import PostCommentDto from '../client/dto/post-comment.dto';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
 import UpdateProfileDto from './dto/update-profile.dto';
+import CreateOrderDto from '../client/dto/create-order.dto';
 
 @Controller('legal')
 @UseGuards(JwtAuthGuard)
@@ -33,5 +34,10 @@ export default class LegalController {
     @Body() body: PostCommentDto,
   ) {
     return this.legalService.postComment(user.roleUID, orderId, body);
+  }
+
+  @Post('create-order')
+  async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
+    return this.legalService.createOrder(user.roleUID, body);
   }
 }

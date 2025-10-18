@@ -45,4 +45,8 @@ export default class LegalRepository {
       },
     });
   }
+
+  async createOrder(data: Prisma.OrderUncheckedCreateInput) {
+    return this.databaseService.order.create({ data });
+  }
 }

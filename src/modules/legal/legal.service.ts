@@ -3,6 +3,8 @@ import LegalRepository from './legal.repository';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import PostCommentDto from '../client/dto/post-comment.dto';
 import UpdateProfileDto from './dto/update-profile.dto';
+import CreateOrderDto from '../client/dto/create-order.dto';
+import dayjs from 'dayjs';
 
 @Injectable()
 export default class LegalService {
@@ -52,6 +54,28 @@ export default class LegalService {
       ok: true,
       message: {
         uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
+
+  async createOrder(legalId: string, orderData: CreateOrderDto) {
+    const deadline = dayjs(orderData.deadline, 'YYYY-MM-DD');
+
+    await this.legalRepository.createOrder({
+      legalId,
+      workerProfessionId: orderData.workerProfessionId,
+      description: orderData.description,
+      deadline: deadline.toDate(),
+      budget: orderData.budget,
+      address1: orderData.address1,
+      address2: orderData.address2,
+      address3: orderData.address3,
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Buyurtma yaratildi va ustaga jo'natildi",
       },
     };
   }
