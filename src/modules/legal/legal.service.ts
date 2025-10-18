@@ -79,4 +79,32 @@ export default class LegalService {
       },
     };
   }
+
+  async getOrders(legalId: string) {
+    const orders = await this.legalRepository.findOrdersByLegalId(legalId, {
+      comments: true,
+      workerProfession: {
+        include: {
+          worker: {
+            select: {
+              user: {
+                select: {
+                  surname: true,
+                  name: true,
+                  middleName: true,
+                  phone: true,
+                  avatar: true,
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      data: orders,
+    };
+  }
 }

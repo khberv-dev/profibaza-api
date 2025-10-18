@@ -40,4 +40,9 @@ export default class LegalController {
   async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
     return this.legalService.createOrder(user.roleUID, body);
   }
+
+  @Get('orders')
+  async getOrders(@User() user: User) {
+    return this.legalService.getOrders(user.roleUID);
+  }
 }

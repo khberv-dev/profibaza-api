@@ -49,4 +49,13 @@ export default class LegalRepository {
   async createOrder(data: Prisma.OrderUncheckedCreateInput) {
     return this.databaseService.order.create({ data });
   }
+
+  async findOrdersByLegalId(legalId: string, include: Prisma.OrderInclude = {}) {
+    return this.databaseService.order.findMany({
+      where: {
+        legalId,
+      },
+      include,
+    });
+  }
 }
