@@ -5,10 +5,16 @@ import PostCommentDto from '../client/dto/post-comment.dto';
 import UpdateProfileDto from './dto/update-profile.dto';
 import CreateOrderDto from '../client/dto/create-order.dto';
 import dayjs from 'dayjs';
+import CreateVacancyDto from './dto/create-vacancy.dto';
+import DatabaseService from '../database/database.service';
+import UpdateVacancyDto from './dto/update-vacancy.dto';
 
 @Injectable()
 export default class LegalService {
-  constructor(private legalRepository: LegalRepository) {}
+  constructor(
+    private legalRepository: LegalRepository,
+    private databaseService: DatabaseService,
+  ) {}
 
   async getMe(id: string) {
     const legal = await this.legalRepository.findById(id);
@@ -105,6 +111,54 @@ export default class LegalService {
     return {
       ok: true,
       data: orders,
+    };
+  }
+
+  async createVacancy(legalId: string, data: CreateVacancyDto) {
+    await this.databaseService.vacancy.create({
+      data: {
+        legalId,
+        title: data.title,
+        salary: data.salary,
+        description: data.description,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Vakansiya yaratildi',
+      },
+    };
+  }
+
+  async updateVacancy(vacancyId: string, data: UpdateVacancyDto) {
+    await this.databaseService.vacancy.update({
+      where: {
+        id: vacancyId,
+      },
+      data,
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
+
+  async getVacancies(legalId: string) {
+    const vacancies = await this.databaseService.vacancy.findMany({
+      where: {
+        legalId,
+        deletedAt: null,
+      },
+    });
+
+    return {
+      ok: true,
+      data: vacancies,
     };
   }
 }

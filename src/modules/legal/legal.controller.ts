@@ -6,6 +6,8 @@ import PostCommentDto from '../client/dto/post-comment.dto';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
 import UpdateProfileDto from './dto/update-profile.dto';
 import CreateOrderDto from '../client/dto/create-order.dto';
+import CreateVacancyDto from './dto/create-vacancy.dto';
+import UpdateVacancyDto from './dto/update-vacancy.dto';
 
 @Controller('legal')
 @UseGuards(JwtAuthGuard)
@@ -44,5 +46,20 @@ export default class LegalController {
   @Get('orders')
   async getOrders(@User() user: User) {
     return this.legalService.getOrders(user.roleUID);
+  }
+
+  @Get('vacancies')
+  async getVacancies(@User() user: User) {
+    return this.legalService.getVacancies(user.roleUID);
+  }
+
+  @Post('create-vacancy')
+  async createVacancy(@User() user: User, @Body() body: CreateVacancyDto) {
+    return this.legalService.createVacancy(user.roleUID, body);
+  }
+
+  @Put('update-vacancy/:id')
+  async updateVacancy(@Param('id') vacancyId: string, @Body() body: UpdateVacancyDto) {
+    return this.legalService.updateVacancy(vacancyId, body);
   }
 }

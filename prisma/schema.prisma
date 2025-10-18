@@ -104,6 +104,7 @@ model Legal {
 
   contacts  Contact[]
   documents Document[]
+  vacancies Vacancy[]
 
   orders Order[]
 
@@ -368,4 +369,21 @@ model Transaction {
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("transactions")
+}
+
+model Vacancy {
+  id          String  @id @default(uuid(4))
+  title       String
+  salary      Int
+  description String
+  active      Boolean @default(true)
+
+  legalId String
+  legal   Legal  @relation(fields: [legalId], references: [id])
+
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  @@map("vacancies")
 }
