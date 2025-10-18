@@ -1,9 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import OrderRepository from './order.repository';
+import DatabaseService from '../../database/database.service';
 
 @Injectable()
 export default class OrderService {
-  constructor(private orderRepository: OrderRepository) {}
+  constructor(
+    private orderRepository: OrderRepository,
+    private databaseService: DatabaseService,
+  ) {}
 
   async findOrders(
     minPrice: number,
@@ -13,7 +17,7 @@ export default class OrderService {
     lat: number,
     radius: number,
   ) {
-    let orders = await this.orderRepository.findOrders({
+    let workerProfessions = await this.orderRepository.findOrders({
       where: {
         minPrice: {
           gte: minPrice,
@@ -59,8 +63,30 @@ export default class OrderService {
       },
     });
 
-    orders = await Promise.all(
-      orders.map(async (order) => {
+    workerProfessions = workerProfessions.filter(async (order) => {
+      const locations = await this.databaseService.location.findMany({
+        where: {
+          workProfessionId: order.id,
+        },
+      });
+
+      let r = false;
+
+      locations.forEach((location) => {
+        const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
+        const r1 = Math.pow(location.radius + radius, 2);
+        const r2 = Math.pow(location.radius - radius, 2);
+
+        if (x <= r1 || x < r2) {
+          r = true;
+        }
+      });
+
+      return r;
+    });
+
+    workerProfessions = await Promise.all(
+      workerProfessions.map(async (order) => {
         const activeOrdersCount = await this.orderRepository.countActiveOrders(order.id);
 
         return {
@@ -72,7 +98,7 @@ export default class OrderService {
 
     return {
       ok: true,
-      data: orders,
+      data: workerProfessions,
     };
   }
 
