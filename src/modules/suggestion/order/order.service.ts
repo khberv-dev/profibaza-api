@@ -5,7 +5,14 @@ import OrderRepository from './order.repository';
 export default class OrderService {
   constructor(private orderRepository: OrderRepository) {}
 
-  async findOrders(minPrice: number, maxPrice: number, professions: string[]) {
+  async findOrders(
+    minPrice: number,
+    maxPrice: number,
+    professions: string[],
+    long: number,
+    lat: number,
+    radius: number,
+  ) {
     let orders = await this.orderRepository.findOrders({
       where: {
         minPrice: {
@@ -19,9 +26,24 @@ export default class OrderService {
             in: professions,
           },
         },
+        locations: {
+          some: {
+            AND: [
+              { longitude: { gte: long - radius } },
+              { longitude: { lte: long + radius } },
+              { latitude: { gte: lat - radius } },
+              { latitude: { lte: lat + radius } },
+            ],
+          },
+        },
       },
       include: {
-        locations: true,
+        locations: {
+          select: {
+            longitude: true,
+            latitude: true,
+          },
+        },
         worker: {
           include: {
             user: {

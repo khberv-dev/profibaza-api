@@ -19,9 +19,12 @@ export default class OrderController {
   async findOrders(
     @Query('minPrice', ParseIntPipe) minPrice: number,
     @Query('maxPrice', ParseIntPipe) maxPrice: number,
+    @Query('long', ParseIntPipe) long: number,
+    @Query('lat', ParseIntPipe) lat: number,
+    @Query('radius', ParseIntPipe) radius: number,
     @Query('professions', ParseArrayPipe) professions: string[],
   ) {
-    return this.orderService.findOrders(minPrice, maxPrice, professions);
+    return this.orderService.findOrders(minPrice, maxPrice, professions, long, lat, radius);
   }
 
   @Get('search/:id')
