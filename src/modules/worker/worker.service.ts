@@ -394,6 +394,13 @@ export default class WorkerService {
           mode: 'insensitive',
         },
       },
+      include: {
+        legal: {
+          select: {
+            name: true,
+          },
+        },
+      },
     });
 
     return {
