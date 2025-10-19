@@ -140,8 +140,8 @@ export default class WorkerController {
     return this.workerService.getOffers(user.roleUID);
   }
 
-  @Get('search-offers')
-  async searchOffers() {
-    return this.workerService.searchOffers();
+  @Get('search-vacancies')
+  async searchVacancies() {
+    return this.workerService.searchVacancies();
   }
 }

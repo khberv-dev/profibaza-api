@@ -383,12 +383,17 @@ export default class WorkerService {
     };
   }
 
-  async searchOffers() {
-    const offers = await this.databaseService.offer.findMany();
+  async searchVacancies() {
+    const vacancies = await this.databaseService.vacancy.findMany({
+      where: {
+        deletedAt: null,
+        active: true,
+      },
+    });
 
     return {
       ok: true,
-      data: offers,
+      data: vacancies,
     };
   }
 }
