@@ -45,6 +45,12 @@ enum TransactionStatus {
   DECLINED
 }
 
+enum OfferStatus {
+  NEW
+  DECLINED
+  ACCEPTED
+}
+
 model User {
   id         String  @id @default(uuid(4))
   name       String
@@ -392,7 +398,9 @@ model Vacancy {
 }
 
 model Offer {
-  id String @id @default(uuid(4))
+  id      String      @id @default(uuid(4))
+  status  OfferStatus @default(NEW)
+  message String?
 
   vacancyId String
   vacancy   Vacancy @relation(fields: [vacancyId], references: [id])

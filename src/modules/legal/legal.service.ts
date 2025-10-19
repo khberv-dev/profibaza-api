@@ -8,6 +8,7 @@ import dayjs from 'dayjs';
 import CreateVacancyDto from './dto/create-vacancy.dto';
 import DatabaseService from '../database/database.service';
 import UpdateVacancyDto from './dto/update-vacancy.dto';
+import OfferDto from './dto/offer.dto';
 
 @Injectable()
 export default class LegalService {
@@ -197,6 +198,44 @@ export default class LegalService {
     return {
       ok: true,
       data: offers,
+    };
+  }
+
+  async declineOffer(offerId: string, data: OfferDto) {
+    await this.databaseService.offer.update({
+      where: {
+        id: offerId,
+      },
+      data: {
+        status: 'DECLINED',
+        message: data.message,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Taklif rad etildi',
+      },
+    };
+  }
+
+  async acceptOffer(offerId: string, data: OfferDto) {
+    await this.databaseService.offer.update({
+      where: {
+        id: offerId,
+      },
+      data: {
+        status: 'ACCEPTED',
+        message: data.message,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Taklif qabul qilindi',
+      },
     };
   }
 }

@@ -8,6 +8,7 @@ import UpdateProfileDto from './dto/update-profile.dto';
 import CreateOrderDto from '../client/dto/create-order.dto';
 import CreateVacancyDto from './dto/create-vacancy.dto';
 import UpdateVacancyDto from './dto/update-vacancy.dto';
+import OfferDto from './dto/offer.dto';
 
 @Controller('legal')
 @UseGuards(JwtAuthGuard)
@@ -71,5 +72,15 @@ export default class LegalController {
   @Get('offers')
   async getOffers(@User() user: User) {
     return this.legalService.getOffers(user.roleUID);
+  }
+
+  @Post('decline-offer/:id')
+  async declineOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
+    return this.legalService.declineOffer(offerId, body);
+  }
+
+  @Post('accept-offer/:id')
+  async acceptOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
+    return this.legalService.declineOffer(offerId, body);
   }
 }
