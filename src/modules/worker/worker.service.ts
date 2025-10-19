@@ -375,6 +375,20 @@ export default class WorkerService {
           workerId,
         },
       },
+      include: {
+        vacancy: {
+          select: {
+            legal: {
+              select: {
+                name: true,
+              },
+            },
+            title: true,
+            description: true,
+            salary: true,
+          },
+        },
+      },
     });
 
     return {
