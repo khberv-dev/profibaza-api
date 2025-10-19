@@ -215,6 +215,15 @@ export default class LegalService {
                 nameRu: true,
               },
             },
+            worker: {
+              select: {
+                user: {
+                  select: {
+                    avatar: true,
+                  },
+                },
+              },
+            },
           },
         },
       },
