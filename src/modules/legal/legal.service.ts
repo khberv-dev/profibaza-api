@@ -193,6 +193,30 @@ export default class LegalService {
           legalId,
         },
       },
+      include: {
+        vacancy: {
+          select: {
+            legal: {
+              select: {
+                name: true,
+              },
+            },
+            title: true,
+            description: true,
+            salary: true,
+          },
+        },
+        workerProfession: {
+          select: {
+            profession: {
+              select: {
+                nameUz: true,
+                nameRu: true,
+              },
+            },
+          },
+        },
+      },
     });
 
     return {
