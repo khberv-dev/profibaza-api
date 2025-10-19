@@ -388,7 +388,16 @@ export default class WorkerService {
             salary: true,
           },
         },
-        workerProfession: true,
+        workerProfession: {
+          select: {
+            profession: {
+              select: {
+                nameUz: true,
+                nameRu: true,
+              },
+            },
+          },
+        },
       },
     });
 
