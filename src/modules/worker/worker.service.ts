@@ -383,11 +383,16 @@ export default class WorkerService {
     };
   }
 
-  async searchVacancies() {
+  async searchVacancies(search: string, minSalary: number, maxSalary: number) {
     const vacancies = await this.databaseService.vacancy.findMany({
       where: {
         deletedAt: null,
         active: true,
+        AND: [{ salary: { gt: minSalary } }, { salary: { lte: maxSalary } }],
+        title: {
+          contains: search,
+          mode: 'insensitive',
+        },
       },
     });
 

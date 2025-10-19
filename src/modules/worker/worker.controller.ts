@@ -141,7 +141,11 @@ export default class WorkerController {
   }
 
   @Get('search-vacancies')
-  async searchVacancies() {
-    return this.workerService.searchVacancies();
+  async searchVacancies(
+    @Query('search') search: string,
+    @Query('minSalary') minSalary: number = 0,
+    @Query('maxSalary') maxSalary: number = 0,
+  ) {
+    return this.workerService.searchVacancies(search, minSalary, maxSalary);
   }
 }
