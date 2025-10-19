@@ -81,6 +81,6 @@ export default class LegalController {
 
   @Post('accept-offer/:id')
   async acceptOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
-    return this.legalService.declineOffer(offerId, body);
+    return this.legalService.acceptOffer(offerId, body);
   }
 }
