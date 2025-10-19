@@ -206,16 +206,7 @@ export default class LegalService {
             salary: true,
           },
         },
-        workerProfession: {
-          select: {
-            profession: {
-              select: {
-                nameUz: true,
-                nameRu: true,
-              },
-            },
-          },
-        },
+        workerProfession: true,
       },
     });
 
