@@ -219,6 +219,9 @@ export default class LegalService {
               select: {
                 user: {
                   select: {
+                    name: true,
+                    surname: true,
+                    middleName: true,
                     avatar: true,
                   },
                 },
