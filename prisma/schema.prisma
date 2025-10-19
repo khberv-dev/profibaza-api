@@ -349,7 +349,7 @@ model Experience {
   jobPlace       String @map("job_place")
   jobDescription String @map("job_description")
 
-  workerProfessionId String           @unique
+  workerProfessionId String
   workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
 
   createdAt DateTime @default(now()) @map("created_at")
