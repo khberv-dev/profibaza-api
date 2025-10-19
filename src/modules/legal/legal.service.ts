@@ -209,6 +209,12 @@ export default class LegalService {
         workerProfession: {
           include: {
             experience: true,
+            profession: {
+              select: {
+                nameUz: true,
+                nameRu: true,
+              },
+            },
           },
         },
       },
