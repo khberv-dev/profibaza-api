@@ -9,12 +9,15 @@ import CommentFeedbackDto from './dto/comment-feedback.dto';
 import GetOrdersDto, { OrderStatus } from './dto/get-orders.dto';
 import { Prisma } from '@prisma/client';
 import CreateExperienceDto from './dto/create-experience.dto';
+import UpdateExperienceDto from './dto/update-experience.dto';
+import DatabaseService from '../database/database.service';
 
 @Injectable()
 export default class WorkerService {
   constructor(
     private workerRepository: WorkerRepository,
     private documentRepository: DocumentRepository,
+    private databaseService: DatabaseService,
   ) {}
 
   async getWorkerProfessions(id: string) {
@@ -328,6 +331,22 @@ export default class WorkerService {
       ok: true,
       message: {
         uz: "Qo'shildi",
+      },
+    };
+  }
+
+  async updateExperience(experienceId: string, data: UpdateExperienceDto) {
+    await this.databaseService.experience.update({
+      where: {
+        id: experienceId,
+      },
+      data,
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Ma'lumot yangilandi",
       },
     };
   }

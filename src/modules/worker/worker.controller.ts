@@ -22,6 +22,7 @@ import UpdateWorkerProfessionDto from './dto/update-worker-profession.dto';
 import CommentFeedbackDto from './dto/comment-feedback.dto';
 import GetOrdersDto from './dto/get-orders.dto';
 import CreateExperienceDto from './dto/create-experience.dto';
+import UpdateExperienceDto from './dto/update-experience.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -66,6 +67,11 @@ export default class WorkerController {
     @Body() body: CreateExperienceDto,
   ) {
     return this.workerService.createExperience(workerProfessionId, body);
+  }
+
+  @Put('profession/experience/:id')
+  async updateExperience(@Param('id') experienceId: string, @Body() body: UpdateExperienceDto) {
+    return this.workerService.updateExperience(experienceId, body);
   }
 
   @Post('upload-document')
