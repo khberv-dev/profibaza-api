@@ -388,6 +388,7 @@ export default class WorkerService {
             salary: true,
           },
         },
+        workerProfession: true,
       },
     });
 
