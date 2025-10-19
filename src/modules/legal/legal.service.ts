@@ -206,7 +206,11 @@ export default class LegalService {
             salary: true,
           },
         },
-        workerProfession: true,
+        workerProfession: {
+          include: {
+            experience: true,
+          },
+        },
       },
     });
 
