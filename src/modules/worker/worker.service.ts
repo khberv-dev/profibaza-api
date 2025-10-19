@@ -382,4 +382,13 @@ export default class WorkerService {
       data: offers,
     };
   }
+
+  async searchOffers() {
+    const offers = await this.databaseService.offer.findMany();
+
+    return {
+      ok: true,
+      data: offers,
+    };
+  }
 }

@@ -139,4 +139,9 @@ export default class WorkerController {
   async getOffers(@User() user: User) {
     return this.workerService.getOffers(user.roleUID);
   }
+
+  @Get('search-offers')
+  async searchOffers() {
+    return this.workerService.searchOffers();
+  }
 }
