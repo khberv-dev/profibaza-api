@@ -67,4 +67,9 @@ export default class LegalController {
   async updateVacancy(@Param('id') vacancyId: string, @Body() body: UpdateVacancyDto) {
     return this.legalService.updateVacancy(vacancyId, body);
   }
+
+  @Get('offers')
+  async getOffers(@User() user: User) {
+    return this.legalService.getOffers(user.roleUID);
+  }
 }

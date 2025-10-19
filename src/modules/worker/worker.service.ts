@@ -11,6 +11,7 @@ import { Prisma } from '@prisma/client';
 import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import DatabaseService from '../database/database.service';
+import CreateOfferDto from './dto/create-offer.dto';
 
 @Injectable()
 export default class WorkerService {
@@ -348,6 +349,37 @@ export default class WorkerService {
       message: {
         uz: "Ma'lumot yangilandi",
       },
+    };
+  }
+
+  async createOffer(data: CreateOfferDto) {
+    await this.databaseService.offer.create({
+      data: {
+        workerProfessionId: data.workerProfessionId,
+        vacancyId: data.vacancyId,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Taklif yuborildi',
+      },
+    };
+  }
+
+  async getOffers(workerId: string) {
+    const offers = await this.databaseService.offer.findMany({
+      where: {
+        workerProfession: {
+          workerId,
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      data: offers,
     };
   }
 }

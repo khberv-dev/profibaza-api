@@ -227,11 +227,12 @@ model WorkerProfession {
   competitions        String?
   jobType             JobType @default(SOLO) @map("job_type")
 
-  demos      WorkerProfessionDemo[]
-  orders     Order[]
-  locations  Location[]
-  experience Experience[]
-  schedule   Schedule?
+  demos         WorkerProfessionDemo[]
+  orders        Order[]
+  locations     Location[]
+  experience    Experience[]
+  vacancyOffers Offer[]
+  schedule      Schedule?
 
   workerId String @map("worker_id")
   worker   Worker @relation(fields: [workerId], references: [id])
@@ -381,9 +382,27 @@ model Vacancy {
   legalId String
   legal   Legal  @relation(fields: [legalId], references: [id])
 
+  offers Offer[]
+
   createdAt DateTime  @default(now()) @map("created_at")
   updatedAt DateTime  @updatedAt @map("updated_at")
   deletedAt DateTime? @map("deleted_at")
 
   @@map("vacancies")
+}
+
+model Offer {
+  id String @id @default(uuid(4))
+
+  vacancyId String
+  vacancy   Vacancy @relation(fields: [vacancyId], references: [id])
+
+  workerProfessionId String
+  workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
+
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+
+  @@map("offers")
 }

@@ -184,4 +184,19 @@ export default class LegalService {
       data: vacancy,
     };
   }
+
+  async getOffers(legalId: string) {
+    const offers = await this.databaseService.offer.findMany({
+      where: {
+        vacancy: {
+          legalId,
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      data: offers,
+    };
+  }
 }

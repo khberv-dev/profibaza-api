@@ -23,6 +23,7 @@ import CommentFeedbackDto from './dto/comment-feedback.dto';
 import GetOrdersDto from './dto/get-orders.dto';
 import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
+import CreateOfferDto from './dto/create-offer.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -127,5 +128,15 @@ export default class WorkerController {
   @Post('finish-order/:id')
   async finishOrder(@Param('id') orderId: string) {
     return this.workerService.finishOrder(orderId);
+  }
+
+  @Post('create-offer')
+  async createOffer(@Body() body: CreateOfferDto) {
+    return this.workerService.createOffer(body);
+  }
+
+  @Get('offers')
+  async getOffers(@User() user: User) {
+    return this.workerService.getOffers(user.roleUID);
   }
 }
