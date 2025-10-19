@@ -161,4 +161,27 @@ export default class LegalService {
       data: vacancies,
     };
   }
+
+  async getVacancyById(vacancyId: string) {
+    const vacancy = await this.databaseService.vacancy.findFirst({
+      where: {
+        id: vacancyId,
+        deletedAt: null,
+      },
+    });
+
+    if (!vacancy) {
+      return {
+        ok: false,
+        message: {
+          uz: "Ma'lumot topilmadi",
+        },
+      };
+    }
+
+    return {
+      ok: true,
+      data: vacancy,
+    };
+  }
 }

@@ -53,6 +53,11 @@ export default class LegalController {
     return this.legalService.getVacancies(user.roleUID);
   }
 
+  @Get('vacancies/:id')
+  async getVacancyById(@Param('id') id: string) {
+    return this.legalService.getVacancyById(id);
+  }
+
   @Post('create-vacancy')
   async createVacancy(@User() user: User, @Body() body: CreateVacancyDto) {
     return this.legalService.createVacancy(user.roleUID, body);
