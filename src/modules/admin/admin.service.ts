@@ -6,15 +6,18 @@ export default class AdminService {
   constructor(private databaseService: DatabaseService) {}
 
   async getOverallStats() {
-    const usersCount = await this.databaseService.user.count();
-    const clientsCount = await this.databaseService.client.count();
-    const workersCount = await this.databaseService.worker.count();
-    const ordersCount = await this.databaseService.order.count();
-    const finishedOrdersCount = await this.databaseService.order.count({
-      where: {
-        status: 'DONE',
-      },
-    });
+    const [usersCount, clientsCount, workersCount, ordersCount, finishedOrdersCount] =
+      await Promise.all([
+        this.databaseService.user.count(),
+        this.databaseService.client.count(),
+        this.databaseService.worker.count(),
+        this.databaseService.order.count(),
+        this.databaseService.order.count({
+          where: {
+            status: 'DONE',
+          },
+        }),
+      ]);
 
     return {
       ok: true,
