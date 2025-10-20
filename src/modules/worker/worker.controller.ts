@@ -150,7 +150,9 @@ export default class WorkerController {
   }
 
   @Get('download-resume/:id')
-  async downloadResume(@Param('id') workerProfessionId: string) {
-    return this.workerService.downloadResume(workerProfessionId);
+  async downloadResume(@Param('id') workerProfessionId: string, @Res() res: Response) {
+    const fileName = await this.workerService.downloadResume(workerProfessionId);
+
+    res.sendFile(fileName);
   }
 }

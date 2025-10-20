@@ -12,6 +12,9 @@ import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import DatabaseService from '../database/database.service';
 import CreateOfferDto from './dto/create-offer.dto';
+import fs from 'node:fs';
+import PDFDocument from 'pdfkit';
+import { formatPhone } from '../../utils/format';
 
 @Injectable()
 export default class WorkerService {
@@ -445,9 +448,72 @@ export default class WorkerService {
           },
         },
         experience: true,
+        profession: true,
       },
     });
 
-    return workerProfession;
+    if (!workerProfession) {
+      throw new BadRequestException();
+    }
+
+    const resumeDir = path.join(process.cwd(), 'files', 'resume');
+
+    if (!fs.existsSync(resumeDir)) {
+      fs.mkdirSync(resumeDir);
+    }
+
+    const worker = workerProfession.worker;
+    const user = worker.user;
+    const experience = workerProfession.experience;
+    const doc = new PDFDocument();
+    const docFileName = path.join(resumeDir, workerProfessionId + '.pdf');
+    const stream = fs.createWriteStream(docFileName);
+
+    doc.pipe(stream);
+
+    doc.fillColor('#ededed').rect(0, 0, 1000, 45).fill().fillColor('#000000');
+
+    doc.font('Helvetica-Bold').fontSize(20).text(`${user.surname} ${user.name}`);
+
+    doc.fontSize(10).font('Helvetica').text(workerProfession.profession.nameUz);
+
+    doc.moveDown();
+
+    doc
+      .fontSize(10)
+      .font('Helvetica')
+      .text('Telefon raqam')
+      .fillColor('#515151')
+      .fontSize(8)
+      .text(formatPhone(user.phone))
+      .fillColor('#000000');
+
+    doc.moveDown();
+
+    doc
+      .fontSize(10)
+      .font('Helvetica')
+      .text('Manzil')
+      .fillColor('#515151')
+      .fontSize(8)
+      .text(`${worker.address1}, ${worker.address2}`);
+
+    doc.moveDown(2);
+
+    doc.fillColor('#c5c5c5').fontSize(15).text('Tajriba').fillColor('#000000');
+
+    experience.forEach((exp) => {
+      doc
+        .fontSize(12)
+        .text(`${exp.jobPlace} (${exp.startedAt}-${exp.endedAt ? exp.endedAt : 'hozir'})`)
+        .fontSize(10)
+        .text(exp.jobDescription);
+
+      doc.moveDown();
+    });
+
+    doc.end();
+
+    return docFileName;
   }
 }
