@@ -7,6 +7,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum Gender {
+  MALE
+  FEMALE
+}
+
 enum Role {
   ADMIN
   CLIENT
@@ -52,16 +57,18 @@ enum OfferStatus {
 }
 
 model User {
-  id         String  @id @default(uuid(4))
+  id         String    @id @default(uuid(4))
   name       String
   surname    String
-  middleName String  @map("middle_name")
+  middleName String    @map("middle_name")
+  gender     Gender    @default(MALE)
+  birthday   DateTime?
   phone      String
-  email      String? @unique
+  email      String?   @unique
   password   String
   avatar     String?
-  active     Boolean @default(false)
-  balance    Int     @default(0)
+  active     Boolean   @default(false)
+  balance    Int       @default(0)
 
   role Role @default(CLIENT)
 

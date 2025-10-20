@@ -6,6 +6,11 @@ export enum UserRole {
   LEGAL = 'LEGAL',
 }
 
+export enum Gender {
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
+}
+
 export default class RegisterDto {
   @Length(2, 30)
   @Matches(/^\p{L}+$/u)
@@ -18,6 +23,14 @@ export default class RegisterDto {
   @Length(2, 30)
   @Matches(/^\p{L}+$/u)
   middleName: string;
+
+  @IsOptional()
+  @IsEnum(Gender)
+  gender: Gender;
+
+  @IsOptional()
+  @IsString()
+  birthday: string;
 
   @Matches(/^998\d{9}$/u)
   phone: string;

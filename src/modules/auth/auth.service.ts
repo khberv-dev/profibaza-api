@@ -8,6 +8,7 @@ import ClientRepository from '../client/client.repository';
 import LegalRepository from '../legal/legal.repository';
 import WorkerRepository from '../worker/worker.repository';
 import { JwtPayload } from '../../helpers/jwt/jwt.strategy';
+import dayjs from 'dayjs';
 
 @Injectable()
 export default class AuthService {
@@ -100,11 +101,14 @@ export default class AuthService {
     }
 
     const passwordHash = await hashPassword(data.password);
+    const birthdayDate = dayjs(data.birthday, 'YYYY-MM-DD').toDate();
 
     const user = await this.userRepository.create({
       name: data.name,
       surname: data.surname,
       middleName: data.middleName,
+      gender: data.gender,
+      birthday: birthdayDate,
       phone: data.phone,
       email: data.email,
       role: data.role,
