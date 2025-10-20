@@ -1,9 +1,17 @@
-import { IsString } from 'class-validator';
+import { IsArray, IsString, ValidateNested } from 'class-validator';
+import { Type } from 'class-transformer';
 
-export default class CreateProfessionDto {
+export class ProfessionDto {
   @IsString()
   nameUz: string;
 
   @IsString()
   nameRu: string;
+}
+
+export default class CreateProfessionDto {
+  @IsArray()
+  @ValidateNested({ each: true })
+  @Type(() => ProfessionDto)
+  professions: ProfessionDto[];
 }

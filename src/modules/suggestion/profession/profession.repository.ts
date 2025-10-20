@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import DatabaseService from '../../database/database.service';
+import { ProfessionDto } from './dto/create-profession.dto';
 
 @Injectable()
 export default class ProfessionRepository {
@@ -9,12 +10,9 @@ export default class ProfessionRepository {
     return this.databaseService.profession.findMany();
   }
 
-  async createProfession(nameUz: string, nameRu: string) {
-    return this.databaseService.profession.create({
-      data: {
-        nameUz,
-        nameRu,
-      },
+  async createProfessions(professions: ProfessionDto[]) {
+    return this.databaseService.profession.createMany({
+      data: professions,
     });
   }
 

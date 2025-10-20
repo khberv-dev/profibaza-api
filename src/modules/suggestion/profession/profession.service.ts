@@ -16,7 +16,7 @@ export default class ProfessionService {
   }
 
   async create(data: CreateProfessionDto) {
-    await this.professionRepository.createProfession(data.nameUz, data.nameRu);
+    await this.professionRepository.createProfessions(data.professions);
 
     return {
       ok: true,
