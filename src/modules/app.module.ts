@@ -12,6 +12,7 @@ import path from 'node:path';
 import { ScheduleModule } from '@nestjs/schedule';
 import CronModule from './cron/cron.module';
 import PaymentModule from './payment/payment.module';
+import AdminModule from './admin/admin.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import PaymentModule from './payment/payment.module';
     WorkerModule,
     DocumentModule,
     PaymentModule,
+    AdminModule,
   ],
 })
 export class AppModule {}
