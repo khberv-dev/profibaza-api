@@ -29,14 +29,21 @@ export default class AdminService {
   }
 
   async getInvoices(page: number, limit: number) {
-    const invoices = await this.databaseService.transaction.findMany({
-      skip: limit * (page - 1),
-      take: limit,
-    });
+    const [invoices, count] = await Promise.all([
+      this.databaseService.transaction.findMany({
+        skip: limit * (page - 1),
+        take: limit,
+      }),
+      this.databaseService.transaction.count(),
+    ]);
 
     return {
       ok: true,
       data: invoices,
+      meta: {
+        total: count,
+        pages: Math.ceil(count / limit),
+      },
     };
   }
 }
