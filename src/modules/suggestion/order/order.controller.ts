@@ -1,5 +1,6 @@
 import {
   Controller,
+  DefaultValuePipe,
   Get,
   Param,
   ParseArrayPipe,
@@ -20,9 +21,9 @@ export default class OrderController {
   async findOrders(
     @Query('minPrice', ParseIntPipe) minPrice: number,
     @Query('maxPrice', ParseIntPipe) maxPrice: number,
-    @Query('long', ParseFloatPipe) long: number,
-    @Query('lat', ParseFloatPipe) lat: number,
-    @Query('radius', ParseFloatPipe) radius: number,
+    @Query('long', new DefaultValuePipe(0), ParseFloatPipe) long: number,
+    @Query('lat', new DefaultValuePipe(0), ParseFloatPipe) lat: number,
+    @Query('radius', new DefaultValuePipe(0), ParseFloatPipe) radius: number,
     @Query('professions', ParseArrayPipe) professions: string[],
   ) {
     return this.orderService.findOrders(minPrice, maxPrice, professions, long, lat, radius);
