@@ -148,4 +148,9 @@ export default class WorkerController {
   ) {
     return this.workerService.searchVacancies(search, minSalary, maxSalary);
   }
+
+  @Get('download-resume/:id')
+  async downloadResume(@Param('id') workerProfessionId: string) {
+    return this.workerService.downloadResume(workerProfessionId);
+  }
 }

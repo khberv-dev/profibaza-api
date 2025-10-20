@@ -432,4 +432,22 @@ export default class WorkerService {
       data: vacancies,
     };
   }
+
+  async downloadResume(workerProfessionId: string) {
+    const workerProfession = await this.databaseService.workerProfession.findFirst({
+      where: {
+        id: workerProfessionId,
+      },
+      include: {
+        worker: {
+          include: {
+            user: true,
+          },
+        },
+        experience: true,
+      },
+    });
+
+    return workerProfession;
+  }
 }

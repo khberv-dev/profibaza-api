@@ -11,6 +11,14 @@ export default class UserRepository {
     return this.database.user.findFirst({ where: { id } });
   }
 
+  findAdminByUserId(id: string) {
+    return this.database.admin.findFirst({
+      where: {
+        userId: id,
+      },
+    });
+  }
+
   findByPhone(phone: string) {
     return this.database.user.findFirst({ where: { phone } });
   }

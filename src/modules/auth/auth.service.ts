@@ -38,6 +38,10 @@ export default class AuthService {
       case 'WORKER':
         roleUID = (await this.workerRepository.findByUserId(user.id))?.id;
         break;
+
+      case 'ADMIN':
+        roleUID = (await this.userRepository.findAdminByUserId(user.id))?.id;
+        break;
     }
 
     const validPassword = await verifyPassword(data.password, user.password);
