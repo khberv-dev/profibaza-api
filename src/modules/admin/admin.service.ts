@@ -27,4 +27,16 @@ export default class AdminService {
       },
     };
   }
+
+  async getInvoices(page: number, limit: number) {
+    const invoices = await this.databaseService.transaction.findMany({
+      skip: limit * (page - 1),
+      take: limit,
+    });
+
+    return {
+      ok: true,
+      data: invoices,
+    };
+  }
 }
