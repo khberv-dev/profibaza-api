@@ -24,6 +24,7 @@ import GetOrdersDto from './dto/get-orders.dto';
 import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import CreateOfferDto from './dto/create-offer.dto';
+import { orderMaterialInterceptor } from './interceptor/order-material.interceptor';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
@@ -128,6 +129,15 @@ export default class WorkerController {
   @Post('finish-order/:id')
   async finishOrder(@Param('id') orderId: string) {
     return this.workerService.finishOrder(orderId);
+  }
+
+  @Post('upload-order-material/:id')
+  @UseInterceptors(orderMaterialInterceptor)
+  async uploadOrderMaterial(
+    @Param('id') orderId: string,
+    @UploadedFile() file: Express.Multer.File,
+  ) {
+    return this.workerService.uploadOrderMaterial(orderId, file.filename);
   }
 
   @Post('create-offer')

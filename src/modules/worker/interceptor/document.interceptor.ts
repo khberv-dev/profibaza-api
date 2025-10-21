@@ -6,9 +6,6 @@ import { randomString } from '../../../utils/randomize';
 import { BadRequestException } from '@nestjs/common';
 
 export const documentInterceptor = FileInterceptor('file', {
-  limits: {
-    fileSize: 5_000_000,
-  },
   storage: diskStorage({
     destination: 'files/document',
     filename(

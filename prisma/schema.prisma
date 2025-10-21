@@ -323,6 +323,7 @@ model Order {
   address3    String
 
   comments Comment[]
+  files    String[]
 
   clientId String? @map("client_id")
   client   Client? @relation(fields: [clientId], references: [id])

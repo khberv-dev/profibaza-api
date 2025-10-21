@@ -5,9 +5,9 @@ import * as path from 'node:path';
 import { randomString } from '../../../utils/randomize';
 import { BadRequestException } from '@nestjs/common';
 
-export const professionDemoInterceptor = FileInterceptor('file', {
+export const orderMaterialInterceptor = FileInterceptor('file', {
   storage: diskStorage({
-    destination: 'files/demo',
+    destination: 'files/order',
     filename(
       req: e.Request,
       file: Express.Multer.File,

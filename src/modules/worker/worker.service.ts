@@ -263,6 +263,15 @@ export default class WorkerService {
       });
     }
 
+    if (order.files.length < 3) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Buyurmani yakunlash uchun kamida 3 ta foto yoki video material joylang',
+        },
+      });
+    }
+
     if (order.status !== OrderStatus.PROGRESS) {
       throw new BadRequestException({
         ok: false,
@@ -520,5 +529,25 @@ export default class WorkerService {
     doc.end();
 
     return docFileName;
+  }
+
+  async uploadOrderMaterial(orderId: string, fileId: string) {
+    await this.databaseService.order.update({
+      where: {
+        id: orderId,
+      },
+      data: {
+        files: {
+          push: fileId,
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Material yuklandi',
+      },
+    };
   }
 }
