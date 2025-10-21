@@ -13,17 +13,17 @@ export default class OrderFilterDto {
   @IsOptional()
   @Type(() => Number)
   @IsNumber()
-  long: number;
+  long: number = 0;
 
   @IsOptional()
   @Type(() => Number)
   @IsNumber()
-  lat: number;
+  lat: number = 0;
 
   @IsOptional()
   @Type(() => Number)
   @IsNumber()
-  radius: number;
+  radius: number = 0;
 
   @IsArray()
   @Transform(({ value }) => (typeof value === 'string' ? value.split(',') : value))
