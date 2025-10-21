@@ -1,21 +1,27 @@
 import { IsArray, IsInt, IsNumber, IsOptional, IsString } from 'class-validator';
+import { Type } from 'class-transformer';
 
 export default class OrderFilterDto {
+  @Type(() => Number)
   @IsInt()
   minPrice: number;
 
+  @Type(() => Number)
   @IsInt()
   maxPrice: number;
 
   @IsOptional()
+  @Type(() => Number)
   @IsNumber()
   long: number;
 
   @IsOptional()
+  @Type(() => Number)
   @IsNumber()
   lat: number;
 
   @IsOptional()
+  @Type(() => Number)
   @IsNumber()
   radius: number;
 
