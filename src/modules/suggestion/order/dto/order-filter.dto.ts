@@ -1,5 +1,5 @@
 import { IsArray, IsInt, IsNumber, IsOptional, IsString } from 'class-validator';
-import { Type } from 'class-transformer';
+import { Transform, Type } from 'class-transformer';
 
 export default class OrderFilterDto {
   @Type(() => Number)
@@ -26,6 +26,7 @@ export default class OrderFilterDto {
   radius: number;
 
   @IsArray()
+  @Transform(({ value }) => (typeof value === 'string' ? value.split(',') : value))
   @IsString({ each: true })
   professions: string[];
 
