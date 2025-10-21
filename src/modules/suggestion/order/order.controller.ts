@@ -1,16 +1,7 @@
-import {
-  Controller,
-  DefaultValuePipe,
-  Get,
-  Param,
-  ParseArrayPipe,
-  ParseFloatPipe,
-  ParseIntPipe,
-  Query,
-  UseGuards,
-} from '@nestjs/common';
+import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
 import OrderService from './order.service';
 import JwtAuthGuard from '../../../helpers/guards/jwt-auth.guard';
+import OrderFilterDto from './dto/order-filter.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('opt/order')
@@ -18,15 +9,8 @@ export default class OrderController {
   constructor(private orderService: OrderService) {}
 
   @Get('search')
-  async findOrders(
-    @Query('minPrice', ParseIntPipe) minPrice: number,
-    @Query('maxPrice', ParseIntPipe) maxPrice: number,
-    @Query('long', new DefaultValuePipe(0), ParseFloatPipe) long: number,
-    @Query('lat', new DefaultValuePipe(0), ParseFloatPipe) lat: number,
-    @Query('radius', new DefaultValuePipe(0), ParseFloatPipe) radius: number,
-    @Query('professions', ParseArrayPipe) professions: string[],
-  ) {
-    return this.orderService.findOrders(minPrice, maxPrice, professions, long, lat, radius);
+  async findOrders(@Query() filter: OrderFilterDto) {
+    return this.orderService.findOrders(filter);
   }
 
   @Get('search/:id')

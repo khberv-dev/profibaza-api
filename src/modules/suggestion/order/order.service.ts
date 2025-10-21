@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import OrderRepository from './order.repository';
 import DatabaseService from '../../database/database.service';
+import OrderFilterDto from './dto/order-filter.dto';
 
 @Injectable()
 export default class OrderService {
@@ -9,35 +10,28 @@ export default class OrderService {
     private databaseService: DatabaseService,
   ) {}
 
-  async findOrders(
-    minPrice: number,
-    maxPrice: number,
-    professions: string[],
-    long: number,
-    lat: number,
-    radius: number,
-  ) {
-    const _radius = radius / 111.32;
+  async findOrders(filter: OrderFilterDto) {
+    const _radius = filter.radius / 111.32;
     let workerProfessions = await this.orderRepository.findOrders({
       where: {
         minPrice: {
-          gte: minPrice,
+          gte: filter.minPrice,
         },
         maxPrice: {
-          lte: maxPrice,
+          lte: filter.maxPrice,
         },
         profession: {
           id: {
-            in: professions,
+            in: filter.professions,
           },
         },
         locations: {
           some: {
             AND: [
-              { longitude: { gte: long - _radius } },
-              { longitude: { lte: long + _radius } },
-              { latitude: { gte: lat - _radius } },
-              { latitude: { lte: lat + _radius } },
+              { longitude: { gte: filter.long - _radius } },
+              { longitude: { lte: filter.long + _radius } },
+              { latitude: { gte: filter.lat - _radius } },
+              { latitude: { lte: filter.lat + _radius } },
             ],
           },
         },
@@ -50,7 +44,10 @@ export default class OrderService {
           },
         },
         worker: {
-          include: {
+          select: {
+            address1: true,
+            address2: true,
+            address3: true,
             user: {
               select: {
                 name: true,
@@ -71,17 +68,31 @@ export default class OrderService {
             workProfessionId: workerProfession.id,
           },
         });
+        const worker = await this.databaseService.worker.findFirst({
+          where: {
+            id: workerProfession.workerId,
+          },
+        });
 
         let inArea = false;
 
         locations.forEach((location) => {
-          const x = Math.pow(location.latitude - lat, 2) + Math.pow(location.longitude - long, 2);
+          const x =
+            Math.pow(location.latitude - filter.lat, 2) +
+            Math.pow(location.longitude - filter.long, 2);
           const _r = location.radius / 111.32;
           const r1 = Math.pow(_r + _radius, 2);
           const r2 = Math.pow(_r - _radius, 2);
 
           if (x <= r1 || x < r2) {
             inArea = true;
+          }
+
+          if (worker && filter.address1 && filter.address2 && filter.address3) {
+            inArea =
+              worker.address1 === filter.address1 &&
+              worker.address2 === filter.address2 &&
+              worker.address3 === filter.address3;
           }
         });
 
