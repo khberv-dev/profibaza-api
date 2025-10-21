@@ -13,15 +13,12 @@ export enum Gender {
 
 export default class RegisterDto {
   @Length(2, 30)
-  @Matches(/^\p{L}+$/u)
   name: string;
 
   @Length(2, 30)
-  @Matches(/^\p{L}+$/u)
   surname: string;
 
   @Length(2, 30)
-  @Matches(/^\p{L}+$/u)
   middleName: string;
 
   @IsOptional()
