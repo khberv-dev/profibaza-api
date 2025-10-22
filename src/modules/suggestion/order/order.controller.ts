@@ -1,9 +1,7 @@
-import { Controller, Get, Param, Query, UseGuards } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import OrderService from './order.service';
-import JwtAuthGuard from '../../../helpers/guards/jwt-auth.guard';
 import OrderFilterDto from './dto/order-filter.dto';
 
-@UseGuards(JwtAuthGuard)
 @Controller('opt/order')
 export default class OrderController {
   constructor(private orderService: OrderService) {}
