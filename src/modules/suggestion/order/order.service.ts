@@ -61,49 +61,53 @@ export default class OrderService {
       },
     });
 
-    workerProfessions = await Promise.all(
-      workerProfessions.map(async (workerProfession) => {
-        const locations = await this.databaseService.location.findMany({
-          where: {
-            workProfessionId: workerProfession.id,
-          },
-        });
-        const worker = await this.databaseService.worker.findFirst({
-          where: {
-            id: workerProfession.workerId,
-          },
-        });
+    if (filter.long && filter.lat && filter.radius) {
+      workerProfessions = await Promise.all(
+        workerProfessions.map(async (workerProfession) => {
+          const locations = await this.databaseService.location.findMany({
+            where: {
+              workProfessionId: workerProfession.id,
+            },
+          });
+          const worker = await this.databaseService.worker.findFirst({
+            where: {
+              id: workerProfession.workerId,
+            },
+          });
 
-        let inArea = false;
+          let inArea = false;
 
-        locations.forEach((location) => {
-          const x =
-            Math.pow(location.latitude - filter.lat, 2) +
-            Math.pow(location.longitude - filter.long, 2);
-          const _r = location.radius / 111.32;
-          const r1 = Math.pow(_r + _radius, 2);
-          const r2 = Math.pow(_r - _radius, 2);
+          locations.forEach((location) => {
+            const x =
+              Math.pow(location.latitude - filter.lat, 2) +
+              Math.pow(location.longitude - filter.long, 2);
+            const _r = location.radius / 111.32;
+            const r1 = Math.pow(_r + _radius, 2);
+            const r2 = Math.pow(_r - _radius, 2);
 
-          if (x <= r1 || x < r2) {
-            inArea = true;
-          }
+            if (x <= r1 || x < r2) {
+              inArea = true;
+            }
 
-          if (worker && filter.address1 && filter.address2 && filter.address3) {
-            inArea =
-              worker.address1 === filter.address1 &&
-              worker.address2 === filter.address2 &&
-              worker.address3 === filter.address3;
-          }
-        });
+            if (worker && filter.address1 && filter.address2 && filter.address3) {
+              inArea =
+                worker.address1 === filter.address1 &&
+                worker.address2 === filter.address2 &&
+                worker.address3 === filter.address3;
+            }
+          });
 
-        return {
-          ...workerProfession,
-          inArea,
-        };
-      }),
-    );
+          return {
+            ...workerProfession,
+            inArea,
+          };
+        }),
+      );
 
-    workerProfessions = workerProfessions.filter((workerProfession) => workerProfession['inArea']);
+      workerProfessions = workerProfessions.filter(
+        (workerProfession) => workerProfession['inArea'],
+      );
+    }
 
     workerProfessions = await Promise.all(
       workerProfessions.map(async (order) => {
