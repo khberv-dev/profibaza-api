@@ -9,6 +9,7 @@ import CreateOrderDto from '../client/dto/create-order.dto';
 import CreateVacancyDto from './dto/create-vacancy.dto';
 import UpdateVacancyDto from './dto/update-vacancy.dto';
 import OfferDto from './dto/offer.dto';
+import CreateContactDto from './dto/create-contact.dto';
 
 @Controller('legal')
 @UseGuards(JwtAuthGuard)
@@ -42,6 +43,11 @@ export default class LegalController {
   @Post('create-order')
   async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
     return this.legalService.createOrder(user.roleUID, body);
+  }
+
+  @Post('contacts')
+  async addContact(@User() user: User, @Body() body: CreateContactDto) {
+    return this.legalService.createContact(user.roleUID, body);
   }
 
   @Get('orders')

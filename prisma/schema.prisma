@@ -176,20 +176,22 @@ model ResetPasswordRequest {
 
 model Contact {
   id      String      @id @default(uuid(4))
+  person  String
   contact String
   type    ContactType
 
-  clientId String @unique @map("client_id")
-  client   Client @relation(fields: [clientId], references: [id])
+  clientId String? @unique @map("client_id")
+  client   Client? @relation(fields: [clientId], references: [id])
 
-  legalId String @unique @map("legal_id")
-  legal   Legal  @relation(fields: [legalId], references: [id])
+  legalId String? @unique @map("legal_id")
+  legal   Legal?  @relation(fields: [legalId], references: [id])
 
-  workerId String @unique @map("worker_id")
-  worker   Worker @relation(fields: [workerId], references: [id])
+  workerId String? @unique @map("worker_id")
+  worker   Worker? @relation(fields: [workerId], references: [id])
 
-  createdAt DateTime @default(now()) @map("created_at")
-  updatedAt DateTime @updatedAt @map("updated_at")
+  deletedAt DateTime? @map("deleted_at")
+  createdAt DateTime  @default(now()) @map("created_at")
+  updatedAt DateTime  @updatedAt @map("updated_at")
 
   @@map("contacts")
 }

@@ -9,6 +9,7 @@ import CreateVacancyDto from './dto/create-vacancy.dto';
 import DatabaseService from '../database/database.service';
 import UpdateVacancyDto from './dto/update-vacancy.dto';
 import OfferDto from './dto/offer.dto';
+import CreateContactDto from './dto/create-contact.dto';
 
 @Injectable()
 export default class LegalService {
@@ -272,6 +273,24 @@ export default class LegalService {
       ok: true,
       message: {
         uz: 'Taklif qabul qilindi',
+      },
+    };
+  }
+
+  async createContact(legalId: string, data: CreateContactDto) {
+    await this.databaseService.contact.create({
+      data: {
+        legalId,
+        contact: data.contact,
+        person: data.person,
+        type: data.type,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Kontakt qo'shildi",
       },
     };
   }

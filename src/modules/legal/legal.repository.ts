@@ -23,6 +23,9 @@ export default class LegalRepository {
       where: {
         id,
       },
+      include: {
+        contacts: true,
+      },
     });
   }
 
