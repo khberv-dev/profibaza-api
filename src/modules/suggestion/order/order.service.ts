@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import OrderRepository from './order.repository';
 import DatabaseService from '../../database/database.service';
 import OrderFilterDto from './dto/order-filter.dto';
+import { Prisma } from '@prisma/client';
 
 @Injectable()
 export default class OrderService {
@@ -12,30 +13,35 @@ export default class OrderService {
 
   async findOrders(filter: OrderFilterDto) {
     const _radius = filter.radius / 111.32;
-    let workerProfessions = await this.orderRepository.findOrders({
-      where: {
-        minPrice: {
-          gte: filter.minPrice,
-        },
-        maxPrice: {
-          lte: filter.maxPrice,
-        },
-        profession: {
-          id: {
-            in: filter.professions,
-          },
-        },
-        locations: {
-          some: {
-            AND: [
-              { longitude: { gte: filter.long - _radius } },
-              { longitude: { lte: filter.long + _radius } },
-              { latitude: { gte: filter.lat - _radius } },
-              { latitude: { lte: filter.lat + _radius } },
-            ],
-          },
+    const workerProfessionFilter: Prisma.WorkerProfessionWhereInput = {
+      minPrice: {
+        gte: filter.minPrice,
+      },
+      maxPrice: {
+        lte: filter.maxPrice,
+      },
+      profession: {
+        id: {
+          in: filter.professions,
         },
       },
+    };
+
+    if (filter.long && filter.lat && filter.radius) {
+      workerProfessionFilter.locations = {
+        some: {
+          AND: [
+            { longitude: { gte: filter.long - _radius } },
+            { longitude: { lte: filter.long + _radius } },
+            { latitude: { gte: filter.lat - _radius } },
+            { latitude: { lte: filter.lat + _radius } },
+          ],
+        },
+      };
+    }
+
+    let workerProfessions = await this.orderRepository.findOrders({
+      where: workerProfessionFilter,
       include: {
         locations: {
           select: {
