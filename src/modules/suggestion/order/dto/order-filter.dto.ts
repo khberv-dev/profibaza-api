@@ -2,10 +2,12 @@ import { IsArray, IsInt, IsNumber, IsOptional, IsString } from 'class-validator'
 import { Transform, Type } from 'class-transformer';
 
 export default class OrderFilterDto {
+  @IsOptional()
   @Type(() => Number)
   @IsInt()
   minPrice: number;
 
+  @IsOptional()
   @Type(() => Number)
   @IsInt()
   maxPrice: number;

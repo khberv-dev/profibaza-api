@@ -13,19 +13,24 @@ export default class OrderService {
 
   async findOrders(filter: OrderFilterDto) {
     const _radius = filter.radius / 111.32;
-    const workerProfessionFilter: Prisma.WorkerProfessionWhereInput = {
-      minPrice: {
-        gte: filter.minPrice,
-      },
-      maxPrice: {
-        lte: filter.maxPrice,
-      },
-      profession: {
+    const workerProfessionFilter: Prisma.WorkerProfessionWhereInput = {};
+
+    if (filter.professions.length > 0) {
+      workerProfessionFilter.profession = {
         id: {
           in: filter.professions,
         },
-      },
-    };
+      };
+    }
+
+    if (filter.minPrice && filter.maxPrice) {
+      workerProfessionFilter.minPrice = {
+        gte: filter.minPrice,
+      };
+      workerProfessionFilter.maxPrice = {
+        lte: filter.maxPrice,
+      };
+    }
 
     if (filter.long && filter.lat && filter.radius) {
       workerProfessionFilter.locations = {
