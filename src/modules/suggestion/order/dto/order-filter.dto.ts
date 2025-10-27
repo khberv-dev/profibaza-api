@@ -27,6 +27,7 @@ export default class OrderFilterDto {
   @IsNumber()
   radius: number;
 
+  @IsOptional()
   @IsArray()
   @Transform(({ value }) => (typeof value === 'string' ? value.split(',') : value))
   @IsString({ each: true })

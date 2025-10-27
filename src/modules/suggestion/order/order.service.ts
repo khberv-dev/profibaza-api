@@ -15,7 +15,7 @@ export default class OrderService {
     const _radius = filter.radius / 111.32;
     const workerProfessionFilter: Prisma.WorkerProfessionWhereInput = {};
 
-    if (filter.professions.length > 0) {
+    if (filter.professions) {
       workerProfessionFilter.profession = {
         id: {
           in: filter.professions,
