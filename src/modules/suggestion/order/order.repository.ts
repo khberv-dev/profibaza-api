@@ -38,6 +38,7 @@ export default class OrderRepository {
         orders: true,
         schedule: true,
         demos: true,
+        experience: true,
       },
     });
   }
