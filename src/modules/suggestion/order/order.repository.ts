@@ -30,7 +30,7 @@ export default class OrderRepository {
                 surname: true,
                 name: true,
                 middleName: true,
-		phone: true,
+                phone: true,
                 avatar: true,
               },
             },

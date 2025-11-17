@@ -21127,495 +21127,3848 @@
     "name_oz": "Янгиҳаёт",
     "name_ru": "Янгихаят"
   },
-  
-  { "id": 100000, "soato_id": 1706401803, "district_id": 43, "name_uz": "M.Narshaxiy", "name_oz": "М.Наршахий", "name_ru": "М.Наршахий" },
-  { "id": 100001, "soato_id": 1706401803, "district_id": 43, "name_uz": "S.Bokharziy", "name_oz": "С.Бохарзий", "name_ru": "С.Бухарзий" },
-  { "id": 100002, "soato_id": 1706401803, "district_id": 43, "name_uz": "Furqat MFY", "name_oz": "Фурқат мфй", "name_ru": "Фуркат МФЙ" },
-  { "id": 100003, "soato_id": 1706401803, "district_id": 43, "name_uz": "A.Navoiy MFY", "name_oz": "А.Навоий мфй", "name_ru": "А.Навои МФЙ" },
-  { "id": 100004, "soato_id": 1706401803, "district_id": 43, "name_uz": "G'afur G'ulom", "name_oz": "Ғафур Ғулом", "name_ru": "Гафур Гулям" },
-  { "id": 100005, "soato_id": 1706401803, "district_id": 43, "name_uz": "Ko'kaldosh", "name_oz": "Кўкалдош", "name_ru": "Кукалдош" },
-  { "id": 100006, "soato_id": 1706401803, "district_id": 43, "name_uz": "I.Buxoriy", "name_oz": "И.Бухорий", "name_ru": "И.Бухари" },
-  { "id": 100007, "soato_id": 1706401803, "district_id": 43, "name_uz": "H.Olimjon", "name_oz": "Ҳ.Олимжон", "name_ru": "Х.Олимджон" },
-  { "id": 100008, "soato_id": 1706401803, "district_id": 43, "name_uz": "Jalol Ikromiy MFY", "name_oz": "Жалол Икромий МФЙ", "name_ru": "Джалол Икромий МФЙ" },
-  { "id": 100009, "soato_id": 1706401803, "district_id": 43, "name_uz": "A.Fitrat", "name_oz": "А.Фитрат", "name_ru": "А.Фитрат" },
-  { "id": 100010, "soato_id": 1706401803, "district_id": 43, "name_uz": "S.Sheroziy", "name_oz": "С.Шерозий", "name_ru": "С.Ширази" },
-  { "id": 100011, "soato_id": 1706401803, "district_id": 43, "name_uz": "Xuja G'unjoriy", "name_oz": "Хужа Гунжорий", "name_ru": "Ходжа Гунжорий" },
-  { "id": 100012, "soato_id": 1706401803, "district_id": 43, "name_uz": "Jubor MFY", "name_oz": "Жубор МФЙ", "name_ru": "Жубор МФЙ" },
-  { "id": 100013, "soato_id": 1706401803, "district_id": 43, "name_uz": "Abu Ali ibn Sino", "name_oz": "Абу Али ибн Сино", "name_ru": "Абу Али ибн Сина" },
-  { "id": 100014, "soato_id": 1706401803, "district_id": 43, "name_uz": "Nizomiy", "name_oz": "Низомий", "name_ru": "Низами" },
-  { "id": 100015, "soato_id": 1706401803, "district_id": 43, "name_uz": "M.Ashrafiy", "name_oz": "М.Ашрафий", "name_ru": "М.Ашрафи" },
-  { "id": 100016, "soato_id": 1706401803, "district_id": 43, "name_uz": "Sobir Rahimov", "name_oz": "Собир Рахимов", "name_ru": "Собир Рахимов" },
-  { "id": 100017, "soato_id": 1706401803, "district_id": 43, "name_uz": "Dilkusho MFY", "name_oz": "ДИЛКУШО МФЙ", "name_ru": "Дилкушо МФЙ" },
-  { "id": 100018, "soato_id": 1706401803, "district_id": 43, "name_uz": "F.Xujayev", "name_oz": "Ф.Хужаев", "name_ru": "Ф.Ходжаев" },
-  { "id": 100019, "soato_id": 1706401803, "district_id": 43, "name_uz": "M.Ulug'bek", "name_oz": "М.Улуғбек", "name_ru": "М.Улугбек" },
-  { "id": 100020, "soato_id": 1706401803, "district_id": 43, "name_uz": "Shergiron", "name_oz": "Шергирон", "name_ru": "Шергирон" },
-  { "id": 100021, "soato_id": 1706401803, "district_id": 43, "name_uz": "Chorbahossa MFY", "name_oz": "Чорбахосса МФЙ", "name_ru": "Чорбахосса МФЙ" },
-  { "id": 100022, "soato_id": 1706401803, "district_id": 43, "name_uz": "Ko'ksaroy", "name_oz": "Кўксарой", "name_ru": "Куксарой" },
-  { "id": 100023, "soato_id": 1706401803, "district_id": 43, "name_uz": "Shayx ul Olam", "name_oz": "Шайх ул Олам", "name_ru": "Шейх уль Алам" },
-  { "id": 100024, "soato_id": 1706401803, "district_id": 43, "name_uz": "Moxi-xossa MFY", "name_oz": "Мохи-хосса МФЙ", "name_ru": "Мохи-хосса МФЙ" },
-  { "id": 100025, "soato_id": 1706401803, "district_id": 43, "name_uz": "Turki Jandi MFY", "name_oz": "Турки Жанди МФЙ", "name_ru": "Турки Жанди МФЙ" },
-  { "id": 100026, "soato_id": 1706401803, "district_id": 43, "name_uz": "Sharq Yulduzi", "name_oz": "Шарк Юлдузи", "name_ru": "Шарк Юлдузи" },
-  { "id": 100027, "soato_id": 1706401803, "district_id": 43, "name_uz": "M.Burxonov", "name_oz": "М.Бурхонов", "name_ru": "М.Бурханов" },
-  { "id": 100028, "soato_id": 1706401803, "district_id": 43, "name_uz": "Gulchorbog'", "name_oz": "Гулчорбоғ", "name_ru": "Гульчорбаг" },
-  { "id": 100029, "soato_id": 1706401803, "district_id": 43, "name_uz": "Xavzi-nav MFY", "name_oz": "Хавзи-нав МФЙ", "name_ru": "Хавзи-нав МФЙ" },
-  { "id": 100030, "soato_id": 1706401803, "district_id": 43, "name_uz": "Yangiobod", "name_oz": "Янгиобод", "name_ru": "Янгиабад" },
-  { "id": 100031, "soato_id": 1706401803, "district_id": 43, "name_uz": "Guliston", "name_oz": "Гулистон", "name_ru": "Гулистан" },
-  { "id": 100032, "soato_id": 1706401803, "district_id": 43, "name_uz": "Abduholiq G'ijduvoniy", "name_oz": "Абдуҳолиқ Ғиждувоний", "name_ru": "Абдухолик Гиждувоний" },
-  { "id": 100033, "soato_id": 1706401803, "district_id": 43, "name_uz": "Navro'z", "name_oz": "Наврўз", "name_ru": "Навруз" },
-  { "id": 100034, "soato_id": 1706401803, "district_id": 43, "name_uz": "Bunyodkor", "name_oz": "Бунёдкор", "name_ru": "Бунёдкор" },
-  { "id": 100035, "soato_id": 1706401803, "district_id": 43, "name_uz": "Zarafshon", "name_oz": "ЗАРАФШОН", "name_ru": "Зарафшан" },
-  { "id": 100036, "soato_id": 1706401803, "district_id": 43, "name_uz": "A.Temur MFY", "name_oz": "А.Темур МФЙ", "name_ru": "А.Темур МФЙ" },
-  { "id": 100037, "soato_id": 1706401803, "district_id": 43, "name_uz": "Piridastgir", "name_oz": "Пиридастгир", "name_ru": "Пиридастгир" },
-  { "id": 100038, "soato_id": 1706401803, "district_id": 43, "name_uz": "Shodlik", "name_oz": "Шодлик", "name_ru": "Шодлик" },
-  { "id": 100039, "soato_id": 1706401803, "district_id": 43, "name_uz": "Razzoq Hamroyev", "name_oz": "Раззоқ Ҳамроев", "name_ru": "Раззак Хамроев" },
-  { "id": 100040, "soato_id": 1706401803, "district_id": 43, "name_uz": "Gulshan", "name_oz": "Гулшан", "name_ru": "Гульшан" },
-  { "id": 100041, "soato_id": 1706401803, "district_id": 43, "name_uz": "Varaxsha MFY", "name_oz": "Варахша МФЙ", "name_ru": "Варахша МФЙ" },
-  { "id": 100042, "soato_id": 1706401803, "district_id": 43, "name_uz": "Olim Xujayev MFY", "name_oz": "Олим Хужаев МФЙ", "name_ru": "Олим Ходжаев МФЙ" },
-  { "id": 100043, "soato_id": 1706401803, "district_id": 43, "name_uz": "To'qimachi", "name_oz": "Тўқимачи", "name_ru": "Тукимачи" },
-  { "id": 100044, "soato_id": 1706401803, "district_id": 43, "name_uz": "Foshun", "name_oz": "Фошун", "name_ru": "Фошун" },
-  { "id": 100045, "soato_id": 1706401803, "district_id": 43, "name_uz": "Dostlik", "name_oz": "Дустлик", "name_ru": "Дустлик" },
-  { "id": 100046, "soato_id": 1706401803, "district_id": 43, "name_uz": "Istiqlol", "name_oz": "Истиқлол", "name_ru": "Истиклол" },
-  { "id": 100047, "soato_id": 1706401803, "district_id": 43, "name_uz": "Yoshlik", "name_oz": "Ёшлик", "name_ru": "Ёшлик" },
-  { "id": 100048, "soato_id": 1706401803, "district_id": 43, "name_uz": "Navbahor", "name_oz": "Навбахор", "name_ru": "Навбахор" },
-  { "id": 100049, "soato_id": 1706401803, "district_id": 43, "name_uz": "Namozgoh", "name_oz": "Намозгох", "name_ru": "Намазгах" },
-  { "id": 100050, "soato_id": 1706401803, "district_id": 43, "name_uz": "B.Nakshband", "name_oz": "Б.Накшбанд", "name_ru": "Б.Накшбанд" },
-  { "id": 100051, "soato_id": 1706401803, "district_id": 43, "name_uz": "Avshormahalla MFY", "name_oz": "Авшормахалла МФЙ", "name_ru": "Авшормахалла МФЙ" },
-  { "id": 100052, "soato_id": 1706401803, "district_id": 43, "name_uz": "M.Tarobiy", "name_oz": "М.Таробий", "name_ru": "М.Тарабий" },
-  { "id": 100053, "soato_id": 1706401803, "district_id": 43, "name_uz": "Losha", "name_oz": "Лоша", "name_ru": "Лоша" },
-  { "id": 100054, "soato_id": 1706401803, "district_id": 43, "name_uz": "S.Ayniy", "name_oz": "С.Айний", "name_ru": "С.Айний" },
-  { "id": 100055, "soato_id": 1706401803, "district_id": 43, "name_uz": "A.Donish MFY", "name_oz": "А.Дониш МФЙ", "name_ru": "А.Дониш МФЙ" },
-  { "id": 100056, "soato_id": 1706401803, "district_id": 43, "name_uz": "Bihishtiyon", "name_oz": "Бихиштиён", "name_ru": "Бихиштиён" },
-  { "id": 100057, "soato_id": 1706401803, "district_id": 43, "name_uz": "Toshmachit", "name_oz": "Тошмачит", "name_ru": "Тошмачит" },
-  { "id": 100058, "soato_id": 1706401803, "district_id": 43, "name_uz": "Oybek MFY", "name_oz": "Ойбек МФЙ", "name_ru": "Ойбек МФЙ" },
-  { "id": 100059, "soato_id": 1706401803, "district_id": 43, "name_uz": "Xujamushkin MFY", "name_oz": "Хужамушкин МФЙ", "name_ru": "Хужамушкин МФЙ" },
-  { "id": 100060, "soato_id": 1706401803, "district_id": 43, "name_uz": "Bogidasht", "name_oz": "БОГИДАШТ", "name_ru": "Богидашт" },
-  { "id": 100061, "soato_id": 1706401803, "district_id": 43, "name_uz": "A.Sifatmuniy", "name_oz": "А.Сифатмуний", "name_ru": "А.Сифатмуний" },
-  { "id": 100062, "soato_id": 1706401803, "district_id": 43, "name_uz": "Shayxon MFY", "name_oz": "Шайхон МФЙ", "name_ru": "Шайхон МФЙ" },
-  { "id": 100063, "soato_id": 1706401803, "district_id": 43, "name_uz": "Otbozor", "name_oz": "Отбозор", "name_ru": "Атбазар" },
-  { "id": 100064, "soato_id": 1706401803, "district_id": 43, "name_uz": "Shirbudin MFY", "name_oz": "Ширбудин МФЙ", "name_ru": "Ширбудин МФЙ" },
-  
-  { "id": 100065, "soato_id": 1706401803, "district_id": 44, "name_uz": "Arabxona", "name_oz": "Арабхона", "name_ru": "Арабхона" },
-  { "id": 100066, "soato_id": 1706401803, "district_id": 44, "name_uz": "Bunyodkor", "name_oz": "Бунёдкор", "name_ru": "Бунёдкор" },
-  { "id": 100067, "soato_id": 1706401803, "district_id": 44, "name_uz": "Mahtumquli", "name_oz": "Маҳтумқули", "name_ru": "Махтумкули" },
-  { "id": 100068, "soato_id": 1706401803, "district_id": 44, "name_uz": "Zirabod", "name_oz": "Зирабод", "name_ru": "Зирабад" },
-  { "id": 100069, "soato_id": 1706401803, "district_id": 44, "name_uz": "Abdulla Qodiriy", "name_oz": "Абдулла Қодирий", "name_ru": "Абдулла Кадыри" },
-  { "id": 100070, "soato_id": 1706401803, "district_id": 44, "name_uz": "A.Navoiy", "name_oz": "А.Навоий", "name_ru": "А.Навои" },
-  { "id": 100071, "soato_id": 1706401803, "district_id": 44, "name_uz": "Ziyokor", "name_oz": "Зиёкор", "name_ru": "Зиякор" },
-  { "id": 100072, "soato_id": 1706401803, "district_id": 44, "name_uz": "Xujabargi", "name_oz": "Хўжабарги", "name_ru": "Ходжабарги" },
-  { "id": 100073, "soato_id": 1706401803, "district_id": 44, "name_uz": "Bobur", "name_oz": "Бобур", "name_ru": "Бабур" },
-  { "id": 100074, "soato_id": 1706401803, "district_id": 44, "name_uz": "Adolat", "name_oz": "Адолат", "name_ru": "Адолат" },
-  { "id": 100075, "soato_id": 1706401803, "district_id": 44, "name_uz": "Temiryo'lchi", "name_oz": "Темирйўлчи", "name_ru": "Темирйулчи" },
-  { "id": 100076, "soato_id": 1706401803, "district_id": 44, "name_uz": "Amir Temur", "name_oz": "Амир Темур", "name_ru": "Амир Тимур" },
-  { "id": 100077, "soato_id": 1706401803, "district_id": 44, "name_uz": "Istiqlol", "name_oz": "Истиқлол", "name_ru": "Истиклол" },
-  { "id": 100078, "soato_id": 1706401803, "district_id": 44, "name_uz": "Buxoroi sharif", "name_oz": "Бухорои шариф", "name_ru": "Бухороишариф" },
-  { "id": 100079, "soato_id": 1706401803, "district_id": 44, "name_uz": "Beruniy", "name_oz": "Беруний", "name_ru": "Беруни" },
-  { "id": 100080, "soato_id": 1706401803, "district_id": 44, "name_uz": "Turkiston", "name_oz": "Туркистон", "name_ru": "Туркестан" },
-  { "id": 100081, "soato_id": 1706401803, "district_id": 44, "name_uz": "Mirzo Ulug'bek", "name_oz": "Мирзо Улуғбек", "name_ru": "Мирзо Улугбек" },
-  { "id": 100082, "soato_id": 1706401803, "district_id": 44, "name_uz": "Mustaqillik", "name_oz": "Мустақиллик", "name_ru": "Мустакиллик" },
-  { "id": 100083, "soato_id": 1706401803, "district_id": 44, "name_uz": "Vatanparvar", "name_oz": "Ватанпарвар", "name_ru": "Ватанпарвар" },
-  
-  { "id": 100084, "soato_id": 1706401803, "district_id": 33, "name_uz": "Ko'chko'mar", "name_oz": "Кўчкўмар", "name_ru": "Кучкумар" },
-  { "id": 100085, "soato_id": 1706401803, "district_id": 33, "name_uz": "Qavola Mahmud", "name_oz": "Қавола Махмуд", "name_ru": "Кавола Махмуд" },
-  { "id": 100086, "soato_id": 1706401803, "district_id": 33, "name_uz": "Sufikorgar", "name_oz": "Сўфикоргар", "name_ru": "Суфикоргар" },
-  { "id": 100087, "soato_id": 1706401803, "district_id": 33, "name_uz": "Bog'ikalon", "name_oz": "Боғикалон", "name_ru": "Богикалон" },
-  { "id": 100088, "soato_id": 1706401803, "district_id": 33, "name_uz": "Qo'shxo'dim", "name_oz": "Қўшходим", "name_ru": "Кушходим" },
-  { "id": 100089, "soato_id": 1706401803, "district_id": 33, "name_uz": "Robotak", "name_oz": "Работак", "name_ru": "Работак" },
-  { "id": 100090, "soato_id": 1706401803, "district_id": 33, "name_uz": "Mustaqillik", "name_oz": "Мустақиллик", "name_ru": "Мустакиллик" },
-  { "id": 100091, "soato_id": 1706401803, "district_id": 33, "name_uz": "Galaosiyo", "name_oz": "Галаосиё", "name_ru": "Галаасия" },
-  { "id": 100092, "soato_id": 1706401803, "district_id": 33, "name_uz": "Do'stlik", "name_oz": "Дўстлик", "name_ru": "Дустлик" },
-  { "id": 100093, "soato_id": 1706401803, "district_id": 33, "name_uz": "Navro'z", "name_oz": "Наврўз", "name_ru": "Навруз" },
-  { "id": 100094, "soato_id": 1706401803, "district_id": 33, "name_uz": "Oybek", "name_oz": "Ойбек", "name_ru": "Ойбек" },
-  { "id": 100095, "soato_id": 1706401803, "district_id": 33, "name_uz": "Xonobod", "name_oz": "Хонобод", "name_ru": "Хонабад" },
-  { "id": 100096, "soato_id": 1706401803, "district_id": 33, "name_uz": "Robotipoyon", "name_oz": "Работипоён", "name_ru": "Работипоён" },
-  { "id": 100097, "soato_id": 1706401803, "district_id": 33, "name_uz": "Shergiron", "name_oz": "Шергирон", "name_ru": "Шергирон" },
-  { "id": 100098, "soato_id": 1706401803, "district_id": 33, "name_uz": "Amirobod Guliston", "name_oz": "Амиробод Гулистон", "name_ru": "Амиробод Гулистан" },
-  { "id": 100099, "soato_id": 1706401803, "district_id": 33, "name_uz": "Robotiqalmoq", "name_oz": "Работиқалмоқ", "name_ru": "Работикалмак" },
-  { "id": 100100, "soato_id": 1706401803, "district_id": 33, "name_uz": "Dexcha", "name_oz": "Дехча", "name_ru": "Дехча" },
-  { "id": 100101, "soato_id": 1706401803, "district_id": 33, "name_uz": "Arabxona", "name_oz": "Арабхона", "name_ru": "Арабхона" },
-  { "id": 100102, "soato_id": 1706401803, "district_id": 33, "name_uz": "Podshoxi", "name_oz": "Подшохи", "name_ru": "Падшахи" },
-  { "id": 100103, "soato_id": 1706401803, "district_id": 33, "name_uz": "Madaniyat Robot", "name_oz": "Маданият Работ", "name_ru": "Маданият Работ" },
-  { "id": 100104, "soato_id": 1706401803, "district_id": 33, "name_uz": "Shexoncha", "name_oz": "Шехонча", "name_ru": "Шехонча" },
-  { "id": 100105, "soato_id": 1706401803, "district_id": 33, "name_uz": "Kunjikal'a", "name_oz": "Кунжи Калъа", "name_ru": "Кунджи Калъа" },
-  { "id": 100106, "soato_id": 1706401803, "district_id": 33, "name_uz": "Novmetan", "name_oz": "Новметан", "name_ru": "Новметан" },
-  { "id": 100107, "soato_id": 1706401803, "district_id": 33, "name_uz": "Yangiobod", "name_oz": "Янгиобод", "name_ru": "Янгиабад" },
-  { "id": 100108, "soato_id": 1706401803, "district_id": 33, "name_uz": "Zarmanok", "name_oz": "Зарманок", "name_ru": "Зарманак" },
-  { "id": 100109, "soato_id": 1706401803, "district_id": 33, "name_uz": "Talaliyon", "name_oz": "Талалиён", "name_ru": "Талалиён" },
-  { "id": 100110, "soato_id": 1706401803, "district_id": 33, "name_uz": "Kulonxona", "name_oz": "Кулонхона", "name_ru": "Кулонхона" },
-  { "id": 100111, "soato_id": 1706401803, "district_id": 33, "name_uz": "Dilobod Zafarobod", "name_oz": "Дилобод Зафаробод", "name_ru": "Дилобод Зафаробод" },
-  { "id": 100112, "soato_id": 1706401803, "district_id": 33, "name_uz": "Xumin", "name_oz": "Хумин", "name_ru": "Хумин" },
-  { "id": 100113, "soato_id": 1706401803, "district_id": 33, "name_uz": "Bog'dasht", "name_oz": "Боғдашт", "name_ru": "Богдашт" },
-  { "id": 100114, "soato_id": 1706401803, "district_id": 33, "name_uz": "Gulshanobod", "name_oz": "Гулшанобод", "name_ru": "Гульшанабад" },
-  { "id": 100115, "soato_id": 1706401803, "district_id": 33, "name_uz": "Yangi turmush", "name_oz": "Янги турмуш", "name_ru": "Янги Турмуш" },
-  { "id": 100116, "soato_id": 1706401803, "district_id": 33, "name_uz": "Turkon", "name_oz": "Туркон", "name_ru": "Туркон" },
-  { "id": 100117, "soato_id": 1706401803, "district_id": 33, "name_uz": "Istiqbol", "name_oz": "Истикбол", "name_ru": "Истикбол" },
-  { "id": 100118, "soato_id": 1706401803, "district_id": 33, "name_uz": "Saxovat", "name_oz": "Саховат", "name_ru": "Саховат" },
-  { "id": 100119, "soato_id": 1706401803, "district_id": 33, "name_uz": "Sohibkor", "name_oz": "Сохибкор", "name_ru": "Сохибкор" },
-  
-  { "id": 100120, "soato_id": 1706401804, "district_id": 34, "name_uz": "Anjirbog'", "name_oz": "Анжирбоғ", "name_ru": "Анжирбаг" },
-  { "id": 100121, "soato_id": 1706401804, "district_id": 34, "name_uz": "Beshrobot", "name_oz": "Бешработ", "name_ru": "Бешработ" },
-  { "id": 100122, "soato_id": 1706401804, "district_id": 34, "name_uz": "Bozorjoyi", "name_oz": "Бозоржойи", "name_ru": "Базарджойи" },
-  { "id": 100123, "soato_id": 1706401804, "district_id": 34, "name_uz": "Vobkent", "name_oz": "Вобкент", "name_ru": "Вабкент" },
-  { "id": 100124, "soato_id": 1706401804, "district_id": 34, "name_uz": "Guliston", "name_oz": "Гулистон", "name_ru": "Гулистан" },
-  { "id": 100125, "soato_id": 1706401804, "district_id": 34, "name_uz": "Diyor", "name_oz": "Диёр", "name_ru": "Диёр" },
-  { "id": 100126, "soato_id": 1706401804, "district_id": 34, "name_uz": "Do'stlik", "name_oz": "Дўстлик", "name_ru": "Дустлик" },
-  { "id": 100127, "soato_id": 1706401804, "district_id": 34, "name_uz": "Istiqlol", "name_oz": "Истиқлол", "name_ru": "Истиклол" },
-  { "id": 100128, "soato_id": 1706401804, "district_id": 34, "name_uz": "Kosari", "name_oz": "Косари", "name_ru": "Косари" },
-  { "id": 100129, "soato_id": 1706401804, "district_id": 34, "name_uz": "Ko'liodina", "name_oz": "Кўлиодина", "name_ru": "Кулиодина" },
-  { "id": 100130, "soato_id": 1706401804, "district_id": 34, "name_uz": "Kulolchi", "name_oz": "Кулолчи", "name_ru": "Кулолчи" },
-  { "id": 100131, "soato_id": 1706401804, "district_id": 34, "name_uz": "Kulxatib", "name_oz": "Кулхатиб", "name_ru": "Кулхатиб" },
-  { "id": 100132, "soato_id": 1706401804, "district_id": 34, "name_uz": "Kumushkent", "name_oz": "Кумушкент", "name_ru": "Кумушкент" },
-  { "id": 100133, "soato_id": 1706401804, "district_id": 34, "name_uz": "Quruvchi MFY", "name_oz": "Курувчи МФЙ", "name_ru": "Курувчи МФЙ" },
-  { "id": 100134, "soato_id": 1706401804, "district_id": 34, "name_uz": "Qatag'an", "name_oz": "Қатаған", "name_ru": "Катаган" },
-  { "id": 100135, "soato_id": 1706401804, "district_id": 34, "name_uz": "Qo'qin", "name_oz": "Қўқин", "name_ru": "Кокин" },
-  { "id": 100136, "soato_id": 1706401804, "district_id": 34, "name_uz": "Latifsobungar", "name_oz": "Латифсобунгар", "name_ru": "Латифсобунгар" },
-  { "id": 100137, "soato_id": 1706401804, "district_id": 34, "name_uz": "Mirvoshi", "name_oz": "Мирвоши", "name_ru": "Мирвоши" },
-  { "id": 100138, "soato_id": 1706401804, "district_id": 34, "name_uz": "Muminobod", "name_oz": "Муминобод", "name_ru": "Муминобод" },
-  { "id": 100139, "soato_id": 1706401804, "district_id": 34, "name_uz": "Nayman", "name_oz": "Найман", "name_ru": "Найман" },
-  { "id": 100140, "soato_id": 1706401804, "district_id": 34, "name_uz": "Niyozxo'ja", "name_oz": "Ниёзхўжа", "name_ru": "Ниёзходжа" },
-  { "id": 100141, "soato_id": 1706401804, "district_id": 34, "name_uz": "Ponob", "name_oz": "Поноб", "name_ru": "Поноб" },
-  { "id": 100142, "soato_id": 1706401804, "district_id": 34, "name_uz": "Rozmoz", "name_oz": "Розмоз", "name_ru": "Розмоз" },
-  { "id": 100143, "soato_id": 1706401804, "district_id": 34, "name_uz": "Sariosiyo", "name_oz": "Сариосиё", "name_ru": "Сариасия" },
-  { "id": 100144, "soato_id": 1706401804, "district_id": 34, "name_uz": "Sufidehqon", "name_oz": "Сўфидеҳқон", "name_ru": "Суфидехкон" },
-  { "id": 100145, "soato_id": 1706401804, "district_id": 34, "name_uz": "Teraklik", "name_oz": "Тераклик", "name_ru": "Тераклик" },
-  { "id": 100146, "soato_id": 1706401804, "district_id": 34, "name_uz": "O'zbakon", "name_oz": "Ўзбакон", "name_ru": "Узбакон" },
-  { "id": 100147, "soato_id": 1706401804, "district_id": 34, "name_uz": "Xajuvon", "name_oz": "Хажувон", "name_ru": "Хаджуван" },
-  { "id": 100148, "soato_id": 1706401804, "district_id": 34, "name_uz": "Xayrxush", "name_oz": "Хайрхуш", "name_ru": "Хайрхуш" },
-  { "id": 100149, "soato_id": 1706401804, "district_id": 34, "name_uz": "Xayrobod", "name_oz": "Хайробод", "name_ru": "Хайрабад" },
-  { "id": 100150, "soato_id": 1706401804, "district_id": 34, "name_uz": "Xalach", "name_oz": "Халач", "name_ru": "Халач" },
-  { "id": 100151, "soato_id": 1706401804, "district_id": 34, "name_uz": "Xo'jarabot", "name_oz": "Хўжаработ", "name_ru": "Хужаработ" },
-  { "id": 100152, "soato_id": 1706401804, "district_id": 34, "name_uz": "Changaron", "name_oz": "Чангарон", "name_ru": "Чангарон" },
-  { "id": 100153, "soato_id": 1706401804, "district_id": 34, "name_uz": "Charmgaron", "name_oz": "Чармгарон", "name_ru": "Чармгарон" },
-  { "id": 100154, "soato_id": 1706401804, "district_id": 34, "name_uz": "Cho'rikalon", "name_oz": "Чўрикалон", "name_ru": "Чурикалон" },
-  { "id": 100155, "soato_id": 1706401804, "district_id": 34, "name_uz": "Shakarkent", "name_oz": "Шакаркент", "name_ru": "Шакаркент" },
-  { "id": 100156, "soato_id": 1706401804, "district_id": 34, "name_uz": "Shanba", "name_oz": "Шанба", "name_ru": "Шанба" },
-  { "id": 100157, "soato_id": 1706401804, "district_id": 34, "name_uz": "Shirin", "name_oz": "Ширин", "name_ru": "Ширин" },
-  { "id": 100158, "soato_id": 1706401804, "district_id": 34, "name_uz": "Shohnigor", "name_oz": "Шоҳнигор", "name_ru": "Шохнигор" },
-  
-  { "id": 100159, "soato_id": 1706401805, "district_id": 41, "name_uz": "Romish MFY", "name_oz": "Ромиш МФЙ", "name_ru": "Ромиш МФЙ" },
-  { "id": 100160, "soato_id": 1706401805, "district_id": 41, "name_uz": "Mirzayon MFY", "name_oz": "Мирзаён МФЙ", "name_ru": "Мирзаён МФЙ" },
-  { "id": 100161, "soato_id": 1706401805, "district_id": 41, "name_uz": "Jamiyat", "name_oz": "Жамият", "name_ru": "Жамият" },
-  { "id": 100162, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qazoqon", "name_oz": "Қазоқон", "name_ru": "Казакон" },
-  { "id": 100163, "soato_id": 1706401805, "district_id": 41, "name_uz": "Oqtepa", "name_oz": "Оқтепа", "name_ru": "Октепа" },
-  { "id": 100164, "soato_id": 1706401805, "district_id": 41, "name_uz": "Yosh kuch", "name_oz": "Ёш куч", "name_ru": "Ёш куч" },
-  { "id": 100165, "soato_id": 1706401805, "district_id": 41, "name_uz": "Luqmon", "name_oz": "Луқмон", "name_ru": "Лукмон" },
-  { "id": 100166, "soato_id": 1706401805, "district_id": 41, "name_uz": "Oydin", "name_oz": "Ойдин", "name_ru": "Айдин" },
-  { "id": 100167, "soato_id": 1706401805, "district_id": 41, "name_uz": "Ibn Sino", "name_oz": "Ибн Сино", "name_ru": "Ибн Сина" },
-  { "id": 100168, "soato_id": 1706401805, "district_id": 41, "name_uz": "Dalmunobod", "name_oz": "Далмунобод", "name_ru": "Далмунобод" },
-  { "id": 100169, "soato_id": 1706401805, "district_id": 41, "name_uz": "Istiqlol", "name_oz": "Истиқлол", "name_ru": "Истиклол" },
-  { "id": 100170, "soato_id": 1706401805, "district_id": 41, "name_uz": "Hazorman", "name_oz": "Ҳазорман", "name_ru": "Хазорман" },
-  { "id": 100171, "soato_id": 1706401805, "district_id": 41, "name_uz": "Sho'robo'd", "name_oz": "Шўробод", "name_ru": "Шурабад" },
-  { "id": 100172, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qozikenti", "name_oz": "Қозикенти", "name_ru": "Казикенти" },
-  { "id": 100173, "soato_id": 1706401805, "district_id": 41, "name_uz": "Boliob", "name_oz": "Болиоб", "name_ru": "Балиоб" },
-  { "id": 100174, "soato_id": 1706401805, "district_id": 41, "name_uz": "Denov", "name_oz": "Денов", "name_ru": "Денов" },
-  { "id": 100175, "soato_id": 1706401805, "district_id": 41, "name_uz": "Murgak", "name_oz": "Мургак", "name_ru": "Мургак" },
-  { "id": 100176, "soato_id": 1706401805, "district_id": 41, "name_uz": "Xumdonak", "name_oz": "Хумдонак", "name_ru": "Хумдонак" },
-  { "id": 100177, "soato_id": 1706401805, "district_id": 41, "name_uz": "Ko'liyon", "name_oz": "Кўлиён", "name_ru": "Кулиён" },
-  { "id": 100178, "soato_id": 1706401805, "district_id": 41, "name_uz": "Puloti MFY", "name_oz": "Пулоти МФЙ", "name_ru": "Пулоти МФЙ" },
-  { "id": 100179, "soato_id": 1706401805, "district_id": 41, "name_uz": "Ushot MFY", "name_oz": "Ушот МФЙ", "name_ru": "Ушот МФЙ" },
-  { "id": 100180, "soato_id": 1706401805, "district_id": 41, "name_uz": "Samonchuq", "name_oz": "Самончуқ", "name_ru": "Самончук" },
-  { "id": 100181, "soato_id": 1706401805, "district_id": 41, "name_uz": "Zangi", "name_oz": "Занги", "name_ru": "Занги" },
-  { "id": 100182, "soato_id": 1706401805, "district_id": 41, "name_uz": "Xumin", "name_oz": "Хумин", "name_ru": "Хумин" },
-  { "id": 100183, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qalmoq", "name_oz": "Қалмоқ", "name_ru": "Калмак" },
-  { "id": 100184, "soato_id": 1706401805, "district_id": 41, "name_uz": "Pahlavon", "name_oz": "Пахлавон", "name_ru": "Пахлаван" },
-  { "id": 100185, "soato_id": 1706401805, "district_id": 41, "name_uz": "Xo'jahayron", "name_oz": "Хўжахайрон", "name_ru": "Хужахайрон" },
-  { "id": 100186, "soato_id": 1706401805, "district_id": 41, "name_uz": "Dovud", "name_oz": "Довуд", "name_ru": "Давуд" },
-  { "id": 100187, "soato_id": 1706401805, "district_id": 41, "name_uz": "Pochchoyi", "name_oz": "Поччойи", "name_ru": "Поччойи" },
-  { "id": 100188, "soato_id": 1706401805, "district_id": 41, "name_uz": "Eronshoh", "name_oz": "Эроншоҳ", "name_ru": "Эроншох" },
-  { "id": 100189, "soato_id": 1706401805, "district_id": 41, "name_uz": "Bahoriston", "name_oz": "Баҳористон", "name_ru": "Бахористон" },
-  { "id": 100190, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qorovul", "name_oz": "Қoрoвул", "name_ru": "Каравул" },
-  { "id": 100191, "soato_id": 1706401805, "district_id": 41, "name_uz": "Darveshi", "name_oz": "Дарвеши", "name_ru": "Дарвеши" },
-  { "id": 100192, "soato_id": 1706401805, "district_id": 41, "name_uz": "Yangiobod", "name_oz": "Янгиобод", "name_ru": "Янгиобод" },
-  { "id": 100193, "soato_id": 1706401805, "district_id": 41, "name_uz": "Chorzona", "name_oz": "Чорзона", "name_ru": "Чарзона" },
-  { "id": 100194, "soato_id": 1706401805, "district_id": 41, "name_uz": "Tobagar", "name_oz": "Тобагар", "name_ru": "Табагар" },
-  { "id": 100195, "soato_id": 1706401805, "district_id": 41, "name_uz": "Nurafshon", "name_oz": "Нурафшон", "name_ru": "Нурафшон" },
-  { "id": 100196, "soato_id": 1706401805, "district_id": 41, "name_uz": "Mustaqillik", "name_oz": "Мустақиллик", "name_ru": "Мустакиллик" },
-  { "id": 100197, "soato_id": 1706401805, "district_id": 41, "name_uz": "Oytug'di", "name_oz": "Ойтўғди", "name_ru": "Айтугди" },
-  { "id": 100198, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qaroli", "name_oz": "Қароли", "name_ru": "Кароли" },
-  { "id": 100199, "soato_id": 1706401805, "district_id": 41, "name_uz": "Tinchlik", "name_oz": "Тинчлик", "name_ru": "Тинчлик" },
-  { "id": 100200, "soato_id": 1706401805, "district_id": 41, "name_uz": "Oxshikh MFY", "name_oz": "Охших МФЙ", "name_ru": "Охших МФЙ" },
-  { "id": 100201, "soato_id": 1706401805, "district_id": 41, "name_uz": "Rabot MFY", "name_oz": "Работ МФЙ", "name_ru": "Работ МФЙ" },
-  { "id": 100202, "soato_id": 1706401805, "district_id": 41, "name_uz": "Namgoni", "name_oz": "Намгони", "name_ru": "Намгони" },
-  { "id": 100203, "soato_id": 1706401805, "district_id": 41, "name_uz": "Aleli MFY", "name_oz": "Алели МФЙ", "name_ru": "Алели МФЙ" },
-  { "id": 100204, "soato_id": 1706401805, "district_id": 41, "name_uz": "Obod MFY", "name_oz": "Обод МФЙ", "name_ru": "Обод МФЙ" },
-  { "id": 100205, "soato_id": 1706401805, "district_id": 41, "name_uz": "Jondor", "name_oz": "Жондор", "name_ru": "Жондор" },
-  { "id": 100206, "soato_id": 1706401805, "district_id": 41, "name_uz": "Zarafshon MFY", "name_oz": "Зарафшон МФЙ", "name_ru": "Зарафшон МФЙ" },
-  { "id": 100207, "soato_id": 1706401805, "district_id": 41, "name_uz": "Qovchin", "name_oz": "Қовчин", "name_ru": "Ковчин" },
-  { "id": 100208, "soato_id": 1706401805, "district_id": 41, "name_uz": "Navgadi MFY", "name_oz": "Навгади МФЙ", "name_ru": "Навгади МФЙ" },
-  
-   { "id": 100000, "soato_id": 1706401803, "district_id": 36, "name_uz": "B.Nakshband", "name_oz": "Б.Накшбанд", "name_ru": "Б.Накшбанд" },
-  { "id": 100001, "soato_id": 1706401803, "district_id": 36, "name_uz": "Beklar", "name_oz": "Беклар", "name_ru": "Беклар" },
-  { "id": 100002, "soato_id": 1706401803, "district_id": 36, "name_uz": "Geofizika", "name_oz": "Геофизика", "name_ru": "Геофизика" },
-  { "id": 100003, "soato_id": 1706401803, "district_id": 36, "name_uz": "Istiqbol", "name_oz": "Истиқбол", "name_ru": "Истиқбол" },
-  { "id": 100004, "soato_id": 1706401803, "district_id": 36, "name_uz": "Kogon", "name_oz": "Когон", "name_ru": "Когон" },
-  { "id": 100005, "soato_id": 1706401803, "district_id": 36, "name_uz": "Mustaqillik", "name_oz": "Мустақиллик", "name_ru": "Мустақиллик" },
-  { "id": 100006, "soato_id": 1706401803, "district_id": 36, "name_uz": "Navruz", "name_oz": "Наврўз", "name_ru": "Навруз" },
-  { "id": 100007, "soato_id": 1706401803, "district_id": 36, "name_uz": "Niyoz hoji", "name_oz": "Ниёз ҳожи", "name_ru": "Ниёз хожи" },
-  { "id": 100008, "soato_id": 1706401803, "district_id": 36, "name_uz": "Nurafshon", "name_oz": "Нурафшон", "name_ru": "Нурафшон" },
-  { "id": 100009, "soato_id": 1706401803, "district_id": 36, "name_uz": "Sarayon", "name_oz": "Сараён", "name_ru": "Сараён" },
-  { "id": 100010, "soato_id": 1706401803, "district_id": 36, "name_uz": "Siyozi poyon", "name_oz": "Сиёзи поён", "name_ru": "Сиёзи поён" },
-  { "id": 100011, "soato_id": 1706401803, "district_id": 36, "name_uz": "Sorgun", "name_oz": "Соргун", "name_ru": "Соргун" },
-  { "id": 100012, "soato_id": 1706401803, "district_id": 36, "name_uz": "Sukhor", "name_oz": "Сухор", "name_ru": "Сухор" },
-  { "id": 100013, "soato_id": 1706401803, "district_id": 36, "name_uz": "Taraqqiyot", "name_oz": "Тараққиёт", "name_ru": "Тараққиёт" },
-  { "id": 100014, "soato_id": 1706401803, "district_id": 36, "name_uz": "Tun-iroq", "name_oz": "Тун-ироқ", "name_ru": "Тун-ироқ" },
-  { "id": 100015, "soato_id": 1706401803, "district_id": 36, "name_uz": "Tutkunda", "name_oz": "Туткунда", "name_ru": "Туткунда" },
-  { "id": 100016, "soato_id": 1706401803, "district_id": 36, "name_uz": "Uba cho‘li", "name_oz": "Ўба чўли", "name_ru": "Уба чули" },
-  { "id": 100017, "soato_id": 1706401803, "district_id": 36, "name_uz": "O‘zbekiston", "name_oz": "Ўзбекистон", "name_ru": "Узбекистан" },
-  { "id": 100018, "soato_id": 1706401803, "district_id": 36, "name_uz": "O‘rta cho‘l", "name_oz": "Ўрта чўл", "name_ru": "Орта чуль" },
-  { "id": 100019, "soato_id": 1706401803, "district_id": 36, "name_uz": "Xo‘ja Yakshaba", "name_oz": "Хўжа Якшаба", "name_ru": "Ходжа Якшаба" },
-  { "id": 100020, "soato_id": 1706401803, "district_id": 36, "name_uz": "Hukumatobod", "name_oz": "Хукуматобод", "name_ru": "Хукуматобод" },
-  { "id": 100021, "soato_id": 1706401803, "district_id": 36, "name_uz": "Choloki", "name_oz": "Чолоки", "name_ru": "Чолоки" },
-  { "id": 100022, "soato_id": 1706401803, "district_id": 36, "name_uz": "Yangi hayot", "name_oz": "Янги ҳаёт", "name_ru": "Янги хаёт" },
-  
-  { "id": 100000, "soato_id": 1706401803, "district_id": 32, "name_uz": "Chovdur MFY", "name_oz": "Човдур МФЙ", "name_ru": "Човдур МФЙ" },
-  { "id": 100001, "soato_id": 1706401803, "district_id": 32, "name_uz": "Muxtor MFY", "name_oz": "Мухтор МФЙ", "name_ru": "Мухтор МФЙ" },
-  { "id": 100002, "soato_id": 1706401803, "district_id": 32, "name_uz": "Bayot MFY", "name_oz": "Баёт МФЙ", "name_ru": "Баёт МФЙ" },
-  { "id": 100003, "soato_id": 1706401803, "district_id": 32, "name_uz": "Kattabayot MFY", "name_oz": "Каттабаёт МФЙ", "name_ru": "Каттабаёт МФЙ" },
-  { "id": 100004, "soato_id": 1706401803, "district_id": 32, "name_uz": "Qumkashon MFY", "name_oz": "Қумкашон МФЙ", "name_ru": "Кумкашон МФЙ" },
-  { "id": 100005, "soato_id": 1706401803, "district_id": 32, "name_uz": "Qirtay MFY", "name_oz": "Қиртай МФЙ", "name_ru": "Киртай МФЙ" },
-  { "id": 100006, "soato_id": 1706401803, "district_id": 32, "name_uz": "O‘zbekiston MFY", "name_oz": "Ўзбекистон МФЙ", "name_ru": "Узбекистан МФЙ" },
-  { "id": 100007, "soato_id": 1706401803, "district_id": 32, "name_uz": "Ko‘lchovdur MFY", "name_oz": "Кўлчовдур МФЙ", "name_ru": "Кульчовдур МФЙ" },
-  { "id": 100008, "soato_id": 1706401803, "district_id": 32, "name_uz": "Qirlison MFY", "name_oz": "Қирлишон МФЙ", "name_ru": "Кирлишон МФЙ" },
-  { "id": 100009, "soato_id": 1706401803, "district_id": 32, "name_uz": "Asajam MFY", "name_oz": "Асажам МФЙ", "name_ru": "Асажам МФЙ" },
-  { "id": 100010, "soato_id": 1706401803, "district_id": 32, "name_uz": "Usmonshayx MFY", "name_oz": "Усмоншайх МФЙ", "name_ru": "Усмоншайх МФЙ" },
-  { "id": 100011, "soato_id": 1706401803, "district_id": 32, "name_uz": "Yoshbotir MFY", "name_oz": "Ёшботир МФЙ", "name_ru": "Ёшботир МФЙ" },
-  { "id": 100012, "soato_id": 1706401803, "district_id": 32, "name_uz": "Denov MFY", "name_oz": "Денов МФЙ", "name_ru": "Денов МФЙ" },
-  { "id": 100013, "soato_id": 1706401803, "district_id": 32, "name_uz": "Nurobod MFY", "name_oz": "Нуробод МФЙ", "name_ru": "Нуробод МФЙ" },
-  { "id": 100014, "soato_id": 1706401803, "district_id": 32, "name_uz": "Pichoqqi MFY", "name_oz": "Пичоқчи МФЙ", "name_ru": "Пичакчи МФЙ" },
-  { "id": 100015, "soato_id": 1706401803, "district_id": 32, "name_uz": "Davlatboy MFY", "name_oz": "Давлатбой МФЙ", "name_ru": "Давлатбой МФЙ" },
-  { "id": 100016, "soato_id": 1706401803, "district_id": 32, "name_uz": "Navruz MFY", "name_oz": "Наврўз МФЙ", "name_ru": "Навруз МФЙ" },
-  { "id": 100017, "soato_id": 1706401803, "district_id": 32, "name_uz": "Eski Olot MFY", "name_oz": "Эски Олот МФЙ", "name_ru": "Эски Алат МФЙ" },
-  { "id": 100018, "soato_id": 1706401803, "district_id": 32, "name_uz": "Bo‘ribek Chandir MFY", "name_oz": "Бўрибек Чандир МФЙ", "name_ru": "Бурибек Чандир МФЙ" },
-  { "id": 100019, "soato_id": 1706401803, "district_id": 32, "name_uz": "G‘anchi Chandir MFY", "name_oz": "Ғанчи Чандир МФЙ", "name_ru": "Ганчи Чандир МФЙ" },
-  { "id": 100020, "soato_id": 1706401803, "district_id": 32, "name_uz": "Xidreli MFY", "name_oz": "Хидрейли МФЙ", "name_ru": "Хидрейли МФЙ" },
-  { "id": 100021, "soato_id": 1706401803, "district_id": 32, "name_uz": "Bo‘ston MFY", "name_oz": "Бўстон МФЙ", "name_ru": "Бустон МФЙ" },
-  { "id": 100022, "soato_id": 1706401803, "district_id": 32, "name_uz": "Soinqorovul MFY", "name_oz": "Соинқоровул МФЙ", "name_ru": "Саинкаровул МФЙ" },
-  { "id": 100023, "soato_id": 1706401803, "district_id": 32, "name_uz": "Arabxona MFY", "name_oz": "Арабхона МФЙ", "name_ru": "Арабхона МФЙ" },
-  { "id": 100024, "soato_id": 1706401803, "district_id": 32, "name_uz": "Oq-oltin MFY", "name_oz": "Ок-олтин МФЙ", "name_ru": "Ак-олтин МФЙ" },
-  { "id": 100025, "soato_id": 1706401803, "district_id": 32, "name_uz": "Jayhunobod MFY", "name_oz": "Жайхунобод МФЙ", "name_ru": "Джахонобод МФЙ" },
-  { "id": 100026, "soato_id": 1706401803, "district_id": 32, "name_uz": "Burjoq MFY", "name_oz": "Буржоқ МФЙ", "name_ru": "Буржак МФЙ" },
-  { "id": 100027, "soato_id": 1706401803, "district_id": 32, "name_uz": "Soloqorovul MFY", "name_oz": "Солоқоровул МФЙ", "name_ru": "Салакаровул МФЙ" },
-  { "id": 100028, "soato_id": 1706401803, "district_id": 32, "name_uz": "Opshok MFY", "name_oz": "Опшок МФЙ", "name_ru": "Опшок МФЙ" },
-  { "id": 100029, "soato_id": 1706401803, "district_id": 32, "name_uz": "Dilkor MFY", "name_oz": "Дилкор МФЙ", "name_ru": "Дилкор МФЙ" },
-  { "id": 100030, "soato_id": 1706401803, "district_id": 32, "name_uz": "Xosabuyi MFY", "name_oz": "Хосабўйи МФЙ", "name_ru": "Хосабуйи МФЙ" },
-  { "id": 100031, "soato_id": 1706401803, "district_id": 32, "name_uz": "Shayxlar MFY", "name_oz": "Шайхлар МФЙ", "name_ru": "Шейхлар МФЙ" },
-  { "id": 100032, "soato_id": 1706401803, "district_id": 32, "name_uz": "Kesakli MFY", "name_oz": "Кесакли МФЙ", "name_ru": "Кесакли МФЙ" },
-  { "id": 100033, "soato_id": 1706401803, "district_id": 32, "name_uz": "Bunyodkor MFY", "name_oz": "Бунёдкор МФЙ", "name_ru": "Бунёдкор МФЙ" },
-  { "id": 100034, "soato_id": 1706401803, "district_id": 32, "name_uz": "Xalifa MFY", "name_oz": "Халифа МФЙ", "name_ru": "Халифа МФЙ" },
-  
-   { "id": 100000, "soato_id": 1706401804, "district_id": 40, "name_uz": "Samosiy MFY", "name_oz": "“Самосий” МФЙ", "name_ru": "Самосий МФЙ" },
-  { "id": 100001, "soato_id": 1706401804, "district_id": 40, "name_uz": "Azizon MFY", "name_oz": "“Азизон” МФЙ", "name_ru": "Азизон МФЙ" },
-  { "id": 100002, "soato_id": 1706401804, "district_id": 40, "name_uz": "Qo‘rg‘on MFY", "name_oz": "Қўрғон МФЙ", "name_ru": "Курган МФЙ" },
-  { "id": 100003, "soato_id": 1706401804, "district_id": 40, "name_uz": "O‘zbekiston MFY", "name_oz": "Ўзбекистон МФЙ", "name_ru": "Узбекистан МФЙ" },
-  { "id": 100004, "soato_id": 1706401804, "district_id": 40, "name_uz": "Qizilravot MFY", "name_oz": "“Қизилравот” МФЙ", "name_ru": "Кызылравот МФЙ" },
-  { "id": 100005, "soato_id": 1706401804, "district_id": 40, "name_uz": "Qalaychorbog‘ MFY", "name_oz": "“Қалайчорбоғ” МФЙ", "name_ru": "Калайчарбог МФЙ" },
-  { "id": 100006, "soato_id": 1706401804, "district_id": 40, "name_uz": "Mug‘oncha MFY", "name_oz": "“Муғонча” МФЙ", "name_ru": "Мугонча МФЙ" },
-  { "id": 100007, "soato_id": 1706401804, "district_id": 40, "name_uz": "Chelong‘u MFY", "name_oz": "Челонғу МФЙ", "name_ru": "Челонгу МФЙ" },
-  { "id": 100008, "soato_id": 1706401804, "district_id": 40, "name_uz": "Toshrabot MFY", "name_oz": "“Тошработ” МФЙ", "name_ru": "Ташработ МФЙ" },
-  { "id": 100009, "soato_id": 1706401804, "district_id": 40, "name_uz": "G‘azberon MFY", "name_oz": "Ғазберон МФЙ", "name_ru": "Газберон МФЙ" },
-  { "id": 100010, "soato_id": 1706401804, "district_id": 40, "name_uz": "Urganjiyon MFY", "name_oz": "“Урганжиён” МФЙ", "name_ru": "Урганжиян МФЙ" },
-  { "id": 100011, "soato_id": 1706401804, "district_id": 40, "name_uz": "Xosa MFY", "name_oz": "Хоса МФЙ", "name_ru": "Хоса МФЙ" },
-  { "id": 100012, "soato_id": 1706401804, "district_id": 40, "name_uz": "Decha MFY", "name_oz": "Деча МФЙ", "name_ru": "Деча МФЙ" },
-  { "id": 100013, "soato_id": 1706401804, "district_id": 40, "name_uz": "Gazli MFY", "name_oz": "“Газли” МФЙ", "name_ru": "Газли МФЙ" },
-  { "id": 100014, "soato_id": 1706401804, "district_id": 40, "name_uz": "Baynalminnal MFY", "name_oz": "“Байналминал” МФЙ", "name_ru": "Байналминал МФЙ" },
-  { "id": 100015, "soato_id": 1706401804, "district_id": 40, "name_uz": "Kahramon MFY", "name_oz": "“Кахрамон” МФЙ", "name_ru": "Кахрамон МФЙ" },
-  { "id": 100016, "soato_id": 1706401804, "district_id": 40, "name_uz": "Romitan MFY", "name_oz": "“Ромитан” МФЙ", "name_ru": "Ромитан МФЙ" },
-  { "id": 100017, "soato_id": 1706401804, "district_id": 40, "name_uz": "Tarnout MFY", "name_oz": "“Тарнаут” МФЙ", "name_ru": "Тарнаут МФЙ" },
-  { "id": 100018, "soato_id": 1706401804, "district_id": 40, "name_uz": "Bog‘cha MFY", "name_oz": "Боғча МФЙ", "name_ru": "Багча МФЙ" },
-  { "id": 100019, "soato_id": 1706401804, "district_id": 40, "name_uz": "Attaron MFY", "name_oz": "“Аттарон” МФЙ", "name_ru": "Аттарон МФЙ" },
-  { "id": 100020, "soato_id": 1706401804, "district_id": 40, "name_uz": "Mirishkor MFY", "name_oz": "Миришкор МФЙ", "name_ru": "Миришкор МФЙ" },
-  { "id": 100021, "soato_id": 1706401804, "district_id": 40, "name_uz": "O‘ba MFY", "name_oz": "“Ўба” МФЙ", "name_ru": "Уба МФЙ" },
-  { "id": 100022, "soato_id": 1706401804, "district_id": 40, "name_uz": "Alisher Navoiy MFY", "name_oz": "Алишер Навоий МФЙ", "name_ru": "Алишер Навои МФЙ" },
-  { "id": 100023, "soato_id": 1706401804, "district_id": 40, "name_uz": "Zarafshon MFY", "name_oz": "Зарафшон МФЙ", "name_ru": "Зарафшан МФЙ" },
-  { "id": 100024, "soato_id": 1706401804, "district_id": 40, "name_uz": "Ibn Sino MFY", "name_oz": "“Ибн Сино” МФЙ", "name_ru": "Ибн Сина МФЙ" },
-  { "id": 100025, "soato_id": 1706401804, "district_id": 40, "name_uz": "Bobur MFY", "name_oz": "Бобур МФЙ", "name_ru": "Бабур МФЙ" },
-  { "id": 100026, "soato_id": 1706401804, "district_id": 40, "name_uz": "Guliston MFY", "name_oz": "Гулистон МФЙ", "name_ru": "Гулистан МФЙ" },
-  { "id": 100027, "soato_id": 1706401804, "district_id": 40, "name_uz": "Bog‘isaydon MFY", "name_oz": "Боғисайдон МФЙ", "name_ru": "Багисайдон МФЙ" },
-  { "id": 100028, "soato_id": 1706401804, "district_id": 40, "name_uz": "Bog‘iturkon MFY", "name_oz": "Богитуркон МФЙ", "name_ru": "Багитуркон МФЙ" },
-  { "id": 100029, "soato_id": 1706401804, "district_id": 40, "name_uz": "Marziya MFY", "name_oz": "“Марзия” МФЙ", "name_ru": "Марзия МФЙ" },
-  { "id": 100030, "soato_id": 1706401804, "district_id": 40, "name_uz": "Qumrabot MFY", "name_oz": "“Қумработ” МФЙ", "name_ru": "Кумработ МФЙ" },
-  { "id": 100031, "soato_id": 1706401804, "district_id": 40, "name_uz": "Xo‘jaubbon MFY", "name_oz": "Хўжауббон МФЙ", "name_ru": "Ходжауббон МФЙ" },
-  { "id": 100032, "soato_id": 1706401804, "district_id": 40, "name_uz": "Hazortut MFY", "name_oz": "Ҳазортут МФЙ", "name_ru": "Хазортут МФЙ" },
-  { "id": 100033, "soato_id": 1706401804, "district_id": 40, "name_uz": "Hofizrabot MFY", "name_oz": "Ҳофизработ МФЙ", "name_ru": "Хафизработ МФЙ" },
-  { "id": 100034, "soato_id": 1706401804, "district_id": 40, "name_uz": "Istiqlol MFY", "name_oz": "Истиқлол МФЙ", "name_ru": "Истиклол МФЙ" },
-  { "id": 100035, "soato_id": 1706401804, "district_id": 40, "name_uz": "Iftixor MFY", "name_oz": "Ифтихор МФЙ", "name_ru": "Ифтихор МФЙ" },
-  { "id": 100036, "soato_id": 1706401804, "district_id": 40, "name_uz": "Sho‘robo MFY", "name_oz": "“Шўробод” МФЙ", "name_ru": "Шуробод МФЙ" },
-  { "id": 100037, "soato_id": 1706401804, "district_id": 40, "name_uz": "Shurcha MFY", "name_oz": "“Шурча” МФЙ", "name_ru": "Шурча МФЙ" },
-  { "id": 100038, "soato_id": 1706401804, "district_id": 40, "name_uz": "Otabek MFY", "name_oz": "Ўтабек МФЙ", "name_ru": "Утабек МФЙ" },
-  { "id": 100039, "soato_id": 1706401804, "district_id": 40, "name_uz": "Navbahor MFY", "name_oz": "“Навбахор” МФЙ", "name_ru": "Навбахор МФЙ" },
-  { "id": 100040, "soato_id": 1706401804, "district_id": 40, "name_uz": "Poyjuy MFY", "name_oz": "Пойжўй МФЙ", "name_ru": "Пайджуй МФЙ" },
-  { "id": 100041, "soato_id": 1706401804, "district_id": 40, "name_uz": "Kokishtuvon MFY", "name_oz": "‘Кокиштувон’ МФЙ", "name_ru": "Кокиштувон МФЙ" },
-  
-  { "id": 100000, "soato_id": 1706401804, "district_id": 42, "name_uz": "G‘ulomte", "name_oz": "Ғуломте", "name_ru": "Гуломте" },
-  { "id": 100001, "soato_id": 1706401804, "district_id": 42, "name_uz": "Juynav", "name_oz": "Жуйнав", "name_ru": "Жуйнав" },
-  { "id": 100002, "soato_id": 1706401804, "district_id": 42, "name_uz": "Iskogare", "name_oz": "Искогаре", "name_ru": "Искогаре" },
-  { "id": 100003, "soato_id": 1706401804, "district_id": 42, "name_uz": "Qalmaqon", "name_oz": "Қалмақон", "name_ru": "Калмакон" },
-  { "id": 100004, "soato_id": 1706401804, "district_id": 42, "name_uz": "Quyi Chuqurak", "name_oz": "Қуйи Чуқурак", "name_ru": "Куий Чукурак" },
-  { "id": 100005, "soato_id": 1706401804, "district_id": 42, "name_uz": "Qo‘rg‘oni Vardonze", "name_oz": "Қўрғони Вардонзе", "name_ru": "Кургони Вардонзе" },
-  { "id": 100006, "soato_id": 1706401804, "district_id": 42, "name_uz": "Talisafer", "name_oz": "Талисафед", "name_ru": "Талисафед" },
-  { "id": 100007, "soato_id": 1706401804, "district_id": 42, "name_uz": "Sharof Rashidov", "name_oz": "Шароф Рашидов", "name_ru": "Шароф Рашидов" },
-  { "id": 100008, "soato_id": 1706401804, "district_id": 42, "name_uz": "Chuqurak", "name_oz": "Чуқурак", "name_ru": "Чукурак" },
-  { "id": 100009, "soato_id": 1706401804, "district_id": 42, "name_uz": "Yangiqishloq", "name_oz": "Янгиқишлоқ", "name_ru": "Янгикишлок" },
-  { "id": 100010, "soato_id": 1706401804, "district_id": 42, "name_uz": "Arabxona", "name_oz": "Арабхона", "name_ru": "Арабхона" },
-  { "id": 100011, "soato_id": 1706401804, "district_id": 42, "name_uz": "Boboato", "name_oz": "Бобоато", "name_ru": "Бобоато" },
-  { "id": 100012, "soato_id": 1706401804, "district_id": 42, "name_uz": "Bobur", "name_oz": "Бобур", "name_ru": "Бабур" },
-  { "id": 100013, "soato_id": 1706401804, "district_id": 42, "name_uz": "Bog‘iafzal", "name_oz": "Боғиафзал", "name_ru": "Багиафзал" },
-  { "id": 100014, "soato_id": 1706401804, "district_id": 42, "name_uz": "Jilvon", "name_oz": "Жилвон", "name_ru": "Жилвон" },
-  { "id": 100015, "soato_id": 1706401804, "district_id": 42, "name_uz": "Jo‘shura", "name_oz": "Жўшўра", "name_ru": "Джошура" },
-  { "id": 100016, "soato_id": 1706401804, "district_id": 42, "name_uz": "Mirzoqul", "name_oz": "Мирзоқул", "name_ru": "Мирзакул" },
-  { "id": 100017, "soato_id": 1706401804, "district_id": 42, "name_uz": "Pashmon", "name_oz": "Пашмон", "name_ru": "Пашмон" },
-  { "id": 100018, "soato_id": 1706401804, "district_id": 42, "name_uz": "Mazlaxon Chandir", "name_oz": "Мазлахон Чандир", "name_ru": "Мазлахон Чандир" },
-  { "id": 100019, "soato_id": 1706401804, "district_id": 42, "name_uz": "Chitkaron", "name_oz": "Читкарон", "name_ru": "Читкарон" },
-  { "id": 100020, "soato_id": 1706401804, "district_id": 42, "name_uz": "Shodlik", "name_oz": "Шодлик", "name_ru": "Шодлик" },
-  { "id": 100021, "soato_id": 1706401804, "district_id": 42, "name_uz": "Denov", "name_oz": "Денов", "name_ru": "Денов" },
-  { "id": 100022, "soato_id": 1706401804, "district_id": 42, "name_uz": "Dorigar", "name_oz": "Доригар", "name_ru": "Доригар" },
-  { "id": 100023, "soato_id": 1706401804, "district_id": 42, "name_uz": "Do‘rmon", "name_oz": "Дўрмон", "name_ru": "Дурмон" },
-  { "id": 100024, "soato_id": 1706401804, "district_id": 42, "name_uz": "Juyrabot", "name_oz": "Жўйработ", "name_ru": "Жуйработ" },
-  { "id": 100025, "soato_id": 1706401804, "district_id": 42, "name_uz": "Zarchabek", "name_oz": "Зарчабек", "name_ru": "Зарчабек" },
-  { "id": 100026, "soato_id": 1706401804, "district_id": 42, "name_uz": "Kalon", "name_oz": "Калон", "name_ru": "Калон" },
-  { "id": 100027, "soato_id": 1706401804, "district_id": 42, "name_uz": "Ko‘rishkent", "name_oz": "Кўришкент", "name_ru": "Куришкент" },
-  { "id": 100028, "soato_id": 1706401804, "district_id": 42, "name_uz": "Qayragoch", "name_oz": "Қайрағоч", "name_ru": "Кайрагоч" },
-  { "id": 100029, "soato_id": 1706401804, "district_id": 42, "name_uz": "Mahallakozi", "name_oz": "Маҳаллакози", "name_ru": "Махаллакози" },
-  { "id": 100030, "soato_id": 1706401804, "district_id": 42, "name_uz": "Mingchinor", "name_oz": "Мингчинор", "name_ru": "Мингчинор" },
-  { "id": 100031, "soato_id": 1706401804, "district_id": 42, "name_uz": "Navbahor", "name_oz": "Навбахор", "name_ru": "Навбахор" },
-  { "id": 100032, "soato_id": 1706401804, "district_id": 42, "name_uz": "Nekkishi", "name_oz": "Неккиши", "name_ru": "Неккиши" },
-  { "id": 100033, "soato_id": 1706401804, "district_id": 42, "name_uz": "Pattaxon", "name_oz": "Паттахон", "name_ru": "Паттахон" },
-  { "id": 100034, "soato_id": 1706401804, "district_id": 42, "name_uz": "Sultonobod", "name_oz": "Султонобод", "name_ru": "Султанабад" },
-  { "id": 100035, "soato_id": 1706401804, "district_id": 42, "name_uz": "Temirchi", "name_oz": "Темирчи", "name_ru": "Темирчи" },
-  { "id": 100036, "soato_id": 1706401804, "district_id": 42, "name_uz": "Xorin", "name_oz": "Хорин", "name_ru": "Хорин" },
-  { "id": 100037, "soato_id": 1706401804, "district_id": 42, "name_uz": "Shibirgon", "name_oz": "Шибирғон", "name_ru": "Шибиргон" },
-  { "id": 100038, "soato_id": 1706401804, "district_id": 42, "name_uz": "Alisher Navoiy", "name_oz": "Алишер Навоий", "name_ru": "Алишер Навои" },
-  { "id": 100039, "soato_id": 1706401804, "district_id": 42, "name_uz": "Bobohaydar", "name_oz": "Бобохайдар", "name_ru": "Бобохайдар" },
-  { "id": 100040, "soato_id": 1706401804, "district_id": 42, "name_uz": "Guliston", "name_oz": "Гулистон", "name_ru": "Гулистан" },
-  { "id": 100041, "soato_id": 1706401804, "district_id": 42, "name_uz": "Kotiyon", "name_oz": "Котиён", "name_ru": "Котион" },
-  { "id": 100042, "soato_id": 1706401804, "district_id": 42, "name_uz": "Nuraфshon", "name_oz": "Нурафшон", "name_ru": "Нурафшон" },
-  { "id": 100043, "soato_id": 1706401804, "district_id": 42, "name_uz": "Savrak", "name_oz": "Саврак", "name_ru": "Саврак" },
-  { "id": 100044, "soato_id": 1706401804, "district_id": 42, "name_uz": "Talisangobod", "name_oz": "Талисангобод", "name_ru": "Талисангобод" },
-  { "id": 100045, "soato_id": 1706401804, "district_id": 42, "name_uz": "Tezguzar", "name_oz": "Тезгузар", "name_ru": "Тезгузар" },
-  { "id": 100046, "soato_id": 1706401804, "district_id": 42, "name_uz": "Tinchlik", "name_oz": "Тинчлик", "name_ru": "Тинчлик" },
-  { "id": 100047, "soato_id": 1706401804, "district_id": 42, "name_uz": "Xo‘ja Orif", "name_oz": "Хўжа Ориф", "name_ru": "Ходжа Ориф" },
-  { "id": 100048, "soato_id": 1706401804, "district_id": 42, "name_uz": "Paxtaobod", "name_oz": "Пахтаобод", "name_ru": "Пахтаабад" },
-  
-   { "id": 110000, "soato_id": 1706401804, "district_id": 37, "name_uz": "Mallaishayx", "name_oz": "Маллаишайх", "name_ru": "Маллаишайх" },
-  { "id": 110001, "soato_id": 1706401804, "district_id": 37, "name_uz": "Xo‘jakon", "name_oz": "Хўжакон", "name_ru": "Ходжакон" },
-  { "id": 110002, "soato_id": 1706401804, "district_id": 37, "name_uz": "Qorahoji", "name_oz": "Қорахожи", "name_ru": "Караходжи" },
-  { "id": 110003, "soato_id": 1706401804, "district_id": 37, "name_uz": "Arabxona", "name_oz": "Арабхона", "name_ru": "Арабхона" },
-  { "id": 110004, "soato_id": 1706401804, "district_id": 37, "name_uz": "Polvonlar", "name_oz": "Полвонлар", "name_ru": "Палвонлар" },
-  { "id": 110005, "soato_id": 1706401804, "district_id": 37, "name_uz": "Yangizamon", "name_oz": "Янгизамон", "name_ru": "Янгизамон" },
-  { "id": 110006, "soato_id": 1706401804, "district_id": 37, "name_uz": "Mirzoqal’a", "name_oz": "Мирзақалъа", "name_ru": "Мирзакала" },
-  { "id": 110007, "soato_id": 1706401804, "district_id": 37, "name_uz": "Chovli", "name_oz": "Човли", "name_ru": "Човли" },
-  { "id": 110008, "soato_id": 1706401804, "district_id": 37, "name_uz": "Oq-olting", "name_oz": "Оқ-олтин", "name_ru": "Ак-олтин" },
-  { "id": 110009, "soato_id": 1706401804, "district_id": 37, "name_uz": "Mirob", "name_oz": "Мироб", "name_ru": "Мироб" },
-  { "id": 110010, "soato_id": 1706401804, "district_id": 37, "name_uz": "Mustaqillik MFY", "name_oz": "Мустақиллик МФЙ", "name_ru": "Мустакиллик МФЙ" },
-  { "id": 110011, "soato_id": 1706401804, "district_id": 37, "name_uz": "Eski qal’a", "name_oz": "Эски қалъа", "name_ru": "Эски калъа" },
-  { "id": 110012, "soato_id": 1706401804, "district_id": 37, "name_uz": "Zarafshon", "name_oz": "Зарафшон", "name_ru": "Зарафшон" },
-  { "id": 110013, "soato_id": 1706401804, "district_id": 37, "name_uz": "Sayyod", "name_oz": "Сайёд", "name_ru": "Саййод" },
-  { "id": 110014, "soato_id": 1706401804, "district_id": 37, "name_uz": "Solur", "name_oz": "Солур", "name_ru": "Солур" },
-  { "id": 110015, "soato_id": 1706401804, "district_id": 37, "name_uz": "Paykent", "name_oz": "Пайкент", "name_ru": "Пайкент" },
-  { "id": 110016, "soato_id": 1706401804, "district_id": 37, "name_uz": "Qulonchi", "name_oz": "Қулончи", "name_ru": "Кулончи" },
-  { "id": 110017, "soato_id": 1706401804, "district_id": 37, "name_uz": "Sho‘robot", "name_oz": "Шўработ", "name_ru": "Шуработ" },
-  { "id": 110018, "soato_id": 1706401804, "district_id": 37, "name_uz": "Qorako‘l", "name_oz": "Қоракўл", "name_ru": "Каракуль" },
-  { "id": 110019, "soato_id": 1706401804, "district_id": 37, "name_uz": "Do‘rman", "name_oz": "Дўрман", "name_ru": "Дурман" },
-  { "id": 110020, "soato_id": 1706401804, "district_id": 37, "name_uz": "Tojikent", "name_oz": "Тожикент", "name_ru": "Таджикент" },
-  { "id": 110021, "soato_id": 1706401804, "district_id": 37, "name_uz": "Ziyorat", "name_oz": "Зиёрат", "name_ru": "Зиёрат" },
-  { "id": 110022, "soato_id": 1706401804, "district_id": 37, "name_uz": "Regihaydar", "name_oz": "Региҳайдар", "name_ru": "Регихайдар" },
-  { "id": 110023, "soato_id": 1706401804, "district_id": 37, "name_uz": "Bandboshi", "name_oz": "Бандбоши", "name_ru": "Бандбоши" },
-  { "id": 110024, "soato_id": 1706401804, "district_id": 37, "name_uz": "Paxtakor", "name_oz": "Пахтакор", "name_ru": "Пахтакор" },
-  { "id": 110025, "soato_id": 1706401804, "district_id": 37, "name_uz": "Chekirchi", "name_oz": "Чекирчи", "name_ru": "Чекирчи" },
-  { "id": 110026, "soato_id": 1706401804, "district_id": 37, "name_uz": "Jig‘achi", "name_oz": "Жиғачи", "name_ru": "Жигачи" },
-  { "id": 110027, "soato_id": 1706401804, "district_id": 37, "name_uz": "Osiyo", "name_oz": "Осиё", "name_ru": "Азия" },
-  { "id": 110028, "soato_id": 1706401804, "district_id": 37, "name_uz": "Qorakulonchi", "name_oz": "Коракулончи", "name_ru": "Коракулончи" },
-  { "id": 110029, "soato_id": 1706401804, "district_id": 37, "name_uz": "Ketmondo‘g‘di", "name_oz": "Кетмондўғди", "name_ru": "Кетмондугди" },
-  { "id": 110030, "soato_id": 1706401804, "district_id": 37, "name_uz": "Quyi Yangibozor", "name_oz": "Қуйи янгибозор", "name_ru": "Куий Янгибазар" },
-  { "id": 110031, "soato_id": 1706401804, "district_id": 37, "name_uz": "Arna MFY", "name_oz": "Арна МФЙ", "name_ru": "Арна МФЙ" },
-  { "id": 110032, "soato_id": 1706401804, "district_id": 37, "name_uz": "Quvvacha", "name_oz": "Қуввача", "name_ru": "Куввача" },
-  { "id": 110033, "soato_id": 1706401804, "district_id": 37, "name_uz": "Chandirobod", "name_oz": "Чандиробод", "name_ru": "Чандиробод" },
-  { "id": 110034, "soato_id": 1706401804, "district_id": 37, "name_uz": "Tinchlik", "name_oz": "Тинчлик", "name_ru": "Тинчлик" },
-  { "id": 110035, "soato_id": 1706401804, "district_id": 37, "name_uz": "Qozon", "name_oz": "Қозон", "name_ru": "Казон" },
-  { "id": 110036, "soato_id": 1706401804, "district_id": 37, "name_uz": "Istiqlol", "name_oz": "Истиқлол", "name_ru": "Истиклол" },
-  { "id": 110037, "soato_id": 1706401804, "district_id": 37, "name_uz": "Tashabbus", "name_oz": "Ташаббус", "name_ru": "Ташаббус" },
-  { "id": 110038, "soato_id": 1706401804, "district_id": 37, "name_uz": "Yangiturmush", "name_oz": "Янгитурмуш", "name_ru": "Янгитурмуш" },
-  { "id": 110039, "soato_id": 1706401804, "district_id": 37, "name_uz": "Darqali", "name_oz": "Дарғали", "name_ru": "Даргали" },
-  { "id": 110040, "soato_id": 1706401804, "district_id": 37, "name_uz": "Shakarbek", "name_oz": "Шакарбек", "name_ru": "Шакарбек" },
-  { "id": 110041, "soato_id": 1706401804, "district_id": 37, "name_uz": "Dargabogi", "name_oz": "Дарғабоғи", "name_ru": "Даргабоги" },
-  { "id": 110042, "soato_id": 1706401804, "district_id": 37, "name_uz": "Xo‘jalar", "name_oz": "Хўжалар", "name_ru": "Ходжалар" },
-  { "id": 110043, "soato_id": 1706401804, "district_id": 37, "name_uz": "Do‘stlik", "name_oz": "Дўстлик", "name_ru": "Дустлик" },
-  
-  { "id": 111000, "soato_id": 1706401804, "district_id": 38, "name_uz": "Navbahor MFY", "name_oz": "Навбахор МФЙ", "name_ru": "Навбахор МФЙ" },
-  { "id": 111001, "soato_id": 1706401804, "district_id": 38, "name_uz": "Tinchlik MFY", "name_oz": "Тинчлик МФЙ", "name_ru": "Тинчлик МФЙ" },
-  { "id": 111002, "soato_id": 1706401804, "district_id": 38, "name_uz": "Bo‘zachi MFY", "name_oz": "Бўзачи МФЙ", "name_ru": "Бузачи МФЙ" },
-  { "id": 111003, "soato_id": 1706401804, "district_id": 38, "name_uz": "Bo‘ston MFY", "name_oz": "Бўстон МФЙ", "name_ru": "Бустон МФЙ" },
-  { "id": 111004, "soato_id": 1706401804, "district_id": 38, "name_uz": "Jarqo‘q MFY", "name_oz": "Жарқоқ МФЙ", "name_ru": "Жаркок МФЙ" },
-  { "id": 111005, "soato_id": 1706401804, "district_id": 38, "name_uz": "Imom Buxoriy MFY", "name_oz": "Имом Бухорий МФЙ", "name_ru": "Имам Бухари МФЙ" },
-  { "id": 111006, "soato_id": 1706401804, "district_id": 38, "name_uz": "Cho‘lquvar MFY", "name_oz": "Чўлқувар МФЙ", "name_ru": "Чулкувар МФЙ" },
-  
-   { "id": 112000, "soato_id": 1706401804, "district_id": 35, "name_uz": "Gulistonobod", "name_oz": "Гулистонобод", "name_ru": "Гулистонобод" },
-  { "id": 112001, "soato_id": 1706401804, "district_id": 35, "name_uz": "Havzak", "name_oz": "Ҳавзак", "name_ru": "Хавзак" },
-  { "id": 112002, "soato_id": 1706401804, "district_id": 35, "name_uz": "Oq gul", "name_oz": "Оқ гул", "name_ru": "Ак гул" },
-  { "id": 112003, "soato_id": 1706401804, "district_id": 35, "name_uz": "Ko‘lijabbor", "name_oz": "Кўлижаббор", "name_ru": "Кулиджаббор" },
-  { "id": 112004, "soato_id": 1706401804, "district_id": 35, "name_uz": "Labirўt", "name_oz": "Лабирўт", "name_ru": "Лабирут" },
-  { "id": 112005, "soato_id": 1706401804, "district_id": 35, "name_uz": "Gajdumak", "name_oz": "Гаждумак", "name_ru": "Гаждумак" },
-  { "id": 112006, "soato_id": 1706401804, "district_id": 35, "name_uz": "Jovgari", "name_oz": "Жовгари", "name_ru": "Жовгари" },
-  { "id": 112007, "soato_id": 1706401804, "district_id": 35, "name_uz": "Sarmijon", "name_oz": "Сармижон", "name_ru": "Сармижон" },
-  { "id": 112008, "soato_id": 1706401804, "district_id": 35, "name_uz": "Chag‘dari", "name_oz": "Чағдари", "name_ru": "Чагдари" },
-  { "id": 112009, "soato_id": 1706401804, "district_id": 35, "name_uz": "Buqtaroy", "name_oz": "Буктарой", "name_ru": "Буктарой" },
-  { "id": 112010, "soato_id": 1706401804, "district_id": 35, "name_uz": "Vazirshoh", "name_oz": "Вазиршох", "name_ru": "Вазиршох" },
-  { "id": 112011, "soato_id": 1706401804, "district_id": 35, "name_uz": "Ko‘shk", "name_oz": "Кўшк", "name_ru": "Кушк" },
-  { "id": 112012, "soato_id": 1706401804, "district_id": 35, "name_uz": "Obod", "name_oz": "Обод", "name_ru": "Обод" },
-  { "id": 112013, "soato_id": 1706401804, "district_id": 35, "name_uz": "Taxtaxon", "name_oz": "Тахтахон", "name_ru": "Тахтахон" },
-  { "id": 112014, "soato_id": 1706401804, "district_id": 35, "name_uz": "Zarafshon", "name_oz": "Зарафшон", "name_ru": "Зарафшон" },
-  { "id": 112015, "soato_id": 1706401804, "district_id": 35, "name_uz": "Sho‘rcha", "name_oz": "Шўрча", "name_ru": "Шурча" },
-  { "id": 112016, "soato_id": 1706401804, "district_id": 35, "name_uz": "Sohibiyon", "name_oz": "Соҳибиён", "name_ru": "Сохибиён" },
-  { "id": 112017, "soato_id": 1706401804, "district_id": 35, "name_uz": "Qassabon", "name_oz": "Қассабон", "name_ru": "Кассабон" },
-  { "id": 112018, "soato_id": 1706401804, "district_id": 35, "name_uz": "Zargaron", "name_oz": "Заргарон", "name_ru": "Заргарон" },
-  { "id": 112019, "soato_id": 1706401804, "district_id": 35, "name_uz": "Yangiobod", "name_oz": "Янгиобод", "name_ru": "Янгиобод" },
-  { "id": 112020, "soato_id": 1706401804, "district_id": 35, "name_uz": "Armechon", "name_oz": "Армечан", "name_ru": "Армечан" },
-  { "id": 112021, "soato_id": 1706401804, "district_id": 35, "name_uz": "Cho‘galon", "name_oz": "Чўғалон", "name_ru": "Чугалон" },
-  { "id": 112022, "soato_id": 1706401804, "district_id": 35, "name_uz": "Todon", "name_oz": "Тодон", "name_ru": "Тодон" },
-  { "id": 112023, "soato_id": 1706401804, "district_id": 35, "name_uz": "Denov", "name_oz": "Денов", "name_ru": "Денов" },
-  { "id": 112024, "soato_id": 1706401804, "district_id": 35, "name_uz": "Soktari", "name_oz": "Соктари", "name_ru": "Соктари" },
-  { "id": 112025, "soato_id": 1706401804, "district_id": 35, "name_uz": "Mirakon", "name_oz": "Миракон", "name_ru": "Миракон" },
-  { "id": 112026, "soato_id": 1706401804, "district_id": 35, "name_uz": "Tarhanon", "name_oz": "Тарханон", "name_ru": "Тарханон" },
-  { "id": 112027, "soato_id": 1706401804, "district_id": 35, "name_uz": "Saidkent", "name_oz": "Саидкент", "name_ru": "Саидкент" },
-  { "id": 112028, "soato_id": 1706401804, "district_id": 35, "name_uz": "G‘ovshun", "name_oz": "Ғовшун", "name_ru": "Говшун" },
-  { "id": 112029, "soato_id": 1706401804, "district_id": 35, "name_uz": "Xatcha", "name_oz": "Хатча", "name_ru": "Хатча" },
-  { "id": 112030, "soato_id": 1706401804, "district_id": 35, "name_uz": "O‘zanon", "name_oz": "Ўзанон", "name_ru": "Узанон" },
-  { "id": 112031, "soato_id": 1706401804, "district_id": 35, "name_uz": "Mahalla Mirzayon", "name_oz": "Маҳалла Мирзаён", "name_ru": "Махалла Мирзайон" },
-  { "id": 112032, "soato_id": 1706401804, "district_id": 35, "name_uz": "Mazragan", "name_oz": "Мазраган", "name_ru": "Мазраган" },
-  { "id": 112033, "soato_id": 1706401804, "district_id": 35, "name_uz": "Biyosin", "name_oz": "Биёсин", "name_ru": "Биёсин" },
-  { "id": 112034, "soato_id": 1706401804, "district_id": 35, "name_uz": "Pozagari", "name_oz": "Позагари", "name_ru": "Позагари" },
-  { "id": 112035, "soato_id": 1706401804, "district_id": 35, "name_uz": "Dodarak", "name_oz": "Додарак", "name_ru": "Додарак" },
-  { "id": 112036, "soato_id": 1706401804, "district_id": 35, "name_uz": "Qumoq", "name_oz": "Қумоқ", "name_ru": "Кумок" },
-  { "id": 112037, "soato_id": 1706401804, "district_id": 35, "name_uz": "Ulfatbibi", "name_oz": "Улфатбиби", "name_ru": "Улфатбиби" },
-  { "id": 112038, "soato_id": 1706401804, "district_id": 35, "name_uz": "Rostg‘uy", "name_oz": "Ростгўй", "name_ru": "Ростгуй" },
-  { "id": 112039, "soato_id": 1706401804, "district_id": 35, "name_uz": "Oqrobot", "name_oz": "Оқработ", "name_ru": "Акробот" },
-  { "id": 112040, "soato_id": 1706401804, "district_id": 35, "name_uz": "Baqqollar", "name_oz": "Баққоллар", "name_ru": "Бакколлар" },
-  { "id": 112041, "soato_id": 1706401804, "district_id": 35, "name_uz": "G‘ishtli", "name_oz": "Ғишти", "name_ru": "Гиштли" },
-  { "id": 112042, "soato_id": 1706401804, "district_id": 35, "name_uz": "Beshtuvo", "name_oz": "Бештуво", "name_ru": "Бештуво" },
-  { "id": 112043, "soato_id": 1706401804, "district_id": 35, "name_uz": "Baraka", "name_oz": "Барака", "name_ru": "Барака" },
-  { "id": 112044, "soato_id": 1706401804, "district_id": 35, "name_uz": "Xalqobod", "name_oz": "Халқобод", "name_ru": "Халкобод" },
-  { "id": 112045, "soato_id": 1706401804, "district_id": 35, "name_uz": "Qarabog‘", "name_oz": "Қарабоғ", "name_ru": "Карабог" },
-  { "id": 112046, "soato_id": 1706401804, "district_id": 35, "name_uz": "Qaraxoni", "name_oz": "Қарахони", "name_ru": "Карахони" },
-  { "id": 112047, "soato_id": 1706401804, "district_id": 35, "name_uz": "Paxtaoҳод", "name_oz": "Пахтаобод", "name_ru": "Пахтаобод" },
-  { "id": 112048, "soato_id": 1706401804, "district_id": 35, "name_uz": "Amirobod", "name_oz": "Амиробод", "name_ru": "Амиробод" },
-  { "id": 112049, "soato_id": 1706401804, "district_id": 35, "name_uz": "Ayirtom", "name_oz": "Айиртом", "name_ru": "Айиртом" },
-  { "id": 112050, "soato_id": 1706401804, "district_id": 35, "name_uz": "Toshloq", "name_oz": "Тошлоқ", "name_ru": "Тошлок" },
-  { "id": 112051, "soato_id": 1706401804, "district_id": 35, "name_uz": "Ko‘kcha", "name_oz": "Кўкча", "name_ru": "Кукча" },
-  { "id": 112052, "soato_id": 1706401804, "district_id": 35, "name_uz": "Sarvari", "name_oz": "Сарвари", "name_ru": "Сарвари" },
-  { "id": 112053, "soato_id": 1706401804, "district_id": 35, "name_uz": "Kalon", "name_oz": "Калон", "name_ru": "Калон" },
-  { "id": 112054, "soato_id": 1706401804, "district_id": 35, "name_uz": "Tavariyon", "name_oz": "Тавариён", "name_ru": "Тавариён" },
-  { "id": 112055, "soato_id": 1706401804, "district_id": 35, "name_uz": "Zarangari", "name_oz": "Зарангари", "name_ru": "Зарангари" },
-  { "id": 112056, "soato_id": 1706401804, "district_id": 35, "name_uz": "Bo‘lakiyon", "name_oz": "Бўлакиён", "name_ru": "Булакиён" },
-  { "id": 112057, "soato_id": 1706401804, "district_id": 35, "name_uz": "Mustaqillik", "name_oz": "Мустақиллик", "name_ru": "Мустакиллик" },
-  { "id": 112058, "soato_id": 1706401804, "district_id": 35, "name_uz": "Chorsu", "name_oz": "Чорсу", "name_ru": "Чорсу" },
-  { "id": 112059, "soato_id": 1706401804, "district_id": 35, "name_uz": "Qo‘rg‘on", "name_oz": "Қўрғон", "name_ru": "Кургон" },
-  { "id": 112060, "soato_id": 1706401804, "district_id": 35, "name_uz": "A. G‘ijduvoniy", "name_oz": "А.Ғиждувоний", "name_ru": "А. Гиждувоний" },
-  { "id": 112061, "soato_id": 1706401804, "district_id": 35, "name_uz": "F. Xo‘jaev", "name_oz": "Ф.Хўжаев", "name_ru": "Ф. Ходжаев" },
-  { "id": 112062, "soato_id": 1706401804, "district_id": 35, "name_uz": "Sharq", "name_oz": "Шарқ", "name_ru": "Шарк" },
-  { "id": 112063, "soato_id": 1706401804, "district_id": 35, "name_uz": "A. Qahhor", "name_oz": "А.Каххор", "name_ru": "А. Каххар" },
-  { "id": 112064, "soato_id": 1706401804, "district_id": 35, "name_uz": "Pomўza", "name_oz": "Помўза", "name_ru": "Помуза" },
-  { "id": 112065, "soato_id": 1706401804, "district_id": 35, "name_uz": "Guliston", "name_oz": "Гулистон", "name_ru": "Гулистон" },
-  { "id": 112066, "soato_id": 1706401804, "district_id": 35, "name_uz": "Bobur", "name_oz": "Бобур", "name_ru": "Бабур" },
-  { "id": 112067, "soato_id": 1706401804, "district_id": 35, "name_uz": "G‘alaba", "name_oz": "Ғалаба", "name_ru": "Галаба" },
-  { "id": 112068, "soato_id": 1706401804, "district_id": 35, "name_uz": "Nodirabegim", "name_oz": "Нодирабегим", "name_ru": "Нодирабегим" },
-  { "id": 112069, "soato_id": 1706401804, "district_id": 35, "name_uz": "Degrezon", "name_oz": "Дегрезон", "name_ru": "Дегрезон" }
+
+  {
+    "id": 100000,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "M.Narshaxiy",
+    "name_oz": "М.Наршахий",
+    "name_ru": "М.Наршахий"
+  },
+  {
+    "id": 100001,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "S.Bokharziy",
+    "name_oz": "С.Бохарзий",
+    "name_ru": "С.Бухарзий"
+  },
+  {
+    "id": 100002,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Furqat MFY",
+    "name_oz": "Фурқат мфй",
+    "name_ru": "Фуркат МФЙ"
+  },
+  {
+    "id": 100003,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "A.Navoiy MFY",
+    "name_oz": "А.Навоий мфй",
+    "name_ru": "А.Навои МФЙ"
+  },
+  {
+    "id": 100004,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "G'afur G'ulom",
+    "name_oz": "Ғафур Ғулом",
+    "name_ru": "Гафур Гулям"
+  },
+  {
+    "id": 100005,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Ko'kaldosh",
+    "name_oz": "Кўкалдош",
+    "name_ru": "Кукалдош"
+  },
+  {
+    "id": 100006,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "I.Buxoriy",
+    "name_oz": "И.Бухорий",
+    "name_ru": "И.Бухари"
+  },
+  {
+    "id": 100007,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "H.Olimjon",
+    "name_oz": "Ҳ.Олимжон",
+    "name_ru": "Х.Олимджон"
+  },
+  {
+    "id": 100008,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Jalol Ikromiy MFY",
+    "name_oz": "Жалол Икромий МФЙ",
+    "name_ru": "Джалол Икромий МФЙ"
+  },
+  {
+    "id": 100009,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "A.Fitrat",
+    "name_oz": "А.Фитрат",
+    "name_ru": "А.Фитрат"
+  },
+  {
+    "id": 100010,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "S.Sheroziy",
+    "name_oz": "С.Шерозий",
+    "name_ru": "С.Ширази"
+  },
+  {
+    "id": 100011,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Xuja G'unjoriy",
+    "name_oz": "Хужа Гунжорий",
+    "name_ru": "Ходжа Гунжорий"
+  },
+  {
+    "id": 100012,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Jubor MFY",
+    "name_oz": "Жубор МФЙ",
+    "name_ru": "Жубор МФЙ"
+  },
+  {
+    "id": 100013,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Abu Ali ibn Sino",
+    "name_oz": "Абу Али ибн Сино",
+    "name_ru": "Абу Али ибн Сина"
+  },
+  {
+    "id": 100014,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Nizomiy",
+    "name_oz": "Низомий",
+    "name_ru": "Низами"
+  },
+  {
+    "id": 100015,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "M.Ashrafiy",
+    "name_oz": "М.Ашрафий",
+    "name_ru": "М.Ашрафи"
+  },
+  {
+    "id": 100016,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Sobir Rahimov",
+    "name_oz": "Собир Рахимов",
+    "name_ru": "Собир Рахимов"
+  },
+  {
+    "id": 100017,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Dilkusho MFY",
+    "name_oz": "ДИЛКУШО МФЙ",
+    "name_ru": "Дилкушо МФЙ"
+  },
+  {
+    "id": 100018,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "F.Xujayev",
+    "name_oz": "Ф.Хужаев",
+    "name_ru": "Ф.Ходжаев"
+  },
+  {
+    "id": 100019,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "M.Ulug'bek",
+    "name_oz": "М.Улуғбек",
+    "name_ru": "М.Улугбек"
+  },
+  {
+    "id": 100020,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Shergiron",
+    "name_oz": "Шергирон",
+    "name_ru": "Шергирон"
+  },
+  {
+    "id": 100021,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Chorbahossa MFY",
+    "name_oz": "Чорбахосса МФЙ",
+    "name_ru": "Чорбахосса МФЙ"
+  },
+  {
+    "id": 100022,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Ko'ksaroy",
+    "name_oz": "Кўксарой",
+    "name_ru": "Куксарой"
+  },
+  {
+    "id": 100023,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Shayx ul Olam",
+    "name_oz": "Шайх ул Олам",
+    "name_ru": "Шейх уль Алам"
+  },
+  {
+    "id": 100024,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Moxi-xossa MFY",
+    "name_oz": "Мохи-хосса МФЙ",
+    "name_ru": "Мохи-хосса МФЙ"
+  },
+  {
+    "id": 100025,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Turki Jandi MFY",
+    "name_oz": "Турки Жанди МФЙ",
+    "name_ru": "Турки Жанди МФЙ"
+  },
+  {
+    "id": 100026,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Sharq Yulduzi",
+    "name_oz": "Шарк Юлдузи",
+    "name_ru": "Шарк Юлдузи"
+  },
+  {
+    "id": 100027,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "M.Burxonov",
+    "name_oz": "М.Бурхонов",
+    "name_ru": "М.Бурханов"
+  },
+  {
+    "id": 100028,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Gulchorbog'",
+    "name_oz": "Гулчорбоғ",
+    "name_ru": "Гульчорбаг"
+  },
+  {
+    "id": 100029,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Xavzi-nav MFY",
+    "name_oz": "Хавзи-нав МФЙ",
+    "name_ru": "Хавзи-нав МФЙ"
+  },
+  {
+    "id": 100030,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Yangiobod",
+    "name_oz": "Янгиобод",
+    "name_ru": "Янгиабад"
+  },
+  {
+    "id": 100031,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Guliston",
+    "name_oz": "Гулистон",
+    "name_ru": "Гулистан"
+  },
+  {
+    "id": 100032,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Abduholiq G'ijduvoniy",
+    "name_oz": "Абдуҳолиқ Ғиждувоний",
+    "name_ru": "Абдухолик Гиждувоний"
+  },
+  {
+    "id": 100033,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Navro'z",
+    "name_oz": "Наврўз",
+    "name_ru": "Навруз"
+  },
+  {
+    "id": 100034,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Bunyodkor",
+    "name_oz": "Бунёдкор",
+    "name_ru": "Бунёдкор"
+  },
+  {
+    "id": 100035,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Zarafshon",
+    "name_oz": "ЗАРАФШОН",
+    "name_ru": "Зарафшан"
+  },
+  {
+    "id": 100036,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "A.Temur MFY",
+    "name_oz": "А.Темур МФЙ",
+    "name_ru": "А.Темур МФЙ"
+  },
+  {
+    "id": 100037,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Piridastgir",
+    "name_oz": "Пиридастгир",
+    "name_ru": "Пиридастгир"
+  },
+  {
+    "id": 100038,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Shodlik",
+    "name_oz": "Шодлик",
+    "name_ru": "Шодлик"
+  },
+  {
+    "id": 100039,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Razzoq Hamroyev",
+    "name_oz": "Раззоқ Ҳамроев",
+    "name_ru": "Раззак Хамроев"
+  },
+  {
+    "id": 100040,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Gulshan",
+    "name_oz": "Гулшан",
+    "name_ru": "Гульшан"
+  },
+  {
+    "id": 100041,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Varaxsha MFY",
+    "name_oz": "Варахша МФЙ",
+    "name_ru": "Варахша МФЙ"
+  },
+  {
+    "id": 100042,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Olim Xujayev MFY",
+    "name_oz": "Олим Хужаев МФЙ",
+    "name_ru": "Олим Ходжаев МФЙ"
+  },
+  {
+    "id": 100043,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "To'qimachi",
+    "name_oz": "Тўқимачи",
+    "name_ru": "Тукимачи"
+  },
+  {
+    "id": 100044,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Foshun",
+    "name_oz": "Фошун",
+    "name_ru": "Фошун"
+  },
+  {
+    "id": 100045,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Dostlik",
+    "name_oz": "Дустлик",
+    "name_ru": "Дустлик"
+  },
+  {
+    "id": 100046,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Istiqlol",
+    "name_oz": "Истиқлол",
+    "name_ru": "Истиклол"
+  },
+  {
+    "id": 100047,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Yoshlik",
+    "name_oz": "Ёшлик",
+    "name_ru": "Ёшлик"
+  },
+  {
+    "id": 100048,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Navbahor",
+    "name_oz": "Навбахор",
+    "name_ru": "Навбахор"
+  },
+  {
+    "id": 100049,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Namozgoh",
+    "name_oz": "Намозгох",
+    "name_ru": "Намазгах"
+  },
+  {
+    "id": 100050,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "B.Nakshband",
+    "name_oz": "Б.Накшбанд",
+    "name_ru": "Б.Накшбанд"
+  },
+  {
+    "id": 100051,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Avshormahalla MFY",
+    "name_oz": "Авшормахалла МФЙ",
+    "name_ru": "Авшормахалла МФЙ"
+  },
+  {
+    "id": 100052,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "M.Tarobiy",
+    "name_oz": "М.Таробий",
+    "name_ru": "М.Тарабий"
+  },
+  {
+    "id": 100053,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Losha",
+    "name_oz": "Лоша",
+    "name_ru": "Лоша"
+  },
+  {
+    "id": 100054,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "S.Ayniy",
+    "name_oz": "С.Айний",
+    "name_ru": "С.Айний"
+  },
+  {
+    "id": 100055,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "A.Donish MFY",
+    "name_oz": "А.Дониш МФЙ",
+    "name_ru": "А.Дониш МФЙ"
+  },
+  {
+    "id": 100056,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Bihishtiyon",
+    "name_oz": "Бихиштиён",
+    "name_ru": "Бихиштиён"
+  },
+  {
+    "id": 100057,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Toshmachit",
+    "name_oz": "Тошмачит",
+    "name_ru": "Тошмачит"
+  },
+  {
+    "id": 100058,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Oybek MFY",
+    "name_oz": "Ойбек МФЙ",
+    "name_ru": "Ойбек МФЙ"
+  },
+  {
+    "id": 100059,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Xujamushkin MFY",
+    "name_oz": "Хужамушкин МФЙ",
+    "name_ru": "Хужамушкин МФЙ"
+  },
+  {
+    "id": 100060,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Bogidasht",
+    "name_oz": "БОГИДАШТ",
+    "name_ru": "Богидашт"
+  },
+  {
+    "id": 100061,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "A.Sifatmuniy",
+    "name_oz": "А.Сифатмуний",
+    "name_ru": "А.Сифатмуний"
+  },
+  {
+    "id": 100062,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Shayxon MFY",
+    "name_oz": "Шайхон МФЙ",
+    "name_ru": "Шайхон МФЙ"
+  },
+  {
+    "id": 100063,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Otbozor",
+    "name_oz": "Отбозор",
+    "name_ru": "Атбазар"
+  },
+  {
+    "id": 100064,
+    "soato_id": 1706401803,
+    "district_id": 43,
+    "name_uz": "Shirbudin MFY",
+    "name_oz": "Ширбудин МФЙ",
+    "name_ru": "Ширбудин МФЙ"
+  },
+
+  {
+    "id": 100065,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Arabxona",
+    "name_oz": "Арабхона",
+    "name_ru": "Арабхона"
+  },
+  {
+    "id": 100066,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Bunyodkor",
+    "name_oz": "Бунёдкор",
+    "name_ru": "Бунёдкор"
+  },
+  {
+    "id": 100067,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Mahtumquli",
+    "name_oz": "Маҳтумқули",
+    "name_ru": "Махтумкули"
+  },
+  {
+    "id": 100068,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Zirabod",
+    "name_oz": "Зирабод",
+    "name_ru": "Зирабад"
+  },
+  {
+    "id": 100069,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Abdulla Qodiriy",
+    "name_oz": "Абдулла Қодирий",
+    "name_ru": "Абдулла Кадыри"
+  },
+  {
+    "id": 100070,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "A.Navoiy",
+    "name_oz": "А.Навоий",
+    "name_ru": "А.Навои"
+  },
+  {
+    "id": 100071,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Ziyokor",
+    "name_oz": "Зиёкор",
+    "name_ru": "Зиякор"
+  },
+  {
+    "id": 100072,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Xujabargi",
+    "name_oz": "Хўжабарги",
+    "name_ru": "Ходжабарги"
+  },
+  {
+    "id": 100073,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Bobur",
+    "name_oz": "Бобур",
+    "name_ru": "Бабур"
+  },
+  {
+    "id": 100074,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Adolat",
+    "name_oz": "Адолат",
+    "name_ru": "Адолат"
+  },
+  {
+    "id": 100075,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Temiryo'lchi",
+    "name_oz": "Темирйўлчи",
+    "name_ru": "Темирйулчи"
+  },
+  {
+    "id": 100076,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Amir Temur",
+    "name_oz": "Амир Темур",
+    "name_ru": "Амир Тимур"
+  },
+  {
+    "id": 100077,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Istiqlol",
+    "name_oz": "Истиқлол",
+    "name_ru": "Истиклол"
+  },
+  {
+    "id": 100078,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Buxoroi sharif",
+    "name_oz": "Бухорои шариф",
+    "name_ru": "Бухороишариф"
+  },
+  {
+    "id": 100079,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Beruniy",
+    "name_oz": "Беруний",
+    "name_ru": "Беруни"
+  },
+  {
+    "id": 100080,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Turkiston",
+    "name_oz": "Туркистон",
+    "name_ru": "Туркестан"
+  },
+  {
+    "id": 100081,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Mirzo Ulug'bek",
+    "name_oz": "Мирзо Улуғбек",
+    "name_ru": "Мирзо Улугбек"
+  },
+  {
+    "id": 100082,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Mustaqillik",
+    "name_oz": "Мустақиллик",
+    "name_ru": "Мустакиллик"
+  },
+  {
+    "id": 100083,
+    "soato_id": 1706401803,
+    "district_id": 44,
+    "name_uz": "Vatanparvar",
+    "name_oz": "Ватанпарвар",
+    "name_ru": "Ватанпарвар"
+  },
+
+  {
+    "id": 100084,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Ko'chko'mar",
+    "name_oz": "Кўчкўмар",
+    "name_ru": "Кучкумар"
+  },
+  {
+    "id": 100085,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Qavola Mahmud",
+    "name_oz": "Қавола Махмуд",
+    "name_ru": "Кавола Махмуд"
+  },
+  {
+    "id": 100086,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Sufikorgar",
+    "name_oz": "Сўфикоргар",
+    "name_ru": "Суфикоргар"
+  },
+  {
+    "id": 100087,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Bog'ikalon",
+    "name_oz": "Боғикалон",
+    "name_ru": "Богикалон"
+  },
+  {
+    "id": 100088,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Qo'shxo'dim",
+    "name_oz": "Қўшходим",
+    "name_ru": "Кушходим"
+  },
+  {
+    "id": 100089,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Robotak",
+    "name_oz": "Работак",
+    "name_ru": "Работак"
+  },
+  {
+    "id": 100090,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Mustaqillik",
+    "name_oz": "Мустақиллик",
+    "name_ru": "Мустакиллик"
+  },
+  {
+    "id": 100091,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Galaosiyo",
+    "name_oz": "Галаосиё",
+    "name_ru": "Галаасия"
+  },
+  {
+    "id": 100092,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Do'stlik",
+    "name_oz": "Дўстлик",
+    "name_ru": "Дустлик"
+  },
+  {
+    "id": 100093,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Navro'z",
+    "name_oz": "Наврўз",
+    "name_ru": "Навруз"
+  },
+  {
+    "id": 100094,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Oybek",
+    "name_oz": "Ойбек",
+    "name_ru": "Ойбек"
+  },
+  {
+    "id": 100095,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Xonobod",
+    "name_oz": "Хонобод",
+    "name_ru": "Хонабад"
+  },
+  {
+    "id": 100096,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Robotipoyon",
+    "name_oz": "Работипоён",
+    "name_ru": "Работипоён"
+  },
+  {
+    "id": 100097,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Shergiron",
+    "name_oz": "Шергирон",
+    "name_ru": "Шергирон"
+  },
+  {
+    "id": 100098,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Amirobod Guliston",
+    "name_oz": "Амиробод Гулистон",
+    "name_ru": "Амиробод Гулистан"
+  },
+  {
+    "id": 100099,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Robotiqalmoq",
+    "name_oz": "Работиқалмоқ",
+    "name_ru": "Работикалмак"
+  },
+  {
+    "id": 100100,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Dexcha",
+    "name_oz": "Дехча",
+    "name_ru": "Дехча"
+  },
+  {
+    "id": 100101,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Arabxona",
+    "name_oz": "Арабхона",
+    "name_ru": "Арабхона"
+  },
+  {
+    "id": 100102,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Podshoxi",
+    "name_oz": "Подшохи",
+    "name_ru": "Падшахи"
+  },
+  {
+    "id": 100103,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Madaniyat Robot",
+    "name_oz": "Маданият Работ",
+    "name_ru": "Маданият Работ"
+  },
+  {
+    "id": 100104,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Shexoncha",
+    "name_oz": "Шехонча",
+    "name_ru": "Шехонча"
+  },
+  {
+    "id": 100105,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Kunjikal'a",
+    "name_oz": "Кунжи Калъа",
+    "name_ru": "Кунджи Калъа"
+  },
+  {
+    "id": 100106,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Novmetan",
+    "name_oz": "Новметан",
+    "name_ru": "Новметан"
+  },
+  {
+    "id": 100107,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Yangiobod",
+    "name_oz": "Янгиобод",
+    "name_ru": "Янгиабад"
+  },
+  {
+    "id": 100108,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Zarmanok",
+    "name_oz": "Зарманок",
+    "name_ru": "Зарманак"
+  },
+  {
+    "id": 100109,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Talaliyon",
+    "name_oz": "Талалиён",
+    "name_ru": "Талалиён"
+  },
+  {
+    "id": 100110,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Kulonxona",
+    "name_oz": "Кулонхона",
+    "name_ru": "Кулонхона"
+  },
+  {
+    "id": 100111,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Dilobod Zafarobod",
+    "name_oz": "Дилобод Зафаробод",
+    "name_ru": "Дилобод Зафаробод"
+  },
+  {
+    "id": 100112,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Xumin",
+    "name_oz": "Хумин",
+    "name_ru": "Хумин"
+  },
+  {
+    "id": 100113,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Bog'dasht",
+    "name_oz": "Боғдашт",
+    "name_ru": "Богдашт"
+  },
+  {
+    "id": 100114,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Gulshanobod",
+    "name_oz": "Гулшанобод",
+    "name_ru": "Гульшанабад"
+  },
+  {
+    "id": 100115,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Yangi turmush",
+    "name_oz": "Янги турмуш",
+    "name_ru": "Янги Турмуш"
+  },
+  {
+    "id": 100116,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Turkon",
+    "name_oz": "Туркон",
+    "name_ru": "Туркон"
+  },
+  {
+    "id": 100117,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Istiqbol",
+    "name_oz": "Истикбол",
+    "name_ru": "Истикбол"
+  },
+  {
+    "id": 100118,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Saxovat",
+    "name_oz": "Саховат",
+    "name_ru": "Саховат"
+  },
+  {
+    "id": 100119,
+    "soato_id": 1706401803,
+    "district_id": 33,
+    "name_uz": "Sohibkor",
+    "name_oz": "Сохибкор",
+    "name_ru": "Сохибкор"
+  },
+
+  {
+    "id": 100120,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Anjirbog'",
+    "name_oz": "Анжирбоғ",
+    "name_ru": "Анжирбаг"
+  },
+  {
+    "id": 100121,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Beshrobot",
+    "name_oz": "Бешработ",
+    "name_ru": "Бешработ"
+  },
+  {
+    "id": 100122,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Bozorjoyi",
+    "name_oz": "Бозоржойи",
+    "name_ru": "Базарджойи"
+  },
+  {
+    "id": 100123,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Vobkent",
+    "name_oz": "Вобкент",
+    "name_ru": "Вабкент"
+  },
+  {
+    "id": 100124,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Guliston",
+    "name_oz": "Гулистон",
+    "name_ru": "Гулистан"
+  },
+  {
+    "id": 100125,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Diyor",
+    "name_oz": "Диёр",
+    "name_ru": "Диёр"
+  },
+  {
+    "id": 100126,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Do'stlik",
+    "name_oz": "Дўстлик",
+    "name_ru": "Дустлик"
+  },
+  {
+    "id": 100127,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Istiqlol",
+    "name_oz": "Истиқлол",
+    "name_ru": "Истиклол"
+  },
+  {
+    "id": 100128,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Kosari",
+    "name_oz": "Косари",
+    "name_ru": "Косари"
+  },
+  {
+    "id": 100129,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Ko'liodina",
+    "name_oz": "Кўлиодина",
+    "name_ru": "Кулиодина"
+  },
+  {
+    "id": 100130,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Kulolchi",
+    "name_oz": "Кулолчи",
+    "name_ru": "Кулолчи"
+  },
+  {
+    "id": 100131,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Kulxatib",
+    "name_oz": "Кулхатиб",
+    "name_ru": "Кулхатиб"
+  },
+  {
+    "id": 100132,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Kumushkent",
+    "name_oz": "Кумушкент",
+    "name_ru": "Кумушкент"
+  },
+  {
+    "id": 100133,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Quruvchi MFY",
+    "name_oz": "Курувчи МФЙ",
+    "name_ru": "Курувчи МФЙ"
+  },
+  {
+    "id": 100134,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Qatag'an",
+    "name_oz": "Қатаған",
+    "name_ru": "Катаган"
+  },
+  {
+    "id": 100135,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Qo'qin",
+    "name_oz": "Қўқин",
+    "name_ru": "Кокин"
+  },
+  {
+    "id": 100136,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Latifsobungar",
+    "name_oz": "Латифсобунгар",
+    "name_ru": "Латифсобунгар"
+  },
+  {
+    "id": 100137,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Mirvoshi",
+    "name_oz": "Мирвоши",
+    "name_ru": "Мирвоши"
+  },
+  {
+    "id": 100138,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Muminobod",
+    "name_oz": "Муминобод",
+    "name_ru": "Муминобод"
+  },
+  {
+    "id": 100139,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Nayman",
+    "name_oz": "Найман",
+    "name_ru": "Найман"
+  },
+  {
+    "id": 100140,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Niyozxo'ja",
+    "name_oz": "Ниёзхўжа",
+    "name_ru": "Ниёзходжа"
+  },
+  {
+    "id": 100141,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Ponob",
+    "name_oz": "Поноб",
+    "name_ru": "Поноб"
+  },
+  {
+    "id": 100142,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Rozmoz",
+    "name_oz": "Розмоз",
+    "name_ru": "Розмоз"
+  },
+  {
+    "id": 100143,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Sariosiyo",
+    "name_oz": "Сариосиё",
+    "name_ru": "Сариасия"
+  },
+  {
+    "id": 100144,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Sufidehqon",
+    "name_oz": "Сўфидеҳқон",
+    "name_ru": "Суфидехкон"
+  },
+  {
+    "id": 100145,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Teraklik",
+    "name_oz": "Тераклик",
+    "name_ru": "Тераклик"
+  },
+  {
+    "id": 100146,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "O'zbakon",
+    "name_oz": "Ўзбакон",
+    "name_ru": "Узбакон"
+  },
+  {
+    "id": 100147,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Xajuvon",
+    "name_oz": "Хажувон",
+    "name_ru": "Хаджуван"
+  },
+  {
+    "id": 100148,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Xayrxush",
+    "name_oz": "Хайрхуш",
+    "name_ru": "Хайрхуш"
+  },
+  {
+    "id": 100149,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Xayrobod",
+    "name_oz": "Хайробод",
+    "name_ru": "Хайрабад"
+  },
+  {
+    "id": 100150,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Xalach",
+    "name_oz": "Халач",
+    "name_ru": "Халач"
+  },
+  {
+    "id": 100151,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Xo'jarabot",
+    "name_oz": "Хўжаработ",
+    "name_ru": "Хужаработ"
+  },
+  {
+    "id": 100152,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Changaron",
+    "name_oz": "Чангарон",
+    "name_ru": "Чангарон"
+  },
+  {
+    "id": 100153,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Charmgaron",
+    "name_oz": "Чармгарон",
+    "name_ru": "Чармгарон"
+  },
+  {
+    "id": 100154,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Cho'rikalon",
+    "name_oz": "Чўрикалон",
+    "name_ru": "Чурикалон"
+  },
+  {
+    "id": 100155,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Shakarkent",
+    "name_oz": "Шакаркент",
+    "name_ru": "Шакаркент"
+  },
+  {
+    "id": 100156,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Shanba",
+    "name_oz": "Шанба",
+    "name_ru": "Шанба"
+  },
+  {
+    "id": 100157,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Shirin",
+    "name_oz": "Ширин",
+    "name_ru": "Ширин"
+  },
+  {
+    "id": 100158,
+    "soato_id": 1706401804,
+    "district_id": 34,
+    "name_uz": "Shohnigor",
+    "name_oz": "Шоҳнигор",
+    "name_ru": "Шохнигор"
+  },
+
+  {
+    "id": 100159,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Romish MFY",
+    "name_oz": "Ромиш МФЙ",
+    "name_ru": "Ромиш МФЙ"
+  },
+  {
+    "id": 100160,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Mirzayon MFY",
+    "name_oz": "Мирзаён МФЙ",
+    "name_ru": "Мирзаён МФЙ"
+  },
+  {
+    "id": 100161,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Jamiyat",
+    "name_oz": "Жамият",
+    "name_ru": "Жамият"
+  },
+  {
+    "id": 100162,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qazoqon",
+    "name_oz": "Қазоқон",
+    "name_ru": "Казакон"
+  },
+  {
+    "id": 100163,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Oqtepa",
+    "name_oz": "Оқтепа",
+    "name_ru": "Октепа"
+  },
+  {
+    "id": 100164,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Yosh kuch",
+    "name_oz": "Ёш куч",
+    "name_ru": "Ёш куч"
+  },
+  {
+    "id": 100165,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Luqmon",
+    "name_oz": "Луқмон",
+    "name_ru": "Лукмон"
+  },
+  {
+    "id": 100166,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Oydin",
+    "name_oz": "Ойдин",
+    "name_ru": "Айдин"
+  },
+  {
+    "id": 100167,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Ibn Sino",
+    "name_oz": "Ибн Сино",
+    "name_ru": "Ибн Сина"
+  },
+  {
+    "id": 100168,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Dalmunobod",
+    "name_oz": "Далмунобод",
+    "name_ru": "Далмунобод"
+  },
+  {
+    "id": 100169,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Istiqlol",
+    "name_oz": "Истиқлол",
+    "name_ru": "Истиклол"
+  },
+  {
+    "id": 100170,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Hazorman",
+    "name_oz": "Ҳазорман",
+    "name_ru": "Хазорман"
+  },
+  {
+    "id": 100171,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Sho'robo'd",
+    "name_oz": "Шўробод",
+    "name_ru": "Шурабад"
+  },
+  {
+    "id": 100172,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qozikenti",
+    "name_oz": "Қозикенти",
+    "name_ru": "Казикенти"
+  },
+  {
+    "id": 100173,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Boliob",
+    "name_oz": "Болиоб",
+    "name_ru": "Балиоб"
+  },
+  {
+    "id": 100174,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Denov",
+    "name_oz": "Денов",
+    "name_ru": "Денов"
+  },
+  {
+    "id": 100175,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Murgak",
+    "name_oz": "Мургак",
+    "name_ru": "Мургак"
+  },
+  {
+    "id": 100176,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Xumdonak",
+    "name_oz": "Хумдонак",
+    "name_ru": "Хумдонак"
+  },
+  {
+    "id": 100177,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Ko'liyon",
+    "name_oz": "Кўлиён",
+    "name_ru": "Кулиён"
+  },
+  {
+    "id": 100178,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Puloti MFY",
+    "name_oz": "Пулоти МФЙ",
+    "name_ru": "Пулоти МФЙ"
+  },
+  {
+    "id": 100179,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Ushot MFY",
+    "name_oz": "Ушот МФЙ",
+    "name_ru": "Ушот МФЙ"
+  },
+  {
+    "id": 100180,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Samonchuq",
+    "name_oz": "Самончуқ",
+    "name_ru": "Самончук"
+  },
+  {
+    "id": 100181,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Zangi",
+    "name_oz": "Занги",
+    "name_ru": "Занги"
+  },
+  {
+    "id": 100182,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Xumin",
+    "name_oz": "Хумин",
+    "name_ru": "Хумин"
+  },
+  {
+    "id": 100183,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qalmoq",
+    "name_oz": "Қалмоқ",
+    "name_ru": "Калмак"
+  },
+  {
+    "id": 100184,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Pahlavon",
+    "name_oz": "Пахлавон",
+    "name_ru": "Пахлаван"
+  },
+  {
+    "id": 100185,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Xo'jahayron",
+    "name_oz": "Хўжахайрон",
+    "name_ru": "Хужахайрон"
+  },
+  {
+    "id": 100186,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Dovud",
+    "name_oz": "Довуд",
+    "name_ru": "Давуд"
+  },
+  {
+    "id": 100187,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Pochchoyi",
+    "name_oz": "Поччойи",
+    "name_ru": "Поччойи"
+  },
+  {
+    "id": 100188,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Eronshoh",
+    "name_oz": "Эроншоҳ",
+    "name_ru": "Эроншох"
+  },
+  {
+    "id": 100189,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Bahoriston",
+    "name_oz": "Баҳористон",
+    "name_ru": "Бахористон"
+  },
+  {
+    "id": 100190,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qorovul",
+    "name_oz": "Қoрoвул",
+    "name_ru": "Каравул"
+  },
+  {
+    "id": 100191,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Darveshi",
+    "name_oz": "Дарвеши",
+    "name_ru": "Дарвеши"
+  },
+  {
+    "id": 100192,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Yangiobod",
+    "name_oz": "Янгиобод",
+    "name_ru": "Янгиобод"
+  },
+  {
+    "id": 100193,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Chorzona",
+    "name_oz": "Чорзона",
+    "name_ru": "Чарзона"
+  },
+  {
+    "id": 100194,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Tobagar",
+    "name_oz": "Тобагар",
+    "name_ru": "Табагар"
+  },
+  {
+    "id": 100195,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Nurafshon",
+    "name_oz": "Нурафшон",
+    "name_ru": "Нурафшон"
+  },
+  {
+    "id": 100196,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Mustaqillik",
+    "name_oz": "Мустақиллик",
+    "name_ru": "Мустакиллик"
+  },
+  {
+    "id": 100197,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Oytug'di",
+    "name_oz": "Ойтўғди",
+    "name_ru": "Айтугди"
+  },
+  {
+    "id": 100198,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qaroli",
+    "name_oz": "Қароли",
+    "name_ru": "Кароли"
+  },
+  {
+    "id": 100199,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Tinchlik",
+    "name_oz": "Тинчлик",
+    "name_ru": "Тинчлик"
+  },
+  {
+    "id": 100200,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Oxshikh MFY",
+    "name_oz": "Охших МФЙ",
+    "name_ru": "Охших МФЙ"
+  },
+  {
+    "id": 100201,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Rabot MFY",
+    "name_oz": "Работ МФЙ",
+    "name_ru": "Работ МФЙ"
+  },
+  {
+    "id": 100202,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Namgoni",
+    "name_oz": "Намгони",
+    "name_ru": "Намгони"
+  },
+  {
+    "id": 100203,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Aleli MFY",
+    "name_oz": "Алели МФЙ",
+    "name_ru": "Алели МФЙ"
+  },
+  {
+    "id": 100204,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Obod MFY",
+    "name_oz": "Обод МФЙ",
+    "name_ru": "Обод МФЙ"
+  },
+  {
+    "id": 100205,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Jondor",
+    "name_oz": "Жондор",
+    "name_ru": "Жондор"
+  },
+  {
+    "id": 100206,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Zarafshon MFY",
+    "name_oz": "Зарафшон МФЙ",
+    "name_ru": "Зарафшон МФЙ"
+  },
+  {
+    "id": 100207,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Qovchin",
+    "name_oz": "Қовчин",
+    "name_ru": "Ковчин"
+  },
+  {
+    "id": 100208,
+    "soato_id": 1706401805,
+    "district_id": 41,
+    "name_uz": "Navgadi MFY",
+    "name_oz": "Навгади МФЙ",
+    "name_ru": "Навгади МФЙ"
+  },
+
+  {
+    "id": 100000,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "B.Nakshband",
+    "name_oz": "Б.Накшбанд",
+    "name_ru": "Б.Накшбанд"
+  },
+  {
+    "id": 100001,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Beklar",
+    "name_oz": "Беклар",
+    "name_ru": "Беклар"
+  },
+  {
+    "id": 100002,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Geofizika",
+    "name_oz": "Геофизика",
+    "name_ru": "Геофизика"
+  },
+  {
+    "id": 100003,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Istiqbol",
+    "name_oz": "Истиқбол",
+    "name_ru": "Истиқбол"
+  },
+  {
+    "id": 100004,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Kogon",
+    "name_oz": "Когон",
+    "name_ru": "Когон"
+  },
+  {
+    "id": 100005,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Mustaqillik",
+    "name_oz": "Мустақиллик",
+    "name_ru": "Мустақиллик"
+  },
+  {
+    "id": 100006,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Navruz",
+    "name_oz": "Наврўз",
+    "name_ru": "Навруз"
+  },
+  {
+    "id": 100007,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Niyoz hoji",
+    "name_oz": "Ниёз ҳожи",
+    "name_ru": "Ниёз хожи"
+  },
+  {
+    "id": 100008,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Nurafshon",
+    "name_oz": "Нурафшон",
+    "name_ru": "Нурафшон"
+  },
+  {
+    "id": 100009,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Sarayon",
+    "name_oz": "Сараён",
+    "name_ru": "Сараён"
+  },
+  {
+    "id": 100010,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Siyozi poyon",
+    "name_oz": "Сиёзи поён",
+    "name_ru": "Сиёзи поён"
+  },
+  {
+    "id": 100011,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Sorgun",
+    "name_oz": "Соргун",
+    "name_ru": "Соргун"
+  },
+  {
+    "id": 100012,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Sukhor",
+    "name_oz": "Сухор",
+    "name_ru": "Сухор"
+  },
+  {
+    "id": 100013,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Taraqqiyot",
+    "name_oz": "Тараққиёт",
+    "name_ru": "Тараққиёт"
+  },
+  {
+    "id": 100014,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Tun-iroq",
+    "name_oz": "Тун-ироқ",
+    "name_ru": "Тун-ироқ"
+  },
+  {
+    "id": 100015,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Tutkunda",
+    "name_oz": "Туткунда",
+    "name_ru": "Туткунда"
+  },
+  {
+    "id": 100016,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Uba cho‘li",
+    "name_oz": "Ўба чўли",
+    "name_ru": "Уба чули"
+  },
+  {
+    "id": 100017,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "O‘zbekiston",
+    "name_oz": "Ўзбекистон",
+    "name_ru": "Узбекистан"
+  },
+  {
+    "id": 100018,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "O‘rta cho‘l",
+    "name_oz": "Ўрта чўл",
+    "name_ru": "Орта чуль"
+  },
+  {
+    "id": 100019,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Xo‘ja Yakshaba",
+    "name_oz": "Хўжа Якшаба",
+    "name_ru": "Ходжа Якшаба"
+  },
+  {
+    "id": 100020,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Hukumatobod",
+    "name_oz": "Хукуматобод",
+    "name_ru": "Хукуматобод"
+  },
+  {
+    "id": 100021,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Choloki",
+    "name_oz": "Чолоки",
+    "name_ru": "Чолоки"
+  },
+  {
+    "id": 100022,
+    "soato_id": 1706401803,
+    "district_id": 36,
+    "name_uz": "Yangi hayot",
+    "name_oz": "Янги ҳаёт",
+    "name_ru": "Янги хаёт"
+  },
+
+  {
+    "id": 100000,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Chovdur MFY",
+    "name_oz": "Човдур МФЙ",
+    "name_ru": "Човдур МФЙ"
+  },
+  {
+    "id": 100001,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Muxtor MFY",
+    "name_oz": "Мухтор МФЙ",
+    "name_ru": "Мухтор МФЙ"
+  },
+  {
+    "id": 100002,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Bayot MFY",
+    "name_oz": "Баёт МФЙ",
+    "name_ru": "Баёт МФЙ"
+  },
+  {
+    "id": 100003,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Kattabayot MFY",
+    "name_oz": "Каттабаёт МФЙ",
+    "name_ru": "Каттабаёт МФЙ"
+  },
+  {
+    "id": 100004,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Qumkashon MFY",
+    "name_oz": "Қумкашон МФЙ",
+    "name_ru": "Кумкашон МФЙ"
+  },
+  {
+    "id": 100005,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Qirtay MFY",
+    "name_oz": "Қиртай МФЙ",
+    "name_ru": "Киртай МФЙ"
+  },
+  {
+    "id": 100006,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "O‘zbekiston MFY",
+    "name_oz": "Ўзбекистон МФЙ",
+    "name_ru": "Узбекистан МФЙ"
+  },
+  {
+    "id": 100007,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Ko‘lchovdur MFY",
+    "name_oz": "Кўлчовдур МФЙ",
+    "name_ru": "Кульчовдур МФЙ"
+  },
+  {
+    "id": 100008,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Qirlison MFY",
+    "name_oz": "Қирлишон МФЙ",
+    "name_ru": "Кирлишон МФЙ"
+  },
+  {
+    "id": 100009,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Asajam MFY",
+    "name_oz": "Асажам МФЙ",
+    "name_ru": "Асажам МФЙ"
+  },
+  {
+    "id": 100010,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Usmonshayx MFY",
+    "name_oz": "Усмоншайх МФЙ",
+    "name_ru": "Усмоншайх МФЙ"
+  },
+  {
+    "id": 100011,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Yoshbotir MFY",
+    "name_oz": "Ёшботир МФЙ",
+    "name_ru": "Ёшботир МФЙ"
+  },
+  {
+    "id": 100012,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Denov MFY",
+    "name_oz": "Денов МФЙ",
+    "name_ru": "Денов МФЙ"
+  },
+  {
+    "id": 100013,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Nurobod MFY",
+    "name_oz": "Нуробод МФЙ",
+    "name_ru": "Нуробод МФЙ"
+  },
+  {
+    "id": 100014,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Pichoqqi MFY",
+    "name_oz": "Пичоқчи МФЙ",
+    "name_ru": "Пичакчи МФЙ"
+  },
+  {
+    "id": 100015,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Davlatboy MFY",
+    "name_oz": "Давлатбой МФЙ",
+    "name_ru": "Давлатбой МФЙ"
+  },
+  {
+    "id": 100016,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Navruz MFY",
+    "name_oz": "Наврўз МФЙ",
+    "name_ru": "Навруз МФЙ"
+  },
+  {
+    "id": 100017,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Eski Olot MFY",
+    "name_oz": "Эски Олот МФЙ",
+    "name_ru": "Эски Алат МФЙ"
+  },
+  {
+    "id": 100018,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Bo‘ribek Chandir MFY",
+    "name_oz": "Бўрибек Чандир МФЙ",
+    "name_ru": "Бурибек Чандир МФЙ"
+  },
+  {
+    "id": 100019,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "G‘anchi Chandir MFY",
+    "name_oz": "Ғанчи Чандир МФЙ",
+    "name_ru": "Ганчи Чандир МФЙ"
+  },
+  {
+    "id": 100020,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Xidreli MFY",
+    "name_oz": "Хидрейли МФЙ",
+    "name_ru": "Хидрейли МФЙ"
+  },
+  {
+    "id": 100021,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Bo‘ston MFY",
+    "name_oz": "Бўстон МФЙ",
+    "name_ru": "Бустон МФЙ"
+  },
+  {
+    "id": 100022,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Soinqorovul MFY",
+    "name_oz": "Соинқоровул МФЙ",
+    "name_ru": "Саинкаровул МФЙ"
+  },
+  {
+    "id": 100023,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Arabxona MFY",
+    "name_oz": "Арабхона МФЙ",
+    "name_ru": "Арабхона МФЙ"
+  },
+  {
+    "id": 100024,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Oq-oltin MFY",
+    "name_oz": "Ок-олтин МФЙ",
+    "name_ru": "Ак-олтин МФЙ"
+  },
+  {
+    "id": 100025,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Jayhunobod MFY",
+    "name_oz": "Жайхунобод МФЙ",
+    "name_ru": "Джахонобод МФЙ"
+  },
+  {
+    "id": 100026,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Burjoq MFY",
+    "name_oz": "Буржоқ МФЙ",
+    "name_ru": "Буржак МФЙ"
+  },
+  {
+    "id": 100027,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Soloqorovul MFY",
+    "name_oz": "Солоқоровул МФЙ",
+    "name_ru": "Салакаровул МФЙ"
+  },
+  {
+    "id": 100028,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Opshok MFY",
+    "name_oz": "Опшок МФЙ",
+    "name_ru": "Опшок МФЙ"
+  },
+  {
+    "id": 100029,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Dilkor MFY",
+    "name_oz": "Дилкор МФЙ",
+    "name_ru": "Дилкор МФЙ"
+  },
+  {
+    "id": 100030,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Xosabuyi MFY",
+    "name_oz": "Хосабўйи МФЙ",
+    "name_ru": "Хосабуйи МФЙ"
+  },
+  {
+    "id": 100031,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Shayxlar MFY",
+    "name_oz": "Шайхлар МФЙ",
+    "name_ru": "Шейхлар МФЙ"
+  },
+  {
+    "id": 100032,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Kesakli MFY",
+    "name_oz": "Кесакли МФЙ",
+    "name_ru": "Кесакли МФЙ"
+  },
+  {
+    "id": 100033,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Bunyodkor MFY",
+    "name_oz": "Бунёдкор МФЙ",
+    "name_ru": "Бунёдкор МФЙ"
+  },
+  {
+    "id": 100034,
+    "soato_id": 1706401803,
+    "district_id": 32,
+    "name_uz": "Xalifa MFY",
+    "name_oz": "Халифа МФЙ",
+    "name_ru": "Халифа МФЙ"
+  },
+
+  {
+    "id": 100000,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Samosiy MFY",
+    "name_oz": "“Самосий” МФЙ",
+    "name_ru": "Самосий МФЙ"
+  },
+  {
+    "id": 100001,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Azizon MFY",
+    "name_oz": "“Азизон” МФЙ",
+    "name_ru": "Азизон МФЙ"
+  },
+  {
+    "id": 100002,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Qo‘rg‘on MFY",
+    "name_oz": "Қўрғон МФЙ",
+    "name_ru": "Курган МФЙ"
+  },
+  {
+    "id": 100003,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "O‘zbekiston MFY",
+    "name_oz": "Ўзбекистон МФЙ",
+    "name_ru": "Узбекистан МФЙ"
+  },
+  {
+    "id": 100004,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Qizilravot MFY",
+    "name_oz": "“Қизилравот” МФЙ",
+    "name_ru": "Кызылравот МФЙ"
+  },
+  {
+    "id": 100005,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Qalaychorbog‘ MFY",
+    "name_oz": "“Қалайчорбоғ” МФЙ",
+    "name_ru": "Калайчарбог МФЙ"
+  },
+  {
+    "id": 100006,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Mug‘oncha MFY",
+    "name_oz": "“Муғонча” МФЙ",
+    "name_ru": "Мугонча МФЙ"
+  },
+  {
+    "id": 100007,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Chelong‘u MFY",
+    "name_oz": "Челонғу МФЙ",
+    "name_ru": "Челонгу МФЙ"
+  },
+  {
+    "id": 100008,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Toshrabot MFY",
+    "name_oz": "“Тошработ” МФЙ",
+    "name_ru": "Ташработ МФЙ"
+  },
+  {
+    "id": 100009,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "G‘azberon MFY",
+    "name_oz": "Ғазберон МФЙ",
+    "name_ru": "Газберон МФЙ"
+  },
+  {
+    "id": 100010,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Urganjiyon MFY",
+    "name_oz": "“Урганжиён” МФЙ",
+    "name_ru": "Урганжиян МФЙ"
+  },
+  {
+    "id": 100011,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Xosa MFY",
+    "name_oz": "Хоса МФЙ",
+    "name_ru": "Хоса МФЙ"
+  },
+  {
+    "id": 100012,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Decha MFY",
+    "name_oz": "Деча МФЙ",
+    "name_ru": "Деча МФЙ"
+  },
+  {
+    "id": 100013,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Gazli MFY",
+    "name_oz": "“Газли” МФЙ",
+    "name_ru": "Газли МФЙ"
+  },
+  {
+    "id": 100014,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Baynalminnal MFY",
+    "name_oz": "“Байналминал” МФЙ",
+    "name_ru": "Байналминал МФЙ"
+  },
+  {
+    "id": 100015,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Kahramon MFY",
+    "name_oz": "“Кахрамон” МФЙ",
+    "name_ru": "Кахрамон МФЙ"
+  },
+  {
+    "id": 100016,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Romitan MFY",
+    "name_oz": "“Ромитан” МФЙ",
+    "name_ru": "Ромитан МФЙ"
+  },
+  {
+    "id": 100017,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Tarnout MFY",
+    "name_oz": "“Тарнаут” МФЙ",
+    "name_ru": "Тарнаут МФЙ"
+  },
+  {
+    "id": 100018,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Bog‘cha MFY",
+    "name_oz": "Боғча МФЙ",
+    "name_ru": "Багча МФЙ"
+  },
+  {
+    "id": 100019,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Attaron MFY",
+    "name_oz": "“Аттарон” МФЙ",
+    "name_ru": "Аттарон МФЙ"
+  },
+  {
+    "id": 100020,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Mirishkor MFY",
+    "name_oz": "Миришкор МФЙ",
+    "name_ru": "Миришкор МФЙ"
+  },
+  {
+    "id": 100021,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "O‘ba MFY",
+    "name_oz": "“Ўба” МФЙ",
+    "name_ru": "Уба МФЙ"
+  },
+  {
+    "id": 100022,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Alisher Navoiy MFY",
+    "name_oz": "Алишер Навоий МФЙ",
+    "name_ru": "Алишер Навои МФЙ"
+  },
+  {
+    "id": 100023,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Zarafshon MFY",
+    "name_oz": "Зарафшон МФЙ",
+    "name_ru": "Зарафшан МФЙ"
+  },
+  {
+    "id": 100024,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Ibn Sino MFY",
+    "name_oz": "“Ибн Сино” МФЙ",
+    "name_ru": "Ибн Сина МФЙ"
+  },
+  {
+    "id": 100025,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Bobur MFY",
+    "name_oz": "Бобур МФЙ",
+    "name_ru": "Бабур МФЙ"
+  },
+  {
+    "id": 100026,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Guliston MFY",
+    "name_oz": "Гулистон МФЙ",
+    "name_ru": "Гулистан МФЙ"
+  },
+  {
+    "id": 100027,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Bog‘isaydon MFY",
+    "name_oz": "Боғисайдон МФЙ",
+    "name_ru": "Багисайдон МФЙ"
+  },
+  {
+    "id": 100028,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Bog‘iturkon MFY",
+    "name_oz": "Богитуркон МФЙ",
+    "name_ru": "Багитуркон МФЙ"
+  },
+  {
+    "id": 100029,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Marziya MFY",
+    "name_oz": "“Марзия” МФЙ",
+    "name_ru": "Марзия МФЙ"
+  },
+  {
+    "id": 100030,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Qumrabot MFY",
+    "name_oz": "“Қумработ” МФЙ",
+    "name_ru": "Кумработ МФЙ"
+  },
+  {
+    "id": 100031,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Xo‘jaubbon MFY",
+    "name_oz": "Хўжауббон МФЙ",
+    "name_ru": "Ходжауббон МФЙ"
+  },
+  {
+    "id": 100032,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Hazortut MFY",
+    "name_oz": "Ҳазортут МФЙ",
+    "name_ru": "Хазортут МФЙ"
+  },
+  {
+    "id": 100033,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Hofizrabot MFY",
+    "name_oz": "Ҳофизработ МФЙ",
+    "name_ru": "Хафизработ МФЙ"
+  },
+  {
+    "id": 100034,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Istiqlol MFY",
+    "name_oz": "Истиқлол МФЙ",
+    "name_ru": "Истиклол МФЙ"
+  },
+  {
+    "id": 100035,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Iftixor MFY",
+    "name_oz": "Ифтихор МФЙ",
+    "name_ru": "Ифтихор МФЙ"
+  },
+  {
+    "id": 100036,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Sho‘robo MFY",
+    "name_oz": "“Шўробод” МФЙ",
+    "name_ru": "Шуробод МФЙ"
+  },
+  {
+    "id": 100037,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Shurcha MFY",
+    "name_oz": "“Шурча” МФЙ",
+    "name_ru": "Шурча МФЙ"
+  },
+  {
+    "id": 100038,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Otabek MFY",
+    "name_oz": "Ўтабек МФЙ",
+    "name_ru": "Утабек МФЙ"
+  },
+  {
+    "id": 100039,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Navbahor MFY",
+    "name_oz": "“Навбахор” МФЙ",
+    "name_ru": "Навбахор МФЙ"
+  },
+  {
+    "id": 100040,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Poyjuy MFY",
+    "name_oz": "Пойжўй МФЙ",
+    "name_ru": "Пайджуй МФЙ"
+  },
+  {
+    "id": 100041,
+    "soato_id": 1706401804,
+    "district_id": 40,
+    "name_uz": "Kokishtuvon MFY",
+    "name_oz": "‘Кокиштувон’ МФЙ",
+    "name_ru": "Кокиштувон МФЙ"
+  },
+
+  {
+    "id": 100000,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "G‘ulomte",
+    "name_oz": "Ғуломте",
+    "name_ru": "Гуломте"
+  },
+  {
+    "id": 100001,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Juynav",
+    "name_oz": "Жуйнав",
+    "name_ru": "Жуйнав"
+  },
+  {
+    "id": 100002,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Iskogare",
+    "name_oz": "Искогаре",
+    "name_ru": "Искогаре"
+  },
+  {
+    "id": 100003,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Qalmaqon",
+    "name_oz": "Қалмақон",
+    "name_ru": "Калмакон"
+  },
+  {
+    "id": 100004,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Quyi Chuqurak",
+    "name_oz": "Қуйи Чуқурак",
+    "name_ru": "Куий Чукурак"
+  },
+  {
+    "id": 100005,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Qo‘rg‘oni Vardonze",
+    "name_oz": "Қўрғони Вардонзе",
+    "name_ru": "Кургони Вардонзе"
+  },
+  {
+    "id": 100006,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Talisafer",
+    "name_oz": "Талисафед",
+    "name_ru": "Талисафед"
+  },
+  {
+    "id": 100007,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Sharof Rashidov",
+    "name_oz": "Шароф Рашидов",
+    "name_ru": "Шароф Рашидов"
+  },
+  {
+    "id": 100008,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Chuqurak",
+    "name_oz": "Чуқурак",
+    "name_ru": "Чукурак"
+  },
+  {
+    "id": 100009,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Yangiqishloq",
+    "name_oz": "Янгиқишлоқ",
+    "name_ru": "Янгикишлок"
+  },
+  {
+    "id": 100010,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Arabxona",
+    "name_oz": "Арабхона",
+    "name_ru": "Арабхона"
+  },
+  {
+    "id": 100011,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Boboato",
+    "name_oz": "Бобоато",
+    "name_ru": "Бобоато"
+  },
+  {
+    "id": 100012,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Bobur",
+    "name_oz": "Бобур",
+    "name_ru": "Бабур"
+  },
+  {
+    "id": 100013,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Bog‘iafzal",
+    "name_oz": "Боғиафзал",
+    "name_ru": "Багиафзал"
+  },
+  {
+    "id": 100014,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Jilvon",
+    "name_oz": "Жилвон",
+    "name_ru": "Жилвон"
+  },
+  {
+    "id": 100015,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Jo‘shura",
+    "name_oz": "Жўшўра",
+    "name_ru": "Джошура"
+  },
+  {
+    "id": 100016,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Mirzoqul",
+    "name_oz": "Мирзоқул",
+    "name_ru": "Мирзакул"
+  },
+  {
+    "id": 100017,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Pashmon",
+    "name_oz": "Пашмон",
+    "name_ru": "Пашмон"
+  },
+  {
+    "id": 100018,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Mazlaxon Chandir",
+    "name_oz": "Мазлахон Чандир",
+    "name_ru": "Мазлахон Чандир"
+  },
+  {
+    "id": 100019,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Chitkaron",
+    "name_oz": "Читкарон",
+    "name_ru": "Читкарон"
+  },
+  {
+    "id": 100020,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Shodlik",
+    "name_oz": "Шодлик",
+    "name_ru": "Шодлик"
+  },
+  {
+    "id": 100021,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Denov",
+    "name_oz": "Денов",
+    "name_ru": "Денов"
+  },
+  {
+    "id": 100022,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Dorigar",
+    "name_oz": "Доригар",
+    "name_ru": "Доригар"
+  },
+  {
+    "id": 100023,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Do‘rmon",
+    "name_oz": "Дўрмон",
+    "name_ru": "Дурмон"
+  },
+  {
+    "id": 100024,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Juyrabot",
+    "name_oz": "Жўйработ",
+    "name_ru": "Жуйработ"
+  },
+  {
+    "id": 100025,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Zarchabek",
+    "name_oz": "Зарчабек",
+    "name_ru": "Зарчабек"
+  },
+  {
+    "id": 100026,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Kalon",
+    "name_oz": "Калон",
+    "name_ru": "Калон"
+  },
+  {
+    "id": 100027,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Ko‘rishkent",
+    "name_oz": "Кўришкент",
+    "name_ru": "Куришкент"
+  },
+  {
+    "id": 100028,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Qayragoch",
+    "name_oz": "Қайрағоч",
+    "name_ru": "Кайрагоч"
+  },
+  {
+    "id": 100029,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Mahallakozi",
+    "name_oz": "Маҳаллакози",
+    "name_ru": "Махаллакози"
+  },
+  {
+    "id": 100030,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Mingchinor",
+    "name_oz": "Мингчинор",
+    "name_ru": "Мингчинор"
+  },
+  {
+    "id": 100031,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Navbahor",
+    "name_oz": "Навбахор",
+    "name_ru": "Навбахор"
+  },
+  {
+    "id": 100032,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Nekkishi",
+    "name_oz": "Неккиши",
+    "name_ru": "Неккиши"
+  },
+  {
+    "id": 100033,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Pattaxon",
+    "name_oz": "Паттахон",
+    "name_ru": "Паттахон"
+  },
+  {
+    "id": 100034,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Sultonobod",
+    "name_oz": "Султонобод",
+    "name_ru": "Султанабад"
+  },
+  {
+    "id": 100035,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Temirchi",
+    "name_oz": "Темирчи",
+    "name_ru": "Темирчи"
+  },
+  {
+    "id": 100036,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Xorin",
+    "name_oz": "Хорин",
+    "name_ru": "Хорин"
+  },
+  {
+    "id": 100037,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Shibirgon",
+    "name_oz": "Шибирғон",
+    "name_ru": "Шибиргон"
+  },
+  {
+    "id": 100038,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Alisher Navoiy",
+    "name_oz": "Алишер Навоий",
+    "name_ru": "Алишер Навои"
+  },
+  {
+    "id": 100039,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Bobohaydar",
+    "name_oz": "Бобохайдар",
+    "name_ru": "Бобохайдар"
+  },
+  {
+    "id": 100040,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Guliston",
+    "name_oz": "Гулистон",
+    "name_ru": "Гулистан"
+  },
+  {
+    "id": 100041,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Kotiyon",
+    "name_oz": "Котиён",
+    "name_ru": "Котион"
+  },
+  {
+    "id": 100042,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Nuraфshon",
+    "name_oz": "Нурафшон",
+    "name_ru": "Нурафшон"
+  },
+  {
+    "id": 100043,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Savrak",
+    "name_oz": "Саврак",
+    "name_ru": "Саврак"
+  },
+  {
+    "id": 100044,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Talisangobod",
+    "name_oz": "Талисангобод",
+    "name_ru": "Талисангобод"
+  },
+  {
+    "id": 100045,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Tezguzar",
+    "name_oz": "Тезгузар",
+    "name_ru": "Тезгузар"
+  },
+  {
+    "id": 100046,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Tinchlik",
+    "name_oz": "Тинчлик",
+    "name_ru": "Тинчлик"
+  },
+  {
+    "id": 100047,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Xo‘ja Orif",
+    "name_oz": "Хўжа Ориф",
+    "name_ru": "Ходжа Ориф"
+  },
+  {
+    "id": 100048,
+    "soato_id": 1706401804,
+    "district_id": 42,
+    "name_uz": "Paxtaobod",
+    "name_oz": "Пахтаобод",
+    "name_ru": "Пахтаабад"
+  },
+
+  {
+    "id": 110000,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Mallaishayx",
+    "name_oz": "Маллаишайх",
+    "name_ru": "Маллаишайх"
+  },
+  {
+    "id": 110001,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Xo‘jakon",
+    "name_oz": "Хўжакон",
+    "name_ru": "Ходжакон"
+  },
+  {
+    "id": 110002,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Qorahoji",
+    "name_oz": "Қорахожи",
+    "name_ru": "Караходжи"
+  },
+  {
+    "id": 110003,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Arabxona",
+    "name_oz": "Арабхона",
+    "name_ru": "Арабхона"
+  },
+  {
+    "id": 110004,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Polvonlar",
+    "name_oz": "Полвонлар",
+    "name_ru": "Палвонлар"
+  },
+  {
+    "id": 110005,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Yangizamon",
+    "name_oz": "Янгизамон",
+    "name_ru": "Янгизамон"
+  },
+  {
+    "id": 110006,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Mirzoqal’a",
+    "name_oz": "Мирзақалъа",
+    "name_ru": "Мирзакала"
+  },
+  {
+    "id": 110007,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Chovli",
+    "name_oz": "Човли",
+    "name_ru": "Човли"
+  },
+  {
+    "id": 110008,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Oq-olting",
+    "name_oz": "Оқ-олтин",
+    "name_ru": "Ак-олтин"
+  },
+  {
+    "id": 110009,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Mirob",
+    "name_oz": "Мироб",
+    "name_ru": "Мироб"
+  },
+  {
+    "id": 110010,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Mustaqillik MFY",
+    "name_oz": "Мустақиллик МФЙ",
+    "name_ru": "Мустакиллик МФЙ"
+  },
+  {
+    "id": 110011,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Eski qal’a",
+    "name_oz": "Эски қалъа",
+    "name_ru": "Эски калъа"
+  },
+  {
+    "id": 110012,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Zarafshon",
+    "name_oz": "Зарафшон",
+    "name_ru": "Зарафшон"
+  },
+  {
+    "id": 110013,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Sayyod",
+    "name_oz": "Сайёд",
+    "name_ru": "Саййод"
+  },
+  {
+    "id": 110014,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Solur",
+    "name_oz": "Солур",
+    "name_ru": "Солур"
+  },
+  {
+    "id": 110015,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Paykent",
+    "name_oz": "Пайкент",
+    "name_ru": "Пайкент"
+  },
+  {
+    "id": 110016,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Qulonchi",
+    "name_oz": "Қулончи",
+    "name_ru": "Кулончи"
+  },
+  {
+    "id": 110017,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Sho‘robot",
+    "name_oz": "Шўработ",
+    "name_ru": "Шуработ"
+  },
+  {
+    "id": 110018,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Qorako‘l",
+    "name_oz": "Қоракўл",
+    "name_ru": "Каракуль"
+  },
+  {
+    "id": 110019,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Do‘rman",
+    "name_oz": "Дўрман",
+    "name_ru": "Дурман"
+  },
+  {
+    "id": 110020,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Tojikent",
+    "name_oz": "Тожикент",
+    "name_ru": "Таджикент"
+  },
+  {
+    "id": 110021,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Ziyorat",
+    "name_oz": "Зиёрат",
+    "name_ru": "Зиёрат"
+  },
+  {
+    "id": 110022,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Regihaydar",
+    "name_oz": "Региҳайдар",
+    "name_ru": "Регихайдар"
+  },
+  {
+    "id": 110023,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Bandboshi",
+    "name_oz": "Бандбоши",
+    "name_ru": "Бандбоши"
+  },
+  {
+    "id": 110024,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Paxtakor",
+    "name_oz": "Пахтакор",
+    "name_ru": "Пахтакор"
+  },
+  {
+    "id": 110025,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Chekirchi",
+    "name_oz": "Чекирчи",
+    "name_ru": "Чекирчи"
+  },
+  {
+    "id": 110026,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Jig‘achi",
+    "name_oz": "Жиғачи",
+    "name_ru": "Жигачи"
+  },
+  {
+    "id": 110027,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Osiyo",
+    "name_oz": "Осиё",
+    "name_ru": "Азия"
+  },
+  {
+    "id": 110028,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Qorakulonchi",
+    "name_oz": "Коракулончи",
+    "name_ru": "Коракулончи"
+  },
+  {
+    "id": 110029,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Ketmondo‘g‘di",
+    "name_oz": "Кетмондўғди",
+    "name_ru": "Кетмондугди"
+  },
+  {
+    "id": 110030,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Quyi Yangibozor",
+    "name_oz": "Қуйи янгибозор",
+    "name_ru": "Куий Янгибазар"
+  },
+  {
+    "id": 110031,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Arna MFY",
+    "name_oz": "Арна МФЙ",
+    "name_ru": "Арна МФЙ"
+  },
+  {
+    "id": 110032,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Quvvacha",
+    "name_oz": "Қуввача",
+    "name_ru": "Куввача"
+  },
+  {
+    "id": 110033,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Chandirobod",
+    "name_oz": "Чандиробод",
+    "name_ru": "Чандиробод"
+  },
+  {
+    "id": 110034,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Tinchlik",
+    "name_oz": "Тинчлик",
+    "name_ru": "Тинчлик"
+  },
+  {
+    "id": 110035,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Qozon",
+    "name_oz": "Қозон",
+    "name_ru": "Казон"
+  },
+  {
+    "id": 110036,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Istiqlol",
+    "name_oz": "Истиқлол",
+    "name_ru": "Истиклол"
+  },
+  {
+    "id": 110037,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Tashabbus",
+    "name_oz": "Ташаббус",
+    "name_ru": "Ташаббус"
+  },
+  {
+    "id": 110038,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Yangiturmush",
+    "name_oz": "Янгитурмуш",
+    "name_ru": "Янгитурмуш"
+  },
+  {
+    "id": 110039,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Darqali",
+    "name_oz": "Дарғали",
+    "name_ru": "Даргали"
+  },
+  {
+    "id": 110040,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Shakarbek",
+    "name_oz": "Шакарбек",
+    "name_ru": "Шакарбек"
+  },
+  {
+    "id": 110041,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Dargabogi",
+    "name_oz": "Дарғабоғи",
+    "name_ru": "Даргабоги"
+  },
+  {
+    "id": 110042,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Xo‘jalar",
+    "name_oz": "Хўжалар",
+    "name_ru": "Ходжалар"
+  },
+  {
+    "id": 110043,
+    "soato_id": 1706401804,
+    "district_id": 37,
+    "name_uz": "Do‘stlik",
+    "name_oz": "Дўстлик",
+    "name_ru": "Дустлик"
+  },
+
+  {
+    "id": 111000,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Navbahor MFY",
+    "name_oz": "Навбахор МФЙ",
+    "name_ru": "Навбахор МФЙ"
+  },
+  {
+    "id": 111001,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Tinchlik MFY",
+    "name_oz": "Тинчлик МФЙ",
+    "name_ru": "Тинчлик МФЙ"
+  },
+  {
+    "id": 111002,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Bo‘zachi MFY",
+    "name_oz": "Бўзачи МФЙ",
+    "name_ru": "Бузачи МФЙ"
+  },
+  {
+    "id": 111003,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Bo‘ston MFY",
+    "name_oz": "Бўстон МФЙ",
+    "name_ru": "Бустон МФЙ"
+  },
+  {
+    "id": 111004,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Jarqo‘q MFY",
+    "name_oz": "Жарқоқ МФЙ",
+    "name_ru": "Жаркок МФЙ"
+  },
+  {
+    "id": 111005,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Imom Buxoriy MFY",
+    "name_oz": "Имом Бухорий МФЙ",
+    "name_ru": "Имам Бухари МФЙ"
+  },
+  {
+    "id": 111006,
+    "soato_id": 1706401804,
+    "district_id": 38,
+    "name_uz": "Cho‘lquvar MFY",
+    "name_oz": "Чўлқувар МФЙ",
+    "name_ru": "Чулкувар МФЙ"
+  },
+
+  {
+    "id": 112000,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Gulistonobod",
+    "name_oz": "Гулистонобод",
+    "name_ru": "Гулистонобод"
+  },
+  {
+    "id": 112001,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Havzak",
+    "name_oz": "Ҳавзак",
+    "name_ru": "Хавзак"
+  },
+  {
+    "id": 112002,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Oq gul",
+    "name_oz": "Оқ гул",
+    "name_ru": "Ак гул"
+  },
+  {
+    "id": 112003,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Ko‘lijabbor",
+    "name_oz": "Кўлижаббор",
+    "name_ru": "Кулиджаббор"
+  },
+  {
+    "id": 112004,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Labirўt",
+    "name_oz": "Лабирўт",
+    "name_ru": "Лабирут"
+  },
+  {
+    "id": 112005,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Gajdumak",
+    "name_oz": "Гаждумак",
+    "name_ru": "Гаждумак"
+  },
+  {
+    "id": 112006,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Jovgari",
+    "name_oz": "Жовгари",
+    "name_ru": "Жовгари"
+  },
+  {
+    "id": 112007,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Sarmijon",
+    "name_oz": "Сармижон",
+    "name_ru": "Сармижон"
+  },
+  {
+    "id": 112008,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Chag‘dari",
+    "name_oz": "Чағдари",
+    "name_ru": "Чагдари"
+  },
+  {
+    "id": 112009,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Buqtaroy",
+    "name_oz": "Буктарой",
+    "name_ru": "Буктарой"
+  },
+  {
+    "id": 112010,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Vazirshoh",
+    "name_oz": "Вазиршох",
+    "name_ru": "Вазиршох"
+  },
+  {
+    "id": 112011,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Ko‘shk",
+    "name_oz": "Кўшк",
+    "name_ru": "Кушк"
+  },
+  {
+    "id": 112012,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Obod",
+    "name_oz": "Обод",
+    "name_ru": "Обод"
+  },
+  {
+    "id": 112013,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Taxtaxon",
+    "name_oz": "Тахтахон",
+    "name_ru": "Тахтахон"
+  },
+  {
+    "id": 112014,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Zarafshon",
+    "name_oz": "Зарафшон",
+    "name_ru": "Зарафшон"
+  },
+  {
+    "id": 112015,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Sho‘rcha",
+    "name_oz": "Шўрча",
+    "name_ru": "Шурча"
+  },
+  {
+    "id": 112016,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Sohibiyon",
+    "name_oz": "Соҳибиён",
+    "name_ru": "Сохибиён"
+  },
+  {
+    "id": 112017,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Qassabon",
+    "name_oz": "Қассабон",
+    "name_ru": "Кассабон"
+  },
+  {
+    "id": 112018,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Zargaron",
+    "name_oz": "Заргарон",
+    "name_ru": "Заргарон"
+  },
+  {
+    "id": 112019,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Yangiobod",
+    "name_oz": "Янгиобод",
+    "name_ru": "Янгиобод"
+  },
+  {
+    "id": 112020,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Armechon",
+    "name_oz": "Армечан",
+    "name_ru": "Армечан"
+  },
+  {
+    "id": 112021,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Cho‘galon",
+    "name_oz": "Чўғалон",
+    "name_ru": "Чугалон"
+  },
+  {
+    "id": 112022,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Todon",
+    "name_oz": "Тодон",
+    "name_ru": "Тодон"
+  },
+  {
+    "id": 112023,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Denov",
+    "name_oz": "Денов",
+    "name_ru": "Денов"
+  },
+  {
+    "id": 112024,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Soktari",
+    "name_oz": "Соктари",
+    "name_ru": "Соктари"
+  },
+  {
+    "id": 112025,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Mirakon",
+    "name_oz": "Миракон",
+    "name_ru": "Миракон"
+  },
+  {
+    "id": 112026,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Tarhanon",
+    "name_oz": "Тарханон",
+    "name_ru": "Тарханон"
+  },
+  {
+    "id": 112027,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Saidkent",
+    "name_oz": "Саидкент",
+    "name_ru": "Саидкент"
+  },
+  {
+    "id": 112028,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "G‘ovshun",
+    "name_oz": "Ғовшун",
+    "name_ru": "Говшун"
+  },
+  {
+    "id": 112029,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Xatcha",
+    "name_oz": "Хатча",
+    "name_ru": "Хатча"
+  },
+  {
+    "id": 112030,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "O‘zanon",
+    "name_oz": "Ўзанон",
+    "name_ru": "Узанон"
+  },
+  {
+    "id": 112031,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Mahalla Mirzayon",
+    "name_oz": "Маҳалла Мирзаён",
+    "name_ru": "Махалла Мирзайон"
+  },
+  {
+    "id": 112032,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Mazragan",
+    "name_oz": "Мазраган",
+    "name_ru": "Мазраган"
+  },
+  {
+    "id": 112033,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Biyosin",
+    "name_oz": "Биёсин",
+    "name_ru": "Биёсин"
+  },
+  {
+    "id": 112034,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Pozagari",
+    "name_oz": "Позагари",
+    "name_ru": "Позагари"
+  },
+  {
+    "id": 112035,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Dodarak",
+    "name_oz": "Додарак",
+    "name_ru": "Додарак"
+  },
+  {
+    "id": 112036,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Qumoq",
+    "name_oz": "Қумоқ",
+    "name_ru": "Кумок"
+  },
+  {
+    "id": 112037,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Ulfatbibi",
+    "name_oz": "Улфатбиби",
+    "name_ru": "Улфатбиби"
+  },
+  {
+    "id": 112038,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Rostg‘uy",
+    "name_oz": "Ростгўй",
+    "name_ru": "Ростгуй"
+  },
+  {
+    "id": 112039,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Oqrobot",
+    "name_oz": "Оқработ",
+    "name_ru": "Акробот"
+  },
+  {
+    "id": 112040,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Baqqollar",
+    "name_oz": "Баққоллар",
+    "name_ru": "Бакколлар"
+  },
+  {
+    "id": 112041,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "G‘ishtli",
+    "name_oz": "Ғишти",
+    "name_ru": "Гиштли"
+  },
+  {
+    "id": 112042,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Beshtuvo",
+    "name_oz": "Бештуво",
+    "name_ru": "Бештуво"
+  },
+  {
+    "id": 112043,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Baraka",
+    "name_oz": "Барака",
+    "name_ru": "Барака"
+  },
+  {
+    "id": 112044,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Xalqobod",
+    "name_oz": "Халқобод",
+    "name_ru": "Халкобод"
+  },
+  {
+    "id": 112045,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Qarabog‘",
+    "name_oz": "Қарабоғ",
+    "name_ru": "Карабог"
+  },
+  {
+    "id": 112046,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Qaraxoni",
+    "name_oz": "Қарахони",
+    "name_ru": "Карахони"
+  },
+  {
+    "id": 112047,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Paxtaoҳод",
+    "name_oz": "Пахтаобод",
+    "name_ru": "Пахтаобод"
+  },
+  {
+    "id": 112048,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Amirobod",
+    "name_oz": "Амиробод",
+    "name_ru": "Амиробод"
+  },
+  {
+    "id": 112049,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Ayirtom",
+    "name_oz": "Айиртом",
+    "name_ru": "Айиртом"
+  },
+  {
+    "id": 112050,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Toshloq",
+    "name_oz": "Тошлоқ",
+    "name_ru": "Тошлок"
+  },
+  {
+    "id": 112051,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Ko‘kcha",
+    "name_oz": "Кўкча",
+    "name_ru": "Кукча"
+  },
+  {
+    "id": 112052,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Sarvari",
+    "name_oz": "Сарвари",
+    "name_ru": "Сарвари"
+  },
+  {
+    "id": 112053,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Kalon",
+    "name_oz": "Калон",
+    "name_ru": "Калон"
+  },
+  {
+    "id": 112054,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Tavariyon",
+    "name_oz": "Тавариён",
+    "name_ru": "Тавариён"
+  },
+  {
+    "id": 112055,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Zarangari",
+    "name_oz": "Зарангари",
+    "name_ru": "Зарангари"
+  },
+  {
+    "id": 112056,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Bo‘lakiyon",
+    "name_oz": "Бўлакиён",
+    "name_ru": "Булакиён"
+  },
+  {
+    "id": 112057,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Mustaqillik",
+    "name_oz": "Мустақиллик",
+    "name_ru": "Мустакиллик"
+  },
+  {
+    "id": 112058,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Chorsu",
+    "name_oz": "Чорсу",
+    "name_ru": "Чорсу"
+  },
+  {
+    "id": 112059,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Qo‘rg‘on",
+    "name_oz": "Қўрғон",
+    "name_ru": "Кургон"
+  },
+  {
+    "id": 112060,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "A. G‘ijduvoniy",
+    "name_oz": "А.Ғиждувоний",
+    "name_ru": "А. Гиждувоний"
+  },
+  {
+    "id": 112061,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "F. Xo‘jaev",
+    "name_oz": "Ф.Хўжаев",
+    "name_ru": "Ф. Ходжаев"
+  },
+  {
+    "id": 112062,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Sharq",
+    "name_oz": "Шарқ",
+    "name_ru": "Шарк"
+  },
+  {
+    "id": 112063,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "A. Qahhor",
+    "name_oz": "А.Каххор",
+    "name_ru": "А. Каххар"
+  },
+  {
+    "id": 112064,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Pomўza",
+    "name_oz": "Помўза",
+    "name_ru": "Помуза"
+  },
+  {
+    "id": 112065,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Guliston",
+    "name_oz": "Гулистон",
+    "name_ru": "Гулистон"
+  },
+  {
+    "id": 112066,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Bobur",
+    "name_oz": "Бобур",
+    "name_ru": "Бабур"
+  },
+  {
+    "id": 112067,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "G‘alaba",
+    "name_oz": "Ғалаба",
+    "name_ru": "Галаба"
+  },
+  {
+    "id": 112068,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Nodirabegim",
+    "name_oz": "Нодирабегим",
+    "name_ru": "Нодирабегим"
+  },
+  {
+    "id": 112069,
+    "soato_id": 1706401804,
+    "district_id": 35,
+    "name_uz": "Degrezon",
+    "name_oz": "Дегрезон",
+    "name_ru": "Дегрезон"
+  }
 ]
