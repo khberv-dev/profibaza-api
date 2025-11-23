@@ -8,11 +8,7 @@ import { BadRequestException } from '@nestjs/common';
 export const documentInterceptor = FileInterceptor('file', {
   storage: diskStorage({
     destination: 'files/document',
-    filename(
-      req: e.Request,
-      file: Express.Multer.File,
-      callback: (error: Error | null, filename: string) => void,
-    ) {
+    filename(req: e.Request, file: Express.Multer.File, callback: (error: Error | null, filename: string) => void) {
       if (!file.mimetype.match(/\/(jpg|jpeg|png|pdf)$/)) {
         callback(
           new BadRequestException({

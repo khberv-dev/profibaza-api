@@ -8,11 +8,7 @@ import { BadRequestException } from '@nestjs/common';
 export const orderMaterialInterceptor = FileInterceptor('file', {
   storage: diskStorage({
     destination: 'files/order',
-    filename(
-      req: e.Request,
-      file: Express.Multer.File,
-      callback: (error: Error | null, filename: string) => void,
-    ) {
+    filename(req: e.Request, file: Express.Multer.File, callback: (error: Error | null, filename: string) => void) {
       if (!file.mimetype.match(/\/(jpg|jpeg|png|mp4|avi|mkv)$/)) {
         callback(
           new BadRequestException({

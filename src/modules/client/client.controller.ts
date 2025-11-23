@@ -32,11 +32,7 @@ export default class ClientController {
   }
 
   @Post('comment/:id')
-  async postComment(
-    @User() user: User,
-    @Param('id') orderId: string,
-    @Body() body: PostCommentDto,
-  ) {
+  async postComment(@User() user: User, @Param('id') orderId: string, @Body() body: PostCommentDto) {
     return this.clientService.postComment(user.roleUID, orderId, body);
   }
 }

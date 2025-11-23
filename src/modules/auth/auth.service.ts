@@ -9,6 +9,8 @@ import LegalRepository from '../legal/legal.repository';
 import WorkerRepository from '../worker/worker.repository';
 import { JwtPayload } from '../../helpers/jwt/jwt.strategy';
 import dayjs from 'dayjs';
+import OtpService from '../notification/otp.service';
+import VerifyOtpDto from './dto/verify-otp.dto';
 
 @Injectable()
 export default class AuthService {
@@ -18,6 +20,7 @@ export default class AuthService {
     private clientRepository: ClientRepository,
     private legalRepository: LegalRepository,
     private workerRepository: WorkerRepository,
+    private otpService: OtpService,
   ) {}
   async validate(data: LoginDto): Promise<JwtPayload | null> {
     const user = await this.userRepository.findByPhone(data.phone);
@@ -145,5 +148,53 @@ export default class AuthService {
     }
 
     return { ok: true };
+  }
+
+  async sendOtp(phone: string) {
+    if (!phone) {
+      throw new BadRequestException();
+    }
+
+    try {
+      await this.otpService.sendOTP(phone);
+
+      return {
+        ok: true,
+        message: {
+          uz: 'Kod yuborildi',
+        },
+      };
+    } catch (e) {
+      throw new BadRequestException(e.toString());
+    }
+  }
+
+  async verifyOtp(data: VerifyOtpDto) {
+    const verification = await this.otpService.verifyOTP(data.phone, data.code);
+
+    if (verification == null) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Raqam topilmadi',
+        },
+      });
+    }
+
+    if (!verification) {
+      throw new BadRequestException({
+        ok: false,
+        message: {
+          uz: 'Kod xato',
+        },
+      });
+    }
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Raqam tasdiqlandi',
+      },
+    };
   }
 }

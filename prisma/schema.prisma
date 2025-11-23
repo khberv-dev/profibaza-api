@@ -441,3 +441,14 @@ model Offer {
 
   @@map("offers")
 }
+
+model Otp {
+  id       String  @id @default(uuid(4))
+  code     String
+  phone    String
+  verified Boolean @default(false)
+
+  sentAt DateTime @default(now()) @map("sent_at")
+
+  @@map("otp")
+}

@@ -15,9 +15,7 @@ export default class LocationService {
   }
 
   getDistricts(regionId: number) {
-    const districts = this.locationRepository.districts.filter(
-      (district) => district.parent === regionId,
-    );
+    const districts = this.locationRepository.districts.filter((district) => district.parent === regionId);
 
     return {
       ok: true,
@@ -26,9 +24,7 @@ export default class LocationService {
   }
 
   getVillages(districtId: number) {
-    const villages = this.locationRepository.villages.filter(
-      (village) => village.parent === districtId,
-    );
+    const villages = this.locationRepository.villages.filter((village) => village.parent === districtId);
 
     return {
       ok: true,

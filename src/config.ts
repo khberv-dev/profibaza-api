@@ -4,3 +4,6 @@ export const HOST_URL = process.env.HOST_URL;
 export const PAYME_SUBSCRIBE_API_URL = process.env.PAYME_SUBSCRIBE_API_URL || '';
 export const PAYME_SUBSCRIBE_API_ID = process.env.PAYME_SUBSCRIBE_API_ID || '';
 export const PAYME_SUBSCRIBE_API_KEY = process.env.PAYME_SUBSCRIBE_API_KEY || '';
+export const SMS_SERVICE_URL = process.env.SMS_SERVICE_URL || '';
+export const SMS_SERVICE_LOGIN = process.env.SMS_SERVICE_LOGIN || '';
+export const SMS_SERVICE_PASSWORD = process.env.SMS_SERVICE_PASSWORD || '';

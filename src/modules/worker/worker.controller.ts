@@ -42,19 +42,13 @@ export default class WorkerController {
   }
 
   @Put('profession/:id')
-  async updateWorkerProfession(
-    @Param('id') workerProfessionId: string,
-    @Body() body: UpdateWorkerProfessionDto,
-  ) {
+  async updateWorkerProfession(@Param('id') workerProfessionId: string, @Body() body: UpdateWorkerProfessionDto) {
     return this.workerService.updateProfession(workerProfessionId, body);
   }
 
   @Post('profession/upload-demo/:id')
   @UseInterceptors(professionDemoInterceptor)
-  async uploadProfessionDemo(
-    @UploadedFile() file: Express.Multer.File,
-    @Param('id') workerProfessionId: string,
-  ) {
+  async uploadProfessionDemo(@UploadedFile() file: Express.Multer.File, @Param('id') workerProfessionId: string) {
     return this.workerService.createDemo(workerProfessionId, file.filename);
   }
 
@@ -64,10 +58,7 @@ export default class WorkerController {
   }
 
   @Post('profession/:id/experience')
-  async createExperience(
-    @Param('id') workerProfessionId: string,
-    @Body() body: CreateExperienceDto,
-  ) {
+  async createExperience(@Param('id') workerProfessionId: string, @Body() body: CreateExperienceDto) {
     return this.workerService.createExperience(workerProfessionId, body);
   }
 
@@ -133,10 +124,7 @@ export default class WorkerController {
 
   @Post('upload-order-material/:id')
   @UseInterceptors(orderMaterialInterceptor)
-  async uploadOrderMaterial(
-    @Param('id') orderId: string,
-    @UploadedFile() file: Express.Multer.File,
-  ) {
+  async uploadOrderMaterial(@Param('id') orderId: string, @UploadedFile() file: Express.Multer.File) {
     return this.workerService.uploadOrderMaterial(orderId, file.filename);
   }
 

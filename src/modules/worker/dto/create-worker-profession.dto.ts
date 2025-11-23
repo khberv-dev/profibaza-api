@@ -1,12 +1,4 @@
-import {
-  IsArray,
-  IsBoolean,
-  IsEnum,
-  IsInt,
-  IsOptional,
-  IsString,
-  ValidateNested,
-} from 'class-validator';
+import { IsArray, IsBoolean, IsEnum, IsInt, IsOptional, IsString, ValidateNested } from 'class-validator';
 import { Type } from 'class-transformer';
 import LocationDto from './location.dto';
 import ScheduleDto from './schedule.dto';

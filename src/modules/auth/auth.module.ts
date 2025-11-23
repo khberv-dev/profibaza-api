@@ -9,6 +9,7 @@ import JwtStrategy from '../../helpers/jwt/jwt.strategy';
 import ClientModule from '../client/client.module';
 import LegalModule from '../legal/legal.module';
 import WorkerModule from '../worker/worker.module';
+import NotificationModule from '../notification/notification.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import WorkerModule from '../worker/worker.module';
     ClientModule,
     LegalModule,
     WorkerModule,
+    NotificationModule,
   ],
   controllers: [AuthController],
   providers: [JwtStrategy, AuthService],

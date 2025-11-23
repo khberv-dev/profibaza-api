@@ -13,10 +13,7 @@ export default class AdminController {
   }
 
   @Get('invoices')
-  async getInvoices(
-    @Query('page', ParseIntPipe) page: number = 1,
-    @Query('limit', ParseIntPipe) limit: number = 10,
-  ) {
+  async getInvoices(@Query('page', ParseIntPipe) page: number = 1, @Query('limit', ParseIntPipe) limit: number = 10) {
     return this.adminService.getInvoices(page, limit);
   }
 }

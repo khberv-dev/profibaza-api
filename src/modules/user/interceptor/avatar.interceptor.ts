@@ -11,11 +11,7 @@ export const avatarInterceptor = FileInterceptor('file', {
   },
   storage: diskStorage({
     destination: 'files/avatar',
-    filename(
-      req: e.Request,
-      file: Express.Multer.File,
-      callback: (error: Error | null, filename: string) => void,
-    ) {
+    filename(req: e.Request, file: Express.Multer.File, callback: (error: Error | null, filename: string) => void) {
       if (!file.mimetype.match(/\/(jpg|jpeg|png)$/)) {
         callback(
           new BadRequestException({

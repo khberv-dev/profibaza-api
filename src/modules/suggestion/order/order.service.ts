@@ -89,9 +89,7 @@ export default class OrderService {
           let inArea = false;
 
           locations.forEach((location) => {
-            const x =
-              Math.pow(location.latitude - filter.lat, 2) +
-              Math.pow(location.longitude - filter.long, 2);
+            const x = Math.pow(location.latitude - filter.lat, 2) + Math.pow(location.longitude - filter.long, 2);
             const _r = location.radius / 111.32;
             const r1 = Math.pow(_r + _radius, 2);
             const r2 = Math.pow(_r - _radius, 2);
@@ -115,9 +113,7 @@ export default class OrderService {
         }),
       );
 
-      workerProfessions = workerProfessions.filter(
-        (workerProfession) => workerProfession['inArea'],
-      );
+      workerProfessions = workerProfessions.filter((workerProfession) => workerProfession['inArea']);
     }
 
     workerProfessions = await Promise.all(

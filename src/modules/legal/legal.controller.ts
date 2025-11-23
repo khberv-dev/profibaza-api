@@ -32,11 +32,7 @@ export default class LegalController {
   }
 
   @Post('comment/:id')
-  async postComment(
-    @User() user: User,
-    @Param('id') orderId: string,
-    @Body() body: PostCommentDto,
-  ) {
+  async postComment(@User() user: User, @Param('id') orderId: string, @Body() body: PostCommentDto) {
     return this.legalService.postComment(user.roleUID, orderId, body);
   }
 

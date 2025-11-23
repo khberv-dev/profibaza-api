@@ -1,11 +1,7 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import CardPaymentDto from './dto/card-payment.dto';
 import axios from 'axios';
-import {
-  PAYME_SUBSCRIBE_API_ID,
-  PAYME_SUBSCRIBE_API_KEY,
-  PAYME_SUBSCRIBE_API_URL,
-} from '../../config';
+import { PAYME_SUBSCRIBE_API_ID, PAYME_SUBSCRIBE_API_KEY, PAYME_SUBSCRIBE_API_URL } from '../../config';
 import CardVerifyDto from './dto/card-verify.dto';
 import DatabaseService from '../database/database.service';
 

@@ -18,9 +18,7 @@ export default class LocationRepository implements OnModuleInit {
   }
 
   readFromFile(fileName: string): LocationEntity[] {
-    const regionsRaw = fs
-      .readFileSync(path.join(this.dataPath, fileName), 'utf-8')
-      .replace(/^\uFEFF/, '');
+    const regionsRaw = fs.readFileSync(path.join(this.dataPath, fileName), 'utf-8').replace(/^\uFEFF/, '');
     const data: any[] = JSON.parse(regionsRaw) as any[];
 
     return data.map((item) => {
