@@ -2,6 +2,7 @@ import { Injectable, Logger, OnModuleInit } from '@nestjs/common';
 import DatabaseService from '../database/database.service';
 import { hashPassword } from '../../utils/hash';
 import { randomString } from '../../utils/randomize';
+import fs from 'node:fs';
 
 @Injectable()
 export default class InitService implements OnModuleInit {
@@ -15,6 +16,7 @@ export default class InitService implements OnModuleInit {
     if (!admin) {
       this.logger.log('Admin not found. Creating one...');
 
+      const passwordFileName = 'admin_pass.txt';
       const adminPhone = '998000000000';
       const adminPassword = randomString(12);
       const passwordHash = await hashPassword(adminPassword);
@@ -35,6 +37,9 @@ export default class InitService implements OnModuleInit {
         },
       });
 
+      if (!fs.existsSync(passwordFileName)) {
+        fs.writeFileSync(passwordFileName, adminPhone + '\n' + adminPassword);
+      }
       this.logger.log(`Admin has been created: ${admin.id}`);
       this.logger.log(`Admin credentials: ${adminPhone}:${adminPassword}`);
     }
