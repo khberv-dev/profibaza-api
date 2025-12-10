@@ -37,9 +37,11 @@ export default class InitService implements OnModuleInit {
         },
       });
 
-      if (!fs.existsSync(passwordFileName)) {
-        fs.writeFileSync(passwordFileName, adminPhone + '\n' + adminPassword);
+      if (fs.existsSync(passwordFileName)) {
+        fs.unlinkSync(passwordFileName);
       }
+
+      fs.writeFileSync(passwordFileName, adminPhone + '\n' + adminPassword);
       this.logger.log(`Admin has been created: ${admin.id}`);
       this.logger.log(`Admin credentials: ${adminPhone}:${adminPassword}`);
     }

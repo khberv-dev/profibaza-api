@@ -16,6 +16,7 @@ enum Role {
   ADMIN
   CLIENT
   LEGAL
+  INVESTOR
   WORKER
 }
 
@@ -72,11 +73,12 @@ model User {
 
   role Role @default(CLIENT)
 
-  clientProfile Client?
-  legalProfile  Legal?
-  workerProfile Worker?
-  adminProfile  Admin?
-  transactions  Transaction[]
+  clientProfile   Client?
+  legalProfile    Legal?
+  investorProfile Investor?
+  workerProfile   Worker?
+  adminProfile    Admin?
+  transactions    Transaction[]
 
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
@@ -128,6 +130,32 @@ model Legal {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("legals")
+}
+
+model Investor {
+  id                String  @id @default(uuid(4))
+  name              String?
+  activityType      String  @map("activity_type")
+  investitionAmount Int?    @map("investition_amount")
+  address1          String?
+  address2          String?
+  address3          String?
+
+  comments Comment[]
+
+  contacts  Contact[]
+  documents Document[]
+  vacancies Vacancy[]
+
+  orders Order[]
+
+  userId String @unique @map("user_id")
+  user   User   @relation(fields: [userId], references: [id])
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("investors")
 }
 
 model Worker {
@@ -186,6 +214,9 @@ model Contact {
   legalId String? @unique @map("legal_id")
   legal   Legal?  @relation(fields: [legalId], references: [id])
 
+  investorId String?   @map("investor_id")
+  investor   Investor? @relation(fields: [investorId], references: [id])
+
   workerId String? @unique @map("worker_id")
   worker   Worker? @relation(fields: [workerId], references: [id])
 
@@ -206,6 +237,9 @@ model Document {
 
   legalId String? @map("legal_id")
   legal   Legal?  @relation(fields: [legalId], references: [id])
+
+  investorId String?   @map("investor_id")
+  investor   Investor? @relation(fields: [investorId], references: [id])
 
   workerId String? @map("worker_id")
   worker   Worker? @relation(fields: [workerId], references: [id])
@@ -306,6 +340,9 @@ model Comment {
   legalId String? @map("legal_id")
   legal   Legal?  @relation(fields: [legalId], references: [id])
 
+  investorId String?   @map("investor_id")
+  investor   Investor? @relation(fields: [investorId], references: [id])
+
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("comments")
@@ -332,6 +369,9 @@ model Order {
 
   legalId String? @map("legal_id")
   legal   Legal?  @relation(fields: [legalId], references: [id])
+
+  investorId String?   @map("investor_id")
+  investor   Investor? @relation(fields: [investorId], references: [id])
 
   workerProfessionId String           @map("worker_profession_id")
   workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])
@@ -414,6 +454,9 @@ model Vacancy {
 
   legalId String
   legal   Legal  @relation(fields: [legalId], references: [id])
+
+  investorId String?   @map("investor_id")
+  investor   Investor? @relation(fields: [investorId], references: [id])
 
   offers Offer[]
 
