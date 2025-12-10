@@ -4,6 +4,7 @@ export enum UserRole {
   CLIENT = 'CLIENT',
   WORKER = 'WORKER',
   LEGAL = 'LEGAL',
+  INVESTOR = 'INVESTOR',
 }
 
 export enum Gender {
@@ -50,6 +51,14 @@ export default class RegisterDto {
   @IsOptional()
   @IsString()
   address3: string;
+
+  @IsOptional()
+  @IsString()
+  activityType: string;
+
+  @IsOptional()
+  @IsString()
+  investmentAmount: number;
 
   @IsString()
   @Length(8, 40)

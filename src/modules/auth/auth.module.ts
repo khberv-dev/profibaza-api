@@ -10,6 +10,7 @@ import ClientModule from '../client/client.module';
 import LegalModule from '../legal/legal.module';
 import WorkerModule from '../worker/worker.module';
 import NotificationModule from '../notification/notification.module';
+import InvestorModule from '../investor/investor.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import NotificationModule from '../notification/notification.module';
     UserModule,
     ClientModule,
     LegalModule,
+    InvestorModule,
     WorkerModule,
     NotificationModule,
   ],

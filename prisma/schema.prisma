@@ -133,13 +133,13 @@ model Legal {
 }
 
 model Investor {
-  id                String  @id @default(uuid(4))
-  name              String?
-  activityType      String  @map("activity_type")
-  investitionAmount Int?    @map("investition_amount")
-  address1          String?
-  address2          String?
-  address3          String?
+  id               String  @id @default(uuid(4))
+  name             String?
+  activityType     String  @map("activity_type")
+  investmentAmount Int?    @map("investition_amount")
+  address1         String?
+  address2         String?
+  address3         String?
 
   comments Comment[]
 

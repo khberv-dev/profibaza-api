@@ -11,6 +11,7 @@ import { JwtPayload } from '../../helpers/jwt/jwt.strategy';
 import dayjs from 'dayjs';
 import OtpService from '../notification/otp.service';
 import VerifyOtpDto from './dto/verify-otp.dto';
+import InvestorRepository from '../investor/investor.repository';
 
 @Injectable()
 export default class AuthService {
@@ -19,6 +20,7 @@ export default class AuthService {
     private userRepository: UserRepository,
     private clientRepository: ClientRepository,
     private legalRepository: LegalRepository,
+    private investorRepository: InvestorRepository,
     private workerRepository: WorkerRepository,
     private otpService: OtpService,
   ) {}
@@ -37,6 +39,10 @@ export default class AuthService {
 
       case 'LEGAL':
         roleUID = (await this.legalRepository.findByUserId(user.id))?.id;
+        break;
+
+      case 'INVESTOR':
+        roleUID = (await this.investorRepository.findByUserId(user.id))?.id;
         break;
 
       case 'WORKER':
@@ -132,6 +138,17 @@ export default class AuthService {
     if (data.role == UserRole.LEGAL) {
       await this.legalRepository.create({
         userId: user.id,
+        address1: data.address1,
+        address2: data.address2,
+        address3: data.address3,
+      });
+    }
+
+    if (data.role == UserRole.INVESTOR) {
+      await this.investorRepository.create({
+        userId: user.id,
+        activityType: data.activityType,
+        investmentAmount: data.investmentAmount,
         address1: data.address1,
         address2: data.address2,
         address3: data.address3,

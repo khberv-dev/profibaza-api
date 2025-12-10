@@ -13,6 +13,7 @@ import { ScheduleModule } from '@nestjs/schedule';
 import CronModule from './cron/cron.module';
 import PaymentModule from './payment/payment.module';
 import AdminModule from './admin/admin.module';
+import InvestorModule from './investor/investor.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import AdminModule from './admin/admin.module';
     SuggestionModule,
     ClientModule,
     LegalModule,
+    InvestorModule,
     WorkerModule,
     DocumentModule,
     PaymentModule,
