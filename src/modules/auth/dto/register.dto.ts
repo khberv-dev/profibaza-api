@@ -1,4 +1,4 @@
-import { IsEmail, IsEnum, IsOptional, IsString, Length, Matches } from 'class-validator';
+import { IsEmail, IsEnum, IsInt, IsOptional, IsString, Length, Matches } from 'class-validator';
 
 export enum UserRole {
   CLIENT = 'CLIENT',
@@ -57,7 +57,7 @@ export default class RegisterDto {
   activityType: string;
 
   @IsOptional()
-  @IsString()
+  @IsInt()
   investmentAmount: number;
 
   @IsString()
