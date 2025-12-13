@@ -452,8 +452,8 @@ model Vacancy {
   description String
   active      Boolean @default(true)
 
-  legalId String
-  legal   Legal  @relation(fields: [legalId], references: [id])
+  legalId String?
+  legal   Legal?  @relation(fields: [legalId], references: [id])
 
   investorId String?   @map("investor_id")
   investor   Investor? @relation(fields: [investorId], references: [id])
