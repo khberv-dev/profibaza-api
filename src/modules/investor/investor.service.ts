@@ -145,5 +145,10 @@ export default class InvestorService {
         employment: true,
       },
     });
+
+    return {
+      ok: true,
+      data: projects,
+    };
   }
 }
