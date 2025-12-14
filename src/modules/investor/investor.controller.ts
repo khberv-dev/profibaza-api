@@ -4,6 +4,7 @@ import InvestorService from './investor.service';
 import { User } from '../../helpers/decorators/user.decorator';
 import CreateContactDto from '../legal/dto/create-contact.dto';
 import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
+import CreateProjectDto from './dto/create-project.dto';
 
 @Controller('investor')
 @UseGuards(JwtAuthGuard)
@@ -33,5 +34,10 @@ export default class InvestorController {
   @Post('create-vacancy')
   async createVacancy(@User() user: User, @Body() body: CreateVacancyDto) {
     return this.investorService.createVacancy(user.roleUID, body);
+  }
+
+  @Post('projects')
+  async createProject(@User() user: User, @Body() body: CreateProjectDto) {
+    return this.investorService.createProject(user.roleUID, body);
   }
 }

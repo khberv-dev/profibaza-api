@@ -4,6 +4,7 @@ import CreateContactDto from '../legal/dto/create-contact.dto';
 import DatabaseService from '../database/database.service';
 import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
 import UpdateVacancyDto from '../legal/dto/update-vacancy.dto';
+import CreateProjectDto from './dto/create-project.dto';
 
 @Injectable()
 export default class InvestorService {
@@ -108,5 +109,25 @@ export default class InvestorService {
       ok: true,
       data: vacancy,
     };
+  }
+
+  async createProject(investorId: string, data: CreateProjectDto) {
+    const project = await this.databaseService.project.create({
+      data: {
+        investorId,
+        capacity: data.capacity,
+        description: data.description,
+        partners: data.partners,
+      },
+    });
+
+    await this.databaseService.projectEmployment.createMany({
+      data: data.employment.map((e) => {
+        return {
+          projectId: project.id,
+          ...e,
+        };
+      }),
+    });
   }
 }

@@ -57,6 +57,30 @@ enum OfferStatus {
   ACCEPTED
 }
 
+enum EmploymentType {
+  EMPLOYEE
+  FREELANCE
+  CONTRACT
+}
+
+enum WorkGraph {
+  FULLTIME
+  PARTTIME
+  FLEX
+}
+
+enum ProjectStatus {
+  PLANNED
+  BUILDING
+  DONE
+}
+
+enum ProjectCapacity {
+  SMALL
+  MIDDLE
+  LARGE
+}
+
 model User {
   id         String    @id @default(uuid(4))
   name       String
@@ -146,6 +170,7 @@ model Investor {
   contacts  Contact[]
   documents Document[]
   vacancies Vacancy[]
+  projects  Project[]
 
   orders Order[]
 
@@ -483,6 +508,36 @@ model Offer {
   deletedAt DateTime? @map("deleted_at")
 
   @@map("offers")
+}
+
+model Project {
+  id          String          @id @default(uuid(4))
+  status      ProjectStatus   @default(PLANNED)
+  capacity    ProjectCapacity
+  partners    String[]
+  description String?
+
+  employment ProjectEmployment[]
+
+  investorId String
+  investor   Investor @relation(fields: [investorId], references: [id])
+
+  @@map("projects")
+}
+
+model ProjectEmployment {
+  id             String         @id @default(uuid(4))
+  profession     String
+  count          Int            @default(0)
+  startDate      DateTime       @map("start_date")
+  endDate        DateTime       @map("end_date")
+  employmentType EmploymentType
+  workGraph      WorkGraph
+
+  projectId String
+  project   Project @relation(fields: [projectId], references: [id])
+
+  @@map("project_employment")
 }
 
 model Otp {
