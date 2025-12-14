@@ -40,4 +40,9 @@ export default class InvestorController {
   async createProject(@User() user: User, @Body() body: CreateProjectDto) {
     return this.investorService.createProject(user.roleUID, body);
   }
+
+  @Get('projects')
+  async getProject(@User() user: User) {
+    return this.investorService.getProjects(user.roleUID);
+  }
 }

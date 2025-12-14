@@ -130,4 +130,15 @@ export default class InvestorService {
       }),
     });
   }
+
+  async getProjects(investorId: string) {
+    const projects = await this.databaseService.project.findMany({
+      where: {
+        investorId,
+      },
+      include: {
+        employment: true,
+      },
+    });
+  }
 }
