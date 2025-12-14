@@ -8,9 +8,11 @@ import ProfessionController from './profession/profession.controller';
 import OrderController from './order/order.controller';
 import OrderService from './order/order.service';
 import OrderRepository from './order/order.repository';
+import InvestorService from './investor/investor.service';
+import InvestorController from './investor/investor.controller';
 
 @Module({
-  controllers: [LocationController, ProfessionController, OrderController],
+  controllers: [LocationController, ProfessionController, OrderController, InvestorController],
   providers: [
     LocationService,
     LocationRepository,
@@ -18,6 +20,7 @@ import OrderRepository from './order/order.repository';
     ProfessionRepository,
     OrderService,
     OrderRepository,
+    InvestorService,
   ],
   exports: [
     LocationService,
