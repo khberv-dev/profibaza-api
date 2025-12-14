@@ -5,6 +5,7 @@ import DatabaseService from '../database/database.service';
 import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
 import UpdateVacancyDto from '../legal/dto/update-vacancy.dto';
 import CreateProjectDto from './dto/create-project.dto';
+import dayjs from 'dayjs';
 
 @Injectable()
 export default class InvestorService {
@@ -123,9 +124,13 @@ export default class InvestorService {
 
     await this.databaseService.projectEmployment.createMany({
       data: data.employment.map((e) => {
+        const { startDate, endDate } = e;
+
         return {
-          projectId: project.id,
           ...e,
+          projectId: project.id,
+          startDate: dayjs(startDate, 'YYYY-MM-DD').toDate(),
+          endDate: dayjs(endDate, 'YYYY-MM-DD').toDate(),
         };
       }),
     });
