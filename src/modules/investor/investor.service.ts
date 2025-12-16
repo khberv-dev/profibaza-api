@@ -134,6 +134,13 @@ export default class InvestorService {
         };
       }),
     });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Loyiha yaratildi',
+      },
+    };
   }
 
   async getProjects(investorId: string) {
