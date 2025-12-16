@@ -9,7 +9,11 @@ export default class InvestorService {
     const investors = await this.databaseService.investor.findMany({
       include: {
         contacts: true,
-        projects: true,
+        projects: {
+          include: {
+            employment: true,
+          },
+        },
       },
     });
 
