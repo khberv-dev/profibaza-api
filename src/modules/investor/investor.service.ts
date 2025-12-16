@@ -6,6 +6,7 @@ import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
 import UpdateVacancyDto from '../legal/dto/update-vacancy.dto';
 import CreateProjectDto from './dto/create-project.dto';
 import dayjs from 'dayjs';
+import UpdateAddressDto from '../user/dto/update-address.dto';
 
 @Injectable()
 export default class InvestorService {
@@ -156,6 +157,26 @@ export default class InvestorService {
     return {
       ok: true,
       data: projects,
+    };
+  }
+
+  async updateAddress(investorId: string, data: UpdateAddressDto) {
+    await this.databaseService.investor.update({
+      where: {
+        id: investorId,
+      },
+      data: {
+        address1: data.address1,
+        address2: data.address2,
+        address3: data.address3,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Ma'lumot yangilandi",
+      },
     };
   }
 }

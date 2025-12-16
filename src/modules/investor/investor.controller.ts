@@ -1,10 +1,11 @@
-import { Body, Controller, Get, Param, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
 import InvestorService from './investor.service';
 import { User } from '../../helpers/decorators/user.decorator';
 import CreateContactDto from '../legal/dto/create-contact.dto';
 import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
 import CreateProjectDto from './dto/create-project.dto';
+import UpdateAddressDto from '../user/dto/update-address.dto';
 
 @Controller('investor')
 @UseGuards(JwtAuthGuard)
@@ -14,6 +15,11 @@ export default class InvestorController {
   @Get('me')
   async getMe(@User() user: User) {
     return this.investorService.getMe(user.roleUID);
+  }
+
+  @Put('update-address')
+  async updateAddress(@User() user: User, @Body() body: UpdateAddressDto) {
+    return this.investorService.updateAddress(user.roleUID, body);
   }
 
   @Post('contacts')
