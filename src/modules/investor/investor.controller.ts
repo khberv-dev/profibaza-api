@@ -8,6 +8,7 @@ import CreateProjectDto from './dto/create-project.dto';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import CreateOrderDto from '../client/dto/create-order.dto';
 import OfferDto from '../legal/dto/offer.dto';
+import PostCommentDto from '../client/dto/post-comment.dto';
 
 @Controller('investor')
 @UseGuards(JwtAuthGuard)
@@ -77,5 +78,10 @@ export default class InvestorController {
   @Post('accept-offer/:id')
   async acceptOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
     return this.investorService.acceptOffer(offerId, body);
+  }
+
+  @Post('comment/:id')
+  async postComment(@User() user: User, @Param('id') orderId: string, @Body() body: PostCommentDto) {
+    return this.investorService.postComment(user.roleUID, orderId, body);
   }
 }

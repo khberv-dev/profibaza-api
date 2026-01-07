@@ -9,6 +9,7 @@ import dayjs from 'dayjs';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import CreateOrderDto from '../client/dto/create-order.dto';
 import OfferDto from '../legal/dto/offer.dto';
+import PostCommentDto from '../client/dto/post-comment.dto';
 
 @Injectable()
 export default class InvestorService {
@@ -225,6 +226,11 @@ export default class InvestorService {
         },
       },
     });
+
+    return {
+      ok: true,
+      data: orders,
+    };
   }
 
   async getOffers(investorId: string) {
@@ -313,6 +319,17 @@ export default class InvestorService {
       ok: true,
       message: {
         uz: 'Taklif qabul qilindi',
+      },
+    };
+  }
+
+  async postComment(legalId: string, orderId: string, data: PostCommentDto) {
+    await this.investorRepository.createOrderComment(legalId, orderId, data.comment, data.rate);
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Izoh qabul qilindi',
       },
     };
   }
