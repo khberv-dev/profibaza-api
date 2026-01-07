@@ -7,6 +7,8 @@ import UpdateVacancyDto from '../legal/dto/update-vacancy.dto';
 import CreateProjectDto from './dto/create-project.dto';
 import dayjs from 'dayjs';
 import UpdateAddressDto from '../user/dto/update-address.dto';
+import CreateOrderDto from '../client/dto/create-order.dto';
+import OfferDto from '../legal/dto/offer.dto';
 
 @Injectable()
 export default class InvestorService {
@@ -176,6 +178,141 @@ export default class InvestorService {
       ok: true,
       message: {
         uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
+
+  async createOrder(investorId: string, orderData: CreateOrderDto) {
+    const deadline = dayjs(orderData.deadline, 'YYYY-MM-DD');
+
+    await this.investorRepository.createOrder({
+      investorId,
+      workerProfessionId: orderData.workerProfessionId,
+      description: orderData.description,
+      deadline: deadline.toDate(),
+      budget: orderData.budget,
+      address1: orderData.address1,
+      address2: orderData.address2,
+      address3: orderData.address3,
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: "Buyurtma yaratildi va ustaga jo'natildi",
+      },
+    };
+  }
+
+  async getOrders(investorId: string) {
+    const orders = await this.investorRepository.findOrdersByInvestorId(investorId, {
+      comments: true,
+      workerProfession: {
+        include: {
+          worker: {
+            select: {
+              user: {
+                select: {
+                  surname: true,
+                  name: true,
+                  middleName: true,
+                  phone: true,
+                  avatar: true,
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+  }
+
+  async getOffers(investorId: string) {
+    const offers = await this.databaseService.offer.findMany({
+      where: {
+        vacancy: {
+          investorId,
+        },
+      },
+      include: {
+        vacancy: {
+          select: {
+            legal: {
+              select: {
+                name: true,
+              },
+            },
+            title: true,
+            description: true,
+            salary: true,
+          },
+        },
+        workerProfession: {
+          include: {
+            experience: true,
+            profession: {
+              select: {
+                nameUz: true,
+                nameRu: true,
+              },
+            },
+            worker: {
+              select: {
+                user: {
+                  select: {
+                    name: true,
+                    surname: true,
+                    middleName: true,
+                    avatar: true,
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    });
+
+    return {
+      ok: true,
+      data: offers,
+    };
+  }
+
+  async declineOffer(offerId: string, data: OfferDto) {
+    await this.databaseService.offer.update({
+      where: {
+        id: offerId,
+      },
+      data: {
+        status: 'DECLINED',
+        message: data.message,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Taklif rad etildi',
+      },
+    };
+  }
+
+  async acceptOffer(offerId: string, data: OfferDto) {
+    await this.databaseService.offer.update({
+      where: {
+        id: offerId,
+      },
+      data: {
+        status: 'ACCEPTED',
+        message: data.message,
+      },
+    });
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Taklif qabul qilindi',
       },
     };
   }

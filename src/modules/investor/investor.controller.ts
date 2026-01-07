@@ -6,6 +6,8 @@ import CreateContactDto from '../legal/dto/create-contact.dto';
 import CreateVacancyDto from '../legal/dto/create-vacancy.dto';
 import CreateProjectDto from './dto/create-project.dto';
 import UpdateAddressDto from '../user/dto/update-address.dto';
+import CreateOrderDto from '../client/dto/create-order.dto';
+import OfferDto from '../legal/dto/offer.dto';
 
 @Controller('investor')
 @UseGuards(JwtAuthGuard)
@@ -50,5 +52,30 @@ export default class InvestorController {
   @Get('projects')
   async getProject(@User() user: User) {
     return this.investorService.getProjects(user.roleUID);
+  }
+
+  @Post('create-order')
+  async createOrder(@User() user: User, @Body() body: CreateOrderDto) {
+    return this.investorService.createOrder(user.roleUID, body);
+  }
+
+  @Get('orders')
+  async getOrders(@User() user: User) {
+    return this.investorService.getOrders(user.roleUID);
+  }
+
+  @Get('offers')
+  async getOffers(@User() user: User) {
+    return this.investorService.getOffers(user.roleUID);
+  }
+
+  @Post('decline-offer/:id')
+  async declineOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
+    return this.investorService.declineOffer(offerId, body);
+  }
+
+  @Post('accept-offer/:id')
+  async acceptOffer(@Param('id') offerId: string, @Body() body: OfferDto) {
+    return this.investorService.acceptOffer(offerId, body);
   }
 }
