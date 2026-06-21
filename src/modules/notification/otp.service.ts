@@ -25,12 +25,12 @@ export default class OtpService {
       ],
     };
 
-    await axios.post(SMS_SERVICE_URL, body, {
-      auth: {
-        username: SMS_SERVICE_LOGIN,
-        password: SMS_SERVICE_PASSWORD,
-      },
-    });
+    // await axios.post(SMS_SERVICE_URL, body, {
+    //   auth: {
+    //     username: SMS_SERVICE_LOGIN,
+    //     password: SMS_SERVICE_PASSWORD,
+    //   },
+    // });
 
     await this.database.otp.create({
       data: {

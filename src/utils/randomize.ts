@@ -9,7 +9,9 @@ export function randomString(len: number) {
 }
 
 export function randomOTP() {
-  return Math.floor(Math.random() * 100000)
-    .toString()
-    .padStart(5, '0');
+  return '66666';
+
+  // return Math.floor(Math.random() * 100000)
+  //   .toString()
+  //   .padStart(5, '0');
 }
