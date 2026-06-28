@@ -111,7 +111,7 @@ export default class AuthService {
 
     const passwordHash = await hashPassword(data.password);
     const birthdayDate = dayjs(data.birthday, 'YYYY-MM-DD').toDate();
-    const defaultActive = data.role !== UserRole.WORKER;
+    const defaultActive = true;
 
     const user = await this.userRepository.create({
       name: data.name,
