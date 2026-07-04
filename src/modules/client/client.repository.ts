@@ -48,6 +48,15 @@ export default class ClientRepository {
     });
   }
 
+  async uploadOrderFile(orderId: string, fileId: string) {
+    return this.databaseService.order.update({
+      where: { id: orderId },
+      data: {
+        files: { push: fileId },
+      },
+    });
+  }
+
   async createOrderComment(clientId: string, orderId: string, comment: string, rating: number) {
     return this.databaseService.comment.create({
       data: {

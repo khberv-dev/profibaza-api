@@ -25,11 +25,17 @@ import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import CreateOfferDto from './dto/create-offer.dto';
 import { orderMaterialInterceptor } from './interceptor/order-material.interceptor';
+import UpdateWorkerProfileDto from './dto/update-worker-profile.dto';
 
 @UseGuards(JwtAuthGuard)
 @Controller('worker')
 export default class WorkerController {
   constructor(private workerService: WorkerService) {}
+
+  @Put('profile')
+  async updateProfile(@User() user: User, @Body() body: UpdateWorkerProfileDto) {
+    return this.workerService.updateProfile(user.roleUID, body);
+  }
 
   @Get('profession')
   async getWorkerProfession(@User() user: User) {

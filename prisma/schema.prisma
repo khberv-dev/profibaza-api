@@ -75,6 +75,11 @@ enum ProjectStatus {
   DONE
 }
 
+enum PositionType {
+  TEHNIKUM
+  DIPLOMA
+}
+
 enum ProjectCapacity {
   SMALL
   MIDDLE
@@ -184,10 +189,11 @@ model Investor {
 }
 
 model Worker {
-  id       String  @id @default(uuid(4))
+  id       String       @id @default(uuid(4))
   address1 String?
   address2 String?
   address3 String?
+  position PositionType?
 
   contacts  Contact[]
   documents Document[]
@@ -425,12 +431,26 @@ model Location {
 model Schedule {
   id        String  @id @default(uuid(4))
   monday    Boolean
+  mondayStart    String? @map("monday_start")
+  mondayEnd      String? @map("monday_end")
   tuesday   Boolean
+  tuesdayStart   String? @map("tuesday_start")
+  tuesdayEnd     String? @map("tuesday_end")
   wednesday Boolean
+  wednesdayStart String? @map("wednesday_start")
+  wednesdayEnd   String? @map("wednesday_end")
   thursday  Boolean
+  thursdayStart  String? @map("thursday_start")
+  thursdayEnd    String? @map("thursday_end")
   friday    Boolean
+  fridayStart    String? @map("friday_start")
+  fridayEnd      String? @map("friday_end")
   saturday  Boolean
+  saturdayStart  String? @map("saturday_start")
+  saturdayEnd    String? @map("saturday_end")
   sunday    Boolean
+  sundayStart    String? @map("sunday_start")
+  sundayEnd      String? @map("sunday_end")
 
   workerProfessionId String           @unique
   workerProfession   WorkerProfession @relation(fields: [workerProfessionId], references: [id])

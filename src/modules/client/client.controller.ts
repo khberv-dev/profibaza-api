@@ -1,10 +1,11 @@
-import { Body, Controller, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Put, UploadedFile, UseGuards, UseInterceptors } from '@nestjs/common';
 import UpdateAddressDto from '../user/dto/update-address.dto';
 import ClientService from './client.service';
 import { User } from '../../helpers/decorators/user.decorator';
 import JwtAuthGuard from '../../helpers/guards/jwt-auth.guard';
 import CreateOrderDto from './dto/create-order.dto';
 import PostCommentDto from './dto/post-comment.dto';
+import { orderFileInterceptor } from './interceptor/order-file.interceptor';
 
 @UseGuards(JwtAuthGuard)
 @Controller('client')
@@ -29,6 +30,12 @@ export default class ClientController {
   @Get('orders')
   async getOrders(@User() user: User) {
     return this.clientService.getOrders(user.roleUID);
+  }
+
+  @Post('order/:id/upload-file')
+  @UseInterceptors(orderFileInterceptor)
+  async uploadOrderFile(@Param('id') orderId: string, @UploadedFile() file: Express.Multer.File) {
+    return this.clientService.uploadOrderFile(orderId, file.filename);
   }
 
   @Post('comment/:id')

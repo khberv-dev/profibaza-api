@@ -12,6 +12,7 @@ import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import DatabaseService from '../database/database.service';
 import CreateOfferDto from './dto/create-offer.dto';
+import UpdateWorkerProfileDto from './dto/update-worker-profile.dto';
 import fs from 'node:fs';
 import PDFDocument from 'pdfkit';
 import { formatOldInfo, formatPhone } from '../../utils/format';
@@ -24,6 +25,17 @@ export default class WorkerService {
     private documentRepository: DocumentRepository,
     private databaseService: DatabaseService,
   ) {}
+
+  async updateProfile(workerId: string, data: UpdateWorkerProfileDto) {
+    await this.workerRepository.update(workerId, data as any);
+
+    return {
+      ok: true,
+      message: {
+        uz: "Ma'lumot yangilandi",
+      },
+    };
+  }
 
   async getWorkerProfessions(id: string) {
     const workerProfessions = await this.workerRepository.findWorkerProfessions(id, {

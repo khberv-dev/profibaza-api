@@ -12,6 +12,10 @@ export default class WorkerRepository {
     return this.databaseService.worker.create({ data });
   }
 
+  async update(id: string, data: Prisma.WorkerUncheckedUpdateInput) {
+    return this.databaseService.worker.update({ where: { id }, data });
+  }
+
   async findByUserId(id: string) {
     return this.databaseService.worker.findFirst({
       where: {

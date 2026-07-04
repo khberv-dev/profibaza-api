@@ -83,6 +83,17 @@ export default class ClientService {
     };
   }
 
+  async uploadOrderFile(orderId: string, fileId: string) {
+    await this.clientRepository.uploadOrderFile(orderId, fileId);
+
+    return {
+      ok: true,
+      message: {
+        uz: 'Fayl yuklandi',
+      },
+    };
+  }
+
   async postComment(clientId: string, orderId: string, data: PostCommentDto) {
     await this.clientRepository.createOrderComment(clientId, orderId, data.comment, data.rate);
 
