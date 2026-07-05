@@ -443,12 +443,13 @@ JWT-токен выдаётся при логине. Payload содержит: `
       "jobType": "SOLO",
       "profession": { "nameUz": "Rassomlik", "nameRu": "Живопись" },
       "schedule": {
-        "monday": true,
-        "mondayStart": "09:00",
-        "mondayEnd": "18:00",
-        "saturday": true,
-        "saturdayStart": null,
-        "saturdayEnd": null
+        "monday": true, "mondayStart": "09:00", "mondayEnd": "18:00",
+        "tuesday": true, "tuesdayStart": "09:00", "tuesdayEnd": "18:00",
+        "wednesday": true, "wednesdayStart": "09:00", "wednesdayEnd": "18:00",
+        "thursday": true, "thursdayStart": "09:00", "thursdayEnd": "18:00",
+        "friday": true, "fridayStart": "09:00", "fridayEnd": "18:00",
+        "saturday": true, "saturdayStart": null, "saturdayEnd": null,
+        "sunday": false, "sundayStart": null, "sundayEnd": null
       },
       "locations": [],
       "experience": [],
@@ -1422,14 +1423,27 @@ JWT-токен выдаётся при логине. Payload содержит: `
       "minPrice": 100000,
       "maxPrice": 500000,
       "rating": 4.5,
+      "hasTeam": false,
+      "teamMemberCount": 1,
+      "readyForHugeProject": false,
+      "jobType": "SOLO",
+      "isBusy": false,
+      "locations": [
+        { "longitude": 69.2401, "latitude": 41.2995 }
+      ],
       "profession": { "nameUz": "Rassomlik", "nameRu": "Живопись" },
       "worker": {
-        "user": { "name": "Бобур", "avatar": "filename.jpg" }
+        "address1": "Ташкент",
+        "address2": "Юнусабад",
+        "address3": "Чиланзар",
+        "user": { "name": "Бобур", "surname": "Юсупов", "middleName": "Акбарович", "avatar": "filename.jpg" }
       }
     }
   ]
 }
 ```
+
+> `isBusy: true` — у работника есть активный заказ в статусе `PROGRESS`.
 
 ---
 
