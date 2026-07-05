@@ -1,5 +1,15 @@
-import { IsArray, IsInt, IsNumber, IsOptional, IsString } from 'class-validator';
+import { IsArray, IsEnum, IsInt, IsNumber, IsOptional, IsString, Matches } from 'class-validator';
 import { Transform, Type } from 'class-transformer';
+
+export enum WeekDay {
+  MONDAY = 'monday',
+  TUESDAY = 'tuesday',
+  WEDNESDAY = 'wednesday',
+  THURSDAY = 'thursday',
+  FRIDAY = 'friday',
+  SATURDAY = 'saturday',
+  SUNDAY = 'sunday',
+}
 
 export default class OrderFilterDto {
   @IsOptional()
@@ -44,4 +54,13 @@ export default class OrderFilterDto {
   @IsOptional()
   @IsString()
   address3: string;
+
+  @IsOptional()
+  @IsEnum(WeekDay)
+  day: WeekDay;
+
+  @IsOptional()
+  @IsString()
+  @Matches(/^([01]\d|2[0-3]):[0-5]\d$/)
+  time: string;
 }

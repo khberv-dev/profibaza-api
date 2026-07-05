@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import OrderRepository from './order.repository';
 import DatabaseService from '../../database/database.service';
-import OrderFilterDto from './dto/order-filter.dto';
+import OrderFilterDto, { WeekDay } from './dto/order-filter.dto';
 import { Prisma } from '@prisma/client';
 
 @Injectable()
@@ -30,6 +30,23 @@ export default class OrderService {
       workerProfessionFilter.maxPrice = {
         lte: filter.maxPrice,
       };
+    }
+
+    if (filter.day) {
+      const day = filter.day as WeekDay;
+      const startField = `${day}Start`;
+      const endField = `${day}End`;
+
+      const scheduleFilter: Record<string, unknown> = { [day]: true };
+
+      if (filter.time) {
+        scheduleFilter['OR'] = [
+          { [startField]: null },
+          { [startField]: { lte: filter.time }, [endField]: { gte: filter.time } },
+        ];
+      }
+
+      workerProfessionFilter.schedule = scheduleFilter as any;
     }
 
     if (filter.long && filter.lat && filter.radius) {
