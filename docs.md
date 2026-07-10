@@ -3,7 +3,10 @@
 ## Changelog
 
 ### 2026-07-10
-- Добавлено поле `workUnit` в `WorkerProfession` — единица измерения работы. Enum: `PIECE` (штука), `SQ_METER` (кв. м), `METER` (пог. м), `KILOGRAMM` (кг), `HOUR` (час). По умолчанию `null`. Доступно при создании и обновлении специальности (`POST /api/worker/profession`, `PUT /api/worker/profession/:id`).
+- **WorkerProfession** — добавлено поле `workUnit` (единица измерения работы, по умолчанию `null`).
+  - Enum: `PIECE` (штука) | `SQ_METER` (кв. м) | `METER` (пог. м) | `KILOGRAMM` (кг) | `HOUR` (час)
+  - Появляется в ответе `GET /api/worker/profession` и `GET /api/opt/order/search`
+  - Принимается в `POST /api/worker/profession` и `PUT /api/worker/profession/:id`
 
 ---
 
