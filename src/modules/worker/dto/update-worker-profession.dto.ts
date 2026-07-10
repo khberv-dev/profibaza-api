@@ -1,5 +1,5 @@
 import { IsBoolean, IsEnum, IsInt, IsOptional, IsString, ValidateNested } from 'class-validator';
-import { JobType } from './create-worker-profession.dto';
+import { JobType, WorkUnit } from './create-worker-profession.dto';
 import { Type } from 'class-transformer';
 import ScheduleDto from './schedule.dto';
 
@@ -35,6 +35,10 @@ export default class UpdateWorkerProfessionDto {
   @IsOptional()
   @IsEnum(JobType)
   jobType: JobType;
+
+  @IsOptional()
+  @IsEnum(WorkUnit)
+  workUnit: WorkUnit;
 
   @IsOptional()
   @IsBoolean()

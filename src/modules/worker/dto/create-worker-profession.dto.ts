@@ -9,6 +9,14 @@ export enum JobType {
   ABROAD = 'ABROAD',
 }
 
+export enum WorkUnit {
+  PIECE = 'PIECE',
+  SQ_METER = 'SQ_METER',
+  METER = 'METER',
+  KILOGRAMM = 'KILOGRAMM',
+  HOUR = 'HOUR',
+}
+
 export default class CreateWorkerProfessionDto {
   @IsString()
   professionId: string;
@@ -36,6 +44,10 @@ export default class CreateWorkerProfessionDto {
   @IsOptional()
   @IsEnum(JobType)
   jobType: JobType;
+
+  @IsOptional()
+  @IsEnum(WorkUnit)
+  workUnit: WorkUnit;
 
   @IsBoolean()
   readyForHugeProject: boolean;

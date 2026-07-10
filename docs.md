@@ -441,6 +441,7 @@ JWT-токен выдаётся при логине. Payload содержит: `
       "inventory": "Кисти, валики",
       "competitions": "Первое место на выставке 2024",
       "jobType": "SOLO",
+      "workUnit": "SQ_METER",
       "profession": { "nameUz": "Rassomlik", "nameRu": "Живопись" },
       "schedule": {
         "monday": true, "mondayStart": "09:00", "mondayEnd": "18:00",
@@ -478,6 +479,7 @@ JWT-токен выдаётся при логине. Payload содержит: `
   "inventory": "Кисти, валики",
   "competitions": null,
   "jobType": "SOLO",
+  "workUnit": "SQ_METER",
   "locations": [
     { "latitude": "41.2995", "longitude": "69.2401", "radius": 10 }
   ],
@@ -508,6 +510,7 @@ JWT-токен выдаётся при логине. Payload содержит: `
 ```
 
 > `jobType`: `SOLO` | `EMPLOYEE` | `ABROAD`  
+> `workUnit`: `PIECE` | `SQ_METER` | `METER` | `KILOGRAMM` | `HOUR` | `null` (опционально)  
 > Время в формате `HH:MM`. `null` = 24/7 (если день активен).
 
 **Ответ:**

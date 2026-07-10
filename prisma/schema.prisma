@@ -80,6 +80,14 @@ enum PositionType {
   DIPLOMA
 }
 
+enum WorkUnit {
+  PIECE
+  SQ_METER
+  METER
+  KILOGRAMM
+  HOUR
+}
+
 enum ProjectCapacity {
   SMALL
   MIDDLE
@@ -322,7 +330,8 @@ model WorkerProfession {
   readyForHugeProject Boolean @default(false) @map("ready_for_huge_project")
   inventory           String?
   competitions        String?
-  jobType             JobType @default(SOLO) @map("job_type")
+  jobType             JobType  @default(SOLO) @map("job_type")
+  workUnit            WorkUnit? @map("work_unit")
 
   demos         WorkerProfessionDemo[]
   orders        Order[]
