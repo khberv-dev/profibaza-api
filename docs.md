@@ -1,5 +1,12 @@
 # Profibaza API — Документация
 
+## Changelog
+
+### 2026-07-10
+- Добавлено поле `workUnit` в `WorkerProfession` — единица измерения работы. Enum: `PIECE` (штука), `SQ_METER` (кв. м), `METER` (пог. м), `KILOGRAMM` (кг), `HOUR` (час). По умолчанию `null`. Доступно при создании и обновлении специальности (`POST /api/worker/profession`, `PUT /api/worker/profession/:id`).
+
+---
+
 **Base URL:** `http://localhost:8080/api`  
 **Swagger UI:** `http://localhost:8080/docs`  
 **Статические файлы:** `http://localhost:8080/public`
