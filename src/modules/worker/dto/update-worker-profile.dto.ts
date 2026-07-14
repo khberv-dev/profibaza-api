@@ -1,4 +1,4 @@
-import { IsEnum, IsOptional } from 'class-validator';
+import { IsEnum, IsOptional, IsString, ValidateIf } from 'class-validator';
 
 export enum PositionType {
   TEHNIKUM = 'TEHNIKUM',
@@ -9,4 +9,8 @@ export default class UpdateWorkerProfileDto {
   @IsOptional()
   @IsEnum(PositionType)
   position?: PositionType;
+
+  @ValidateIf((o: UpdateWorkerProfileDto) => o.position === PositionType.TEHNIKUM)
+  @IsString()
+  tehnikumId?: string;
 }

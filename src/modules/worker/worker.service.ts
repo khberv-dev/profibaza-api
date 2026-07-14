@@ -12,7 +12,7 @@ import CreateExperienceDto from './dto/create-experience.dto';
 import UpdateExperienceDto from './dto/update-experience.dto';
 import DatabaseService from '../database/database.service';
 import CreateOfferDto from './dto/create-offer.dto';
-import UpdateWorkerProfileDto from './dto/update-worker-profile.dto';
+import UpdateWorkerProfileDto, { PositionType } from './dto/update-worker-profile.dto';
 import fs from 'node:fs';
 import PDFDocument from 'pdfkit';
 import { formatOldInfo, formatPhone } from '../../utils/format';
@@ -27,6 +27,21 @@ export default class WorkerService {
   ) {}
 
   async updateProfile(workerId: string, data: UpdateWorkerProfileDto) {
+    if (data.position === PositionType.TEHNIKUM) {
+      const tehnikum = await this.databaseService.tehnikum.findFirst({
+        where: { id: data.tehnikumId },
+      });
+
+      if (!tehnikum) {
+        throw new BadRequestException({
+          ok: false,
+          message: {
+            uz: 'Texnikum topilmadi',
+          },
+        });
+      }
+    }
+
     await this.workerRepository.update(workerId, data as any);
 
     return {

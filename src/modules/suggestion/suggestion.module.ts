@@ -10,9 +10,12 @@ import OrderService from './order/order.service';
 import OrderRepository from './order/order.repository';
 import InvestorService from './investor/investor.service';
 import InvestorController from './investor/investor.controller';
+import TehnikumRepository from './tehnikum/tehnikum.repository';
+import TehnikumService from './tehnikum/tehnikum.service';
+import TehnikumController from './tehnikum/tehnikum.controller';
 
 @Module({
-  controllers: [LocationController, ProfessionController, OrderController, InvestorController],
+  controllers: [LocationController, ProfessionController, OrderController, InvestorController, TehnikumController],
   providers: [
     LocationService,
     LocationRepository,
@@ -21,6 +24,8 @@ import InvestorController from './investor/investor.controller';
     OrderService,
     OrderRepository,
     InvestorService,
+    TehnikumService,
+    TehnikumRepository,
   ],
   exports: [
     LocationService,
@@ -29,6 +34,8 @@ import InvestorController from './investor/investor.controller';
     ProfessionRepository,
     OrderService,
     OrderRepository,
+    TehnikumService,
+    TehnikumRepository,
   ],
 })
 export default class SuggestionModule {}
